@@ -1220,7 +1220,7 @@ pre code {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #ffff7a;
+  background: #c6e4e2;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2508,4 +2508,22 @@ header.header {
 body {
   background: url("/images/bg.jpg") no-repeat center fixed;
   background-size: cover;
+}
+.post-block {
+  background: #fff; /* 卡片背景色（白色） */
+  border-radius: 8px; /* 圆角 */
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08); /* 阴影，增强立体感 */
+  padding: 1.5rem; /* 内边距，避免内容贴边 */
+  margin-bottom: 2rem; /* 文章间距 */
+  transition: all 0.3s ease; /* 鼠标悬停动画 */
+}
+.post-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+.post-title {
+  margin-top: 0; /* 去掉默认间距 */
+}
+.post-meta {
+  color: #999; /* 浅灰色，弱化次要信息 */
 }
