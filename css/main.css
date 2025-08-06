@@ -1221,7 +1221,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ff6721;
+    background: #a89d17;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2832,4 +2832,11 @@ body {
 }
 .post-meta {
   color: #999; /* 浅灰色，弱化次要信息 */
+}
+/* 视频容器添加阴影和圆角 */
+video,
+iframe {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin: 1rem 0; /* 上下间距 */
 }
