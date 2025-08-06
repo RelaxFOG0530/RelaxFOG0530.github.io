@@ -165,6 +165,19 @@
       </tags>
   </entry>
   <entry>
+    <title>NEWNEW</title>
+    <url>/2025/08/06/New/</url>
+    <content><![CDATA[<h1 id="NEWNEW"><a href="#NEWNEW" class="headerlink" title="NEWNEW"></a>NEWNEW</h1><p><img src="https://static-cse.canva.cn/blob/234749/.gif" alt="NEWNEW"></p>
+]]></content>
+      <categories>
+        <category>think</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>GIF</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Splay 学习笔记</title>
     <url>/2025/08/03/Splay-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Splay 是二叉查找树的一种，它通过访问节点时将其旋转到根节点，使查找树尽量维持平衡。</p>
@@ -389,38 +402,6 @@
       </tags>
   </entry>
   <entry>
-    <title>线性尺寸莫比乌斯函数</title>
-    <url>/2025/08/03/%E7%BA%BF%E6%80%A7%E5%B0%BA%E5%AF%B8%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<p>模拟赛中的一道题，让我发现自己莫比乌斯函数的基础十分薄弱。:cry:</p>
-<span id="more"></span>
-
-<h2 id="推导"><a href="#推导" class="headerlink" title="推导"></a>推导</h2><p>先来看看莫比乌斯函数的定义：</p>
-<p>设 $n&#x3D;\prod_{i&#x3D;1}^Np_i^{k_i}$（$p$ 为质数集合），则</p>
-<p>$$<br>\mu(n)&#x3D;<br>\begin{cases}<br>1&amp;n&#x3D;1\<br>(-1)^N&amp;\forall1\leq i\leq N,k_i&#x3D;1\<br>0&amp;k_i&gt;1<br>\end{cases}<br>$$</p>
-<p>当 $i\in p$ 时，显然 $\mu(i)&#x3D;-1$。</p>
-<p>设 $n^\prime&#x3D;\frac n{p_1}$，在线性筛中，$n$ 通过 $n^\prime\cdot p_1$ 被筛去。</p>
-<p>当 $n^\prime\mid p_1$，即 $k_1&gt;1$ 时，$\mu(n)&#x3D;0$；</p>
-<p>否则 $n^\prime$ 有 $N-1$ 个质因子。</p>
-<p>如果 $\mu(n^\prime)\neq0$，即 $\forall2\leq i\leq N,k_i&#x3D;1$ 时，根据定义得：</p>
-<p>$$<br>\begin{aligned}\mu(n)&amp;&#x3D;(-1)^N\&amp;&#x3D;(-1)^{N-1}\cdot(-1)\&amp;&#x3D;\mu(n^\prime)\cdot(-1)\&amp;&#x3D;-\mu(n^\prime)\end{aligned}<br>$$</p>
-<p>如果 $\mu(n^\prime)&#x3D;0$，则 $n^\prime$ 一定有次数大于 $1$ 的质因子，所以 $n$ 也一定有，即 $\mu(n)&#x3D;0$。</p>
-<p>此时 $\mu(n)&#x3D;-\mu(n^\prime)$ 仍成立。</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">mu[<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">2</span>;i&lt;=N;++i) &#123;</span><br><span class="line">    <span class="keyword">if</span>(!npri[i]) &#123;</span><br><span class="line">        pri[++cnt]=i;</span><br><span class="line">        mu[i]=<span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>,tem;(j&lt;=cnt)&amp;&amp;((tem=i*pri[j])&lt;=N);++j) &#123;</span><br><span class="line">        npri[tem]=<span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">if</span>(i%pri[j]==<span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">        mu[tem]=-mu[i];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="资料"><a href="#资料" class="headerlink" title="资料"></a>资料</h2><blockquote>
-<p>本文部分参考<a href="https://oi.men.ci/euler-sieve/">线性筛法筛素数、莫比乌斯函数、欧拉函数 | Menci’s Blog</a>。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>study</category>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>code</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>序列自动机学习笔记</title>
     <url>/2025/08/03/%E5%BA%8F%E5%88%97%E8%87%AA%E5%8A%A8%E6%9C%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>序列自动机是接受一个字符串的子序列的自动机。</p>
@@ -464,6 +445,38 @@
 
 <h2 id="资料"><a href="#资料" class="headerlink" title="资料"></a>资料</h2><blockquote>
 <p>序列自动机第二种部分参考<a href="https://www.luogu.com.cn/blog/WYXkk/zi-xu-lie-zi-dong-ji">浅谈子序列自动机 - WYXkk 的博客</a>。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>study</category>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>code</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>线性尺寸莫比乌斯函数</title>
+    <url>/2025/08/03/%E7%BA%BF%E6%80%A7%E5%B0%BA%E5%AF%B8%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<p>模拟赛中的一道题，让我发现自己莫比乌斯函数的基础十分薄弱。:cry:</p>
+<span id="more"></span>
+
+<h2 id="推导"><a href="#推导" class="headerlink" title="推导"></a>推导</h2><p>先来看看莫比乌斯函数的定义：</p>
+<p>设 $n&#x3D;\prod_{i&#x3D;1}^Np_i^{k_i}$（$p$ 为质数集合），则</p>
+<p>$$<br>\mu(n)&#x3D;<br>\begin{cases}<br>1&amp;n&#x3D;1\<br>(-1)^N&amp;\forall1\leq i\leq N,k_i&#x3D;1\<br>0&amp;k_i&gt;1<br>\end{cases}<br>$$</p>
+<p>当 $i\in p$ 时，显然 $\mu(i)&#x3D;-1$。</p>
+<p>设 $n^\prime&#x3D;\frac n{p_1}$，在线性筛中，$n$ 通过 $n^\prime\cdot p_1$ 被筛去。</p>
+<p>当 $n^\prime\mid p_1$，即 $k_1&gt;1$ 时，$\mu(n)&#x3D;0$；</p>
+<p>否则 $n^\prime$ 有 $N-1$ 个质因子。</p>
+<p>如果 $\mu(n^\prime)\neq0$，即 $\forall2\leq i\leq N,k_i&#x3D;1$ 时，根据定义得：</p>
+<p>$$<br>\begin{aligned}\mu(n)&amp;&#x3D;(-1)^N\&amp;&#x3D;(-1)^{N-1}\cdot(-1)\&amp;&#x3D;\mu(n^\prime)\cdot(-1)\&amp;&#x3D;-\mu(n^\prime)\end{aligned}<br>$$</p>
+<p>如果 $\mu(n^\prime)&#x3D;0$，则 $n^\prime$ 一定有次数大于 $1$ 的质因子，所以 $n$ 也一定有，即 $\mu(n)&#x3D;0$。</p>
+<p>此时 $\mu(n)&#x3D;-\mu(n^\prime)$ 仍成立。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">mu[<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">2</span>;i&lt;=N;++i) &#123;</span><br><span class="line">    <span class="keyword">if</span>(!npri[i]) &#123;</span><br><span class="line">        pri[++cnt]=i;</span><br><span class="line">        mu[i]=<span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>,tem;(j&lt;=cnt)&amp;&amp;((tem=i*pri[j])&lt;=N);++j) &#123;</span><br><span class="line">        npri[tem]=<span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">if</span>(i%pri[j]==<span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">        mu[tem]=-mu[i];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="资料"><a href="#资料" class="headerlink" title="资料"></a>资料</h2><blockquote>
+<p>本文部分参考<a href="https://oi.men.ci/euler-sieve/">线性筛法筛素数、莫比乌斯函数、欧拉函数 | Menci’s Blog</a>。</p>
 </blockquote>
 ]]></content>
       <categories>
