@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Espresso</title>
+    <url>/2025/08/04/Espresso/</url>
+    <content><![CDATA[<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1954627753&bvid=BV1ay411Y7WS&cid=1549402671&p=1" 
+        width="100%" height="450" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+]]></content>
+      <categories>
+        <category>music</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>video</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Blog的初次暴走</title>
     <url>/2025/08/02/Blog%E7%9A%84%E5%88%9D%E6%AC%A1%E6%9A%B4%E8%B5%B0/</url>
     <content><![CDATA[<p>昨天 BlogWeb 暴走了，主要是因为凌晨三点加的那段动态天气代码里藏了个没闭合的循环。原本想让天气图标每小时自动刷新，结果写成了while(true)却忘了加终止条件，代码像脱缰的野马在后台疯狂请求接口。等早上发现时，服务器日志已经堆到了 300 多 MB，全是重复的天气数据报错，连带着首页加载时都在疯狂弹窗 —— 毕竟每秒钟弹出十几次 “获取天气失败” 的提示，再稳的浏览器也扛不住。<br>更糟的是，因为循环占用了太多进程，连后台管理页面都卡成了幻灯片。点 “编辑文章” 要等三分钟才能加载出编辑器，好不容易改完内容点保存，直接弹出 404 超时。最哭笑不得的是，原本用来美化页面的粒子特效插件，因为内存被占满，粒子全黏成了一团黑乎乎的像素块，在屏幕上像只乱爬的虫子。<br>后来对着服务器监控日志一点点捋，才发现问题根源藏在sidebar.njk的脚本里。删那行循环代码时手都在抖，生怕误删了其他功能。重启服务器后看着控制台跳出 “正常运行” 的提示，突然觉得那些凌晨改代码的冲动，都不如加个定时器再睡个好觉实在。现在每次改代码都逼着自己先写注释，哪怕只是加一行打印，也得标清楚 “这里可能会炸”—— 毕竟谁也不想再体验一次，看着自己的博客从精致小站变成狂弹窗的 “失控现场” 了。</p>
@@ -13,20 +27,6 @@
         <tag>2025</tag>
         <tag>Note</tag>
         <tag>观测</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Espresso</title>
-    <url>/2025/08/04/Espresso/</url>
-    <content><![CDATA[<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1954627753&bvid=BV1ay411Y7WS&cid=1549402671&p=1" 
-        width="100%" height="450" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
-]]></content>
-      <categories>
-        <category>music</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>video</tag>
       </tags>
   </entry>
   <entry>
@@ -128,6 +128,24 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2025/08/02/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Splay 学习笔记</title>
     <url>/2025/08/03/Splay-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Splay 是二叉查找树的一种，它通过访问节点时将其旋转到根节点，使查找树尽量维持平衡。</p>
@@ -225,24 +243,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2025/08/02/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>今日暴走</title>
     <url>/2025/08/03/%E4%BB%8A%E6%97%A5%E6%9A%B4%E8%B5%B0/</url>
     <content><![CDATA[<p>今天优化网页的过程，简直是把自己扔进了代码的泥沼里挣扎。<br><img src="https://s1.aigei.com/src/img/gif/02/021da8d3e9e24928b36cd0e6a5ddb567.gif?imageMogr2/auto-orient/thumbnail/!282x226r/gravity/Center/crop/282x226/quality/85/%7CimageView2/2/w/282&e=2051020800&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:t6dvivz7_aMOjctuQUsuUfUxZEw=" alt="红温"></p>
@@ -257,6 +257,19 @@
         <tag>2025</tag>
         <tag>Note</tag>
         <tag>观测</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>劇終</title>
+    <url>/2025/08/03/%E5%8A%87%E7%B5%82/</url>
+    <content><![CDATA[<p><img src="http://img.xinmin.cn/xmwb/2020/5/NEM1_20200510_C0325256459_A2250577.png" alt="剧终"></p>
+]]></content>
+      <categories>
+        <category>talk，追剧</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>Note</tag>
       </tags>
   </entry>
   <entry>
@@ -377,19 +390,6 @@
       <tags>
         <tag>2025</tag>
         <tag>code</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>劇終</title>
-    <url>/2025/08/03/%E5%8A%87%E7%B5%82/</url>
-    <content><![CDATA[<p><img src="http://img.xinmin.cn/xmwb/2020/5/NEM1_20200510_C0325256459_A2250577.png" alt="剧终"></p>
-]]></content>
-      <categories>
-        <category>talk，追剧</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>Note</tag>
       </tags>
   </entry>
   <entry>
