@@ -176,13 +176,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -233,6 +233,112 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://relaxfog0530.github.io/2025/08/06/Horse%20Races%E9%A2%98%E8%A7%A3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Early">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Early's Blog">
+      <meta itemprop="description" content="愿，<br>自己不再辜负自己，<br>奇迹不再辜负奇迹。">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | Early's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2025/08/06/Horse%20Races%E9%A2%98%E8%A7%A3/" class="post-title-link" itemprop="url">Horse Races</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2025-08-06 21:15:43 / 修改时间：21:22:17" itemprop="dateCreated datePublished" datetime="2025-08-06T21:15:43+08:00">2025-08-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">study</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/study/%E9%A2%98%E8%A7%A3/" itemprop="url" rel="index"><span itemprop="name">题解</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h4 id="我们先看题"><a href="#我们先看题" class="headerlink" title="我们先看题"></a>我们先看题</h4><h1 id="CF95D-Horse-Races"><a href="#CF95D-Horse-Races" class="headerlink" title="CF95D Horse Races"></a>CF95D Horse Races</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Petya likes horse racing very much. Horses numbered from $ l $ to $ r $ take part in the races. Petya wants to evaluate the probability of victory; for some reason, to do that he needs to know the amount of nearly lucky horses’ numbers. A nearly lucky number is an integer number that has at least two lucky digits the distance between which does not exceed $ k $ . Petya learned from some of his mates from Lviv that lucky digits are digits $ 4 $ and $ 7 $ . The distance between the digits is the absolute difference between their positions in the number of a horse. For example, if $ k&#x3D;2 $ , then numbers $ 412395497 $ , $ 404 $ , $ 4070400000070004007 $ are nearly lucky and numbers $ 4 $ , $ 4123954997 $ , $ 4007000040070004007 $ are not.</p>
+<p>Petya prepared $ t $ intervals $ [l_{i},r_{i}] $ and invented number $ k $ , common for all of them. Your task is to find how many nearly happy numbers there are in each of these segments. Since the answers can be quite large, output them modulo $ 1000000007 $ ( $ 10^{9}+7 $ ).</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>The first line contains two integers $ t $ and $ k $ ( $ 1&lt;&#x3D;t,k&lt;&#x3D;1000 $ ) — the number of segments and the distance between the numbers correspondingly. Next $ t $ lines contain pairs of integers $ l_{i} $ and $ r_{i} $ ( $ 1&lt;&#x3D;l&lt;&#x3D;r&lt;&#x3D;10^{1000} $ ). All numbers are given without the leading zeroes. Numbers in each line are separated by exactly one space character.</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>Output $ t $ lines. In each line print one integer — the answer for the corresponding segment modulo $ 1000000007 $ ( $ 10^{9}+7 $ ).</p>
+<h2 id="输入输出样例-1"><a href="#输入输出样例-1" class="headerlink" title="输入输出样例 #1"></a>输入输出样例 #1</h2><h3 id="输入-1"><a href="#输入-1" class="headerlink" title="输入 #1"></a>输入 #1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1 2</span><br><span class="line">1 100</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出-1"><a href="#输出-1" class="headerlink" title="输出 #1"></a>输出 #1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4</span><br></pre></td></tr></table></figure>
+
+<h2 id="输入输出样例-2"><a href="#输入输出样例-2" class="headerlink" title="输入输出样例 #2"></a>输入输出样例 #2</h2><h3 id="输入-2"><a href="#输入-2" class="headerlink" title="输入 #2"></a>输入 #2</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1 2</span><br><span class="line">70 77</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出-2"><a href="#输出-2" class="headerlink" title="输出 #2"></a>输出 #2</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure>
+
+<h2 id="输入输出样例-3"><a href="#输入输出样例-3" class="headerlink" title="输入输出样例 #3"></a>输入输出样例 #3</h2><h3 id="输入-3"><a href="#输入-3" class="headerlink" title="输入 #3"></a>输入 #3</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">2 1</span><br><span class="line">1 20</span><br><span class="line">80 100</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出-3"><a href="#输出-3" class="headerlink" title="输出 #3"></a>输出 #3</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">0</span><br><span class="line">0</span><br></pre></td></tr></table></figure>
+
+<h2 id="说明-提示"><a href="#说明-提示" class="headerlink" title="说明&#x2F;提示"></a>说明&#x2F;提示</h2><p>In the first sample, the four nearly lucky numbers are 44, 47, 74, 77.</p>
+<p>In the second sample, only 74 and 77 are in the given segment.</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>一道比较基础的数位DP。</p>
+<p>答案明显可以差分出来，ans&#x3D;calc(r)−calc(l−1) ，但是由于数据范围太大 1≤l≤r≤10的1000次方，所以我们必须将 l 单独拿出来判断一下。</p>
+<p>至于 calc(x) ，可以用数位dp来进行求解，定义 dp i,j,k<br>​<br>  为在第 i 位距上一个幸运数字距离为 j 且是否满足条件的数的数量。</p>
+<p>状态转移的过程可以用记忆化搜索来实现。之后就可以很简单的解决了。</p>
+<p>Code (最近学坏了，压行的有些厉害)</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> mod = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"><span class="type">int</span> dp[<span class="number">1005</span>][<span class="number">1005</span>][<span class="number">2</span>];</span><br><span class="line"><span class="type">int</span> bits[<span class="number">1005</span>];</span><br><span class="line"><span class="type">int</span> t,k;</span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">dfs</span><span class="params">(<span class="type">int</span> len,<span class="type">int</span> lpos,<span class="type">int</span> fg,<span class="type">bool</span> border)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(!len) <span class="keyword">return</span> fg == <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span>(!border &amp;&amp; dp[len][lpos][fg]!=<span class="number">-1</span>) <span class="keyword">return</span> dp[len][lpos][fg];</span><br><span class="line">    <span class="type">int</span> up=border? bits[len]:<span class="number">9</span>;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> res=<span class="number">0</span> ;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>; i&lt;=up; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(i==<span class="number">4</span>||i==<span class="number">7</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            res += <span class="built_in">dfs</span>(len<span class="number">-1</span>,len,(lpos &amp;&amp; lpos-len&lt;=k)|fg,border&amp;&amp;i==up);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> res += <span class="built_in">dfs</span>(len - <span class="number">1</span>, lpos, fg, border &amp;&amp; i == up);</span><br><span class="line">    &#125;</span><br><span class="line">    res %= mod;</span><br><span class="line">    <span class="keyword">if</span>(!border) dp[len][lpos][fg] = res;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">f</span><span class="params">(string s)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> len=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i=s.<span class="built_in">size</span>()<span class="number">-1</span>; i&gt;=<span class="number">0</span>; i--)</span><br><span class="line">    &#123;</span><br><span class="line">        bits[++ len] = s[i] - <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">dfs</span>(len,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">check</span><span class="params">(string &amp;s)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> p = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">1</span>; i&lt;=s.<span class="built_in">size</span>(); i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (s[i<span class="number">-1</span>]==<span class="string">&#x27;4&#x27;</span>||s[i<span class="number">-1</span>]==<span class="string">&#x27;7&#x27;</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(!p||i-p&gt;k) p=i;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(i-p&lt;=k) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cin&gt;&gt;t&gt;&gt;k;</span><br><span class="line">    string l,r;</span><br><span class="line">    <span class="built_in">memset</span>(dp, <span class="number">-1</span>, <span class="built_in">sizeof</span>(dp));</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>; i&lt;t; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cin&gt;&gt;l&gt;&gt;r;</span><br><span class="line">        <span class="type">long</span> <span class="type">long</span> ans=<span class="built_in">f</span>(r)-<span class="built_in">f</span>(l)+(<span class="built_in">check</span>(l)?<span class="number">1</span>:<span class="number">0</span>);</span><br><span class="line">        cout&lt;&lt;(ans%mod+mod)%mod&lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1020,92 +1126,6 @@
     
     <div class="post-body" itemprop="articleBody">
           <p><img src="http://img.xinmin.cn/xmwb/2020/5/NEM1_20200510_C0325256459_A2250577.png" alt="剧终"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://relaxfog0530.github.io/2025/08/02/Blog%E7%9A%84%E5%88%9D%E6%AC%A1%E6%9A%B4%E8%B5%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Early">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Early's Blog">
-      <meta itemprop="description" content="愿，<br>自己不再辜负自己，<br>奇迹不再辜负奇迹。">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Early's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/08/02/Blog%E7%9A%84%E5%88%9D%E6%AC%A1%E6%9A%B4%E8%B5%B0/" class="post-title-link" itemprop="url">Blog的初次暴走</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2025-08-02 20:37:37" itemprop="dateCreated datePublished" datetime="2025-08-02T20:37:37+08:00">2025-08-02</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-08-03 23:06:29" itemprop="dateModified" datetime="2025-08-03T23:06:29+08:00">2025-08-03</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/talk/" itemprop="url" rel="index"><span itemprop="name">talk</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>昨天 BlogWeb 暴走了，主要是因为凌晨三点加的那段动态天气代码里藏了个没闭合的循环。原本想让天气图标每小时自动刷新，结果写成了while(true)却忘了加终止条件，代码像脱缰的野马在后台疯狂请求接口。等早上发现时，服务器日志已经堆到了 300 多 MB，全是重复的天气数据报错，连带着首页加载时都在疯狂弹窗 —— 毕竟每秒钟弹出十几次 “获取天气失败” 的提示，再稳的浏览器也扛不住。<br>更糟的是，因为循环占用了太多进程，连后台管理页面都卡成了幻灯片。点 “编辑文章” 要等三分钟才能加载出编辑器，好不容易改完内容点保存，直接弹出 404 超时。最哭笑不得的是，原本用来美化页面的粒子特效插件，因为内存被占满，粒子全黏成了一团黑乎乎的像素块，在屏幕上像只乱爬的虫子。<br>后来对着服务器监控日志一点点捋，才发现问题根源藏在sidebar.njk的脚本里。删那行循环代码时手都在抖，生怕误删了其他功能。重启服务器后看着控制台跳出 “正常运行” 的提示，突然觉得那些凌晨改代码的冲动，都不如加个定时器再睡个好觉实在。现在每次改代码都逼着自己先写注释，哪怕只是加一行打印，也得标清楚 “这里可能会炸”—— 毕竟谁也不想再体验一次，看着自己的博客从精致小站变成狂弹窗的 “失控现场” 了。</p>
-<p>特别感谢：LCX（Thank you for your support）</p>
 
       
     </div>
