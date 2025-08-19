@@ -1,35 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Blog的初次暴走</title>
-    <url>/2025/08/02/Blog%E7%9A%84%E5%88%9D%E6%AC%A1%E6%9A%B4%E8%B5%B0/</url>
-    <content><![CDATA[<p>昨天 BlogWeb 暴走了，主要是因为凌晨三点加的那段动态天气代码里藏了个没闭合的循环。原本想让天气图标每小时自动刷新，结果写成了while(true)却忘了加终止条件，代码像脱缰的野马在后台疯狂请求接口。等早上发现时，服务器日志已经堆到了 300 多 MB，全是重复的天气数据报错，连带着首页加载时都在疯狂弹窗 —— 毕竟每秒钟弹出十几次 “获取天气失败” 的提示，再稳的浏览器也扛不住。<br>更糟的是，因为循环占用了太多进程，连后台管理页面都卡成了幻灯片。点 “编辑文章” 要等三分钟才能加载出编辑器，好不容易改完内容点保存，直接弹出 404 超时。最哭笑不得的是，原本用来美化页面的粒子特效插件，因为内存被占满，粒子全黏成了一团黑乎乎的像素块，在屏幕上像只乱爬的虫子。<br>后来对着服务器监控日志一点点捋，才发现问题根源藏在sidebar.njk的脚本里。删那行循环代码时手都在抖，生怕误删了其他功能。重启服务器后看着控制台跳出 “正常运行” 的提示，突然觉得那些凌晨改代码的冲动，都不如加个定时器再睡个好觉实在。现在每次改代码都逼着自己先写注释，哪怕只是加一行打印，也得标清楚 “这里可能会炸”—— 毕竟谁也不想再体验一次，看着自己的博客从精致小站变成狂弹窗的 “失控现场” 了。</p>
-<p>特别感谢：LCX（Thank you for your support）</p>
-]]></content>
-      <categories>
-        <category>talk</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>Note</tag>
-        <tag>观测</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Espresso</title>
-    <url>/2025/08/04/Espresso/</url>
-    <content><![CDATA[<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1954627753&bvid=BV1ay411Y7WS&cid=1549402671&p=1" 
-        width="100%" height="450" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
-]]></content>
-      <categories>
-        <category>music</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>video</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Horse Races</title>
     <url>/2025/08/06/Horse%20Races%E9%A2%98%E8%A7%A3/</url>
     <content><![CDATA[<h4 id="我们先看题"><a href="#我们先看题" class="headerlink" title="我们先看题"></a>我们先看题</h4><h1 id="CF95D-Horse-Races"><a href="#CF95D-Horse-Races" class="headerlink" title="CF95D Horse Races"></a>CF95D Horse Races</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Petya likes horse racing very much. Horses numbered from $ l $ to $ r $ take part in the races. Petya wants to evaluate the probability of victory; for some reason, to do that he needs to know the amount of nearly lucky horses’ numbers. A nearly lucky number is an integer number that has at least two lucky digits the distance between which does not exceed $ k $ . Petya learned from some of his mates from Lviv that lucky digits are digits $ 4 $ and $ 7 $ . The distance between the digits is the absolute difference between their positions in the number of a horse. For example, if $ k&#x3D;2 $ , then numbers $ 412395497 $ , $ 404 $ , $ 4070400000070004007 $ are nearly lucky and numbers $ 4 $ , $ 4123954997 $ , $ 4007000040070004007 $ are not.</p>
@@ -64,6 +35,48 @@
       <tags>
         <tag>2025</tag>
         <tag>code</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Blog的初次暴走</title>
+    <url>/2025/08/02/Blog%E7%9A%84%E5%88%9D%E6%AC%A1%E6%9A%B4%E8%B5%B0/</url>
+    <content><![CDATA[<p>昨天 BlogWeb 暴走了，主要是因为凌晨三点加的那段动态天气代码里藏了个没闭合的循环。原本想让天气图标每小时自动刷新，结果写成了while(true)却忘了加终止条件，代码像脱缰的野马在后台疯狂请求接口。等早上发现时，服务器日志已经堆到了 300 多 MB，全是重复的天气数据报错，连带着首页加载时都在疯狂弹窗 —— 毕竟每秒钟弹出十几次 “获取天气失败” 的提示，再稳的浏览器也扛不住。<br>更糟的是，因为循环占用了太多进程，连后台管理页面都卡成了幻灯片。点 “编辑文章” 要等三分钟才能加载出编辑器，好不容易改完内容点保存，直接弹出 404 超时。最哭笑不得的是，原本用来美化页面的粒子特效插件，因为内存被占满，粒子全黏成了一团黑乎乎的像素块，在屏幕上像只乱爬的虫子。<br>后来对着服务器监控日志一点点捋，才发现问题根源藏在sidebar.njk的脚本里。删那行循环代码时手都在抖，生怕误删了其他功能。重启服务器后看着控制台跳出 “正常运行” 的提示，突然觉得那些凌晨改代码的冲动，都不如加个定时器再睡个好觉实在。现在每次改代码都逼着自己先写注释，哪怕只是加一行打印，也得标清楚 “这里可能会炸”—— 毕竟谁也不想再体验一次，看着自己的博客从精致小站变成狂弹窗的 “失控现场” 了。</p>
+<p>特别感谢：LCX（Thank you for your support）</p>
+]]></content>
+      <categories>
+        <category>talk</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>Note</tag>
+        <tag>观测</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Espresso</title>
+    <url>/2025/08/04/Espresso/</url>
+    <content><![CDATA[<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1954627753&bvid=BV1ay411Y7WS&cid=1549402671&p=1" 
+        width="100%" height="450" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+]]></content>
+      <categories>
+        <category>music</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>video</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NEWNEW</title>
+    <url>/2025/08/06/New/</url>
+    <content><![CDATA[<h1 id="NEWNEW"><a href="#NEWNEW" class="headerlink" title="NEWNEW"></a>NEWNEW</h1><p><img src="https://static-cse.canva.cn/blob/234749/.gif" alt="NEWNEW"></p>
+]]></content>
+      <categories>
+        <category>think</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>GIF</tag>
       </tags>
   </entry>
   <entry>
@@ -165,17 +178,22 @@
       </tags>
   </entry>
   <entry>
-    <title>NEWNEW</title>
-    <url>/2025/08/06/New/</url>
-    <content><![CDATA[<h1 id="NEWNEW"><a href="#NEWNEW" class="headerlink" title="NEWNEW"></a>NEWNEW</h1><p><img src="https://static-cse.canva.cn/blob/234749/.gif" alt="NEWNEW"></p>
+    <title>Hello World</title>
+    <url>/2025/08/02/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-      <categories>
-        <category>think</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>GIF</tag>
-      </tags>
   </entry>
   <entry>
     <title>Splay 学习笔记</title>
@@ -275,24 +293,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2025/08/02/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>今日暴走</title>
     <url>/2025/08/03/%E4%BB%8A%E6%97%A5%E6%9A%B4%E8%B5%B0/</url>
     <content><![CDATA[<p>今天优化网页的过程，简直是把自己扔进了代码的泥沼里挣扎。<br><img src="https://s1.aigei.com/src/img/gif/02/021da8d3e9e24928b36cd0e6a5ddb567.gif?imageMogr2/auto-orient/thumbnail/!282x226r/gravity/Center/crop/282x226/quality/85/%7CimageView2/2/w/282&e=2051020800&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:t6dvivz7_aMOjctuQUsuUfUxZEw=" alt="红温"></p>
@@ -310,9 +310,9 @@
       </tags>
   </entry>
   <entry>
-    <title>劇終</title>
-    <url>/2025/08/03/%E5%8A%87%E7%B5%82/</url>
-    <content><![CDATA[<p><img src="http://img.xinmin.cn/xmwb/2020/5/NEM1_20200510_C0325256459_A2250577.png" alt="剧终"></p>
+    <title>劇終-2</title>
+    <url>/2025/08/08/%E5%8A%87%E7%B5%822/</url>
+    <content><![CDATA[<p><img src="http://mms2.baidu.com/it/u=3117035648,2825770514&fm=253&app=138&f=JPEG?w=652&h=500" alt="剧终"></p>
 ]]></content>
       <categories>
         <category>talk，追剧</category>
@@ -323,9 +323,9 @@
       </tags>
   </entry>
   <entry>
-    <title>劇終-2</title>
-    <url>/2025/08/08/%E5%8A%87%E7%B5%822/</url>
-    <content><![CDATA[<p><img src="http://mms2.baidu.com/it/u=3117035648,2825770514&fm=253&app=138&f=JPEG?w=652&h=500" alt="剧终"></p>
+    <title>劇終</title>
+    <url>/2025/08/03/%E5%8A%87%E7%B5%82/</url>
+    <content><![CDATA[<p><img src="http://img.xinmin.cn/xmwb/2020/5/NEM1_20200510_C0325256459_A2250577.png" alt="剧终"></p>
 ]]></content>
       <categories>
         <category>talk，追剧</category>
@@ -470,31 +470,6 @@
       </tags>
   </entry>
   <entry>
-    <title>线性求逆元</title>
-    <url>/2025/08/03/%E7%BA%BF%E6%80%A7%E6%B1%82%E9%80%86%E5%85%83/</url>
-    <content><![CDATA[<p>当要求 $1-n$ 中所有数的逆元时，$O(n\log p)$ 的方法就有点悬了。</p>
-<p>下面介绍一种 $O(n)$ 求逆元的好方法。</p>
-<span id="more"></span>
-
-<h2 id="推导"><a href="#推导" class="headerlink" title="推导"></a>推导</h2><p>首先，$1^{-1}\equiv1\pmod p$。</p>
-<p>设 $k&#x3D;\lfloor\frac pi\rfloor$，则 $p&#x3D;k\cdot i+r$，其中 $r&#x3D;p\bmod i,1&lt;i&lt;p$。</p>
-<p>易得 $k\cdot i+r\equiv0\pmod p$。</p>
-<p>两边同乘 $i^{-1}\cdot r^{-1}$ 得：</p>
-<p>$$<br>\begin{aligned}<br>k\cdot r^{-1}+i^{-1}&amp;\equiv0&amp;\pmod p\<br>i^{-1}&amp;\equiv-k\cdot r^{-1}&amp;\pmod p\<br>i^{-1}&amp;\equiv-\lfloor\frac pi\rfloor\cdot(p\bmod i)^{-1}&amp;\pmod p<br>\end{aligned}<br>$$</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;++i) &#123;</span><br><span class="line">    inv[i]=-(mod/i)*inv[mod%i]%mod;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>为使 $inv_i$ 非负，代码也可写成：</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;++i) &#123;</span><br><span class="line">    inv[i]=(mod-mod/i)*inv[mod%i]%mod;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>study</category>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>code</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>线性尺寸莫比乌斯函数</title>
     <url>/2025/08/03/%E7%BA%BF%E6%80%A7%E5%B0%BA%E5%AF%B8%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<p>模拟赛中的一道题，让我发现自己莫比乌斯函数的基础十分薄弱。:cry:</p>
@@ -524,6 +499,59 @@
       <tags>
         <tag>2025</tag>
         <tag>code</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>线性求逆元</title>
+    <url>/2025/08/03/%E7%BA%BF%E6%80%A7%E6%B1%82%E9%80%86%E5%85%83/</url>
+    <content><![CDATA[<p>当要求 $1-n$ 中所有数的逆元时，$O(n\log p)$ 的方法就有点悬了。</p>
+<p>下面介绍一种 $O(n)$ 求逆元的好方法。</p>
+<span id="more"></span>
+
+<h2 id="推导"><a href="#推导" class="headerlink" title="推导"></a>推导</h2><p>首先，$1^{-1}\equiv1\pmod p$。</p>
+<p>设 $k&#x3D;\lfloor\frac pi\rfloor$，则 $p&#x3D;k\cdot i+r$，其中 $r&#x3D;p\bmod i,1&lt;i&lt;p$。</p>
+<p>易得 $k\cdot i+r\equiv0\pmod p$。</p>
+<p>两边同乘 $i^{-1}\cdot r^{-1}$ 得：</p>
+<p>$$<br>\begin{aligned}<br>k\cdot r^{-1}+i^{-1}&amp;\equiv0&amp;\pmod p\<br>i^{-1}&amp;\equiv-k\cdot r^{-1}&amp;\pmod p\<br>i^{-1}&amp;\equiv-\lfloor\frac pi\rfloor\cdot(p\bmod i)^{-1}&amp;\pmod p<br>\end{aligned}<br>$$</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;++i) &#123;</span><br><span class="line">    inv[i]=-(mod/i)*inv[mod%i]%mod;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>为使 $inv_i$ 非负，代码也可写成：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;++i) &#123;</span><br><span class="line">    inv[i]=(mod-mod/i)*inv[mod%i]%mod;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>study</category>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>code</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记忆体的建设与总结</title>
+    <url>/2025/08/19/%E8%AE%B0%E5%BF%86%E4%BD%93/</url>
+    <content><![CDATA[<h1 id="记忆体的建设与总结"><a href="#记忆体的建设与总结" class="headerlink" title="记忆体的建设与总结"></a>记忆体的建设与总结</h1><p>具有记忆衰退功能的电子生命体（Python 实现）</p>
+<h2 id="1-项目概述"><a href="#1-项目概述" class="headerlink" title="1. 项目概述"></a>1. 项目概述</h2><p>本文档提供一个简化版「记忆衰退电子生命体」的 Python 实现，核心模拟人类记忆的三大特性：<br>短期记忆易遗忘：临时信息（如待办事项）衰退速度远快于长期记忆。<br>长期记忆随时间模糊：基于艾宾浩斯遗忘曲线，记忆保留率随时间呈指数衰减。<br>复习增强记忆：提取（复习）记忆时，会提升其活跃度，降低遗忘速度。</p>
+<h2 id="2-完整代码实现"><a href="#2-完整代码实现" class="headerlink" title="2. 完整代码实现"></a>2. 完整代码实现</h2><h3 id="2-1-核心模块：记忆系统类"><a href="#2-1-核心模块：记忆系统类" class="headerlink" title="2.1 核心模块：记忆系统类"></a>2.1 核心模块：记忆系统类</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line">from dataclasses <span class="keyword">import</span> dataclass</span><br><span class="line">from typing <span class="keyword">import</span> Dict, List, Optional</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">@dataclass</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Memory</span>:</span><br><span class="line">    <span class="string">&quot;&quot;</span><span class="string">&quot;记忆单元数据结构&quot;</span><span class="string">&quot;&quot;</span></span><br><span class="line">    content: str          # 记忆具体内容</span><br><span class="line">    timestamp: <span class="type">float</span>      # 记忆存储时间（时间戳）</span><br><span class="line">    active_level: <span class="type">float</span>   # 活跃度（<span class="number">0</span><span class="number">-1</span>，越高越难遗忘）</span><br><span class="line">    stability: <span class="type">float</span>      # 稳定性（<span class="number">0.5</span><span class="number">-2.0</span>，基础遗忘抵抗能力）</span><br><span class="line">    is_short_term: <span class="type">bool</span>   # 是否为短期记忆（衰退更快）</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">MemoryBeing</span>:</span><br><span class="line">    <span class="string">&quot;&quot;</span><span class="string">&quot;具有记忆衰退功能的电子生命体类&quot;</span><span class="string">&quot;&quot;</span></span><br><span class="line">    def __init__(self, name: str):</span><br><span class="line">        self.name = name                          # 电子生命体名称</span><br><span class="line">        self.memories: Dict[str, Memory] = &#123;&#125;     # 记忆库（key: 记忆唯一标识）</span><br><span class="line">        self.current_time = time.<span class="built_in">time</span>()           # 系统当前时间（用于模拟时间流逝）</span><br><span class="line"></span><br><span class="line">    def _get_time_since_creation(self, memory: Memory) -&gt; <span class="type">float</span>:</span><br><span class="line">        <span class="string">&quot;&quot;</span><span class="string">&quot;计算记忆从存储到当前的时间间隔（秒）&quot;</span><span class="string">&quot;&quot;</span></span><br><span class="line">        <span class="keyword">return</span> self.current_time - memory.timestamp</span><br><span class="line"></span><br><span class="line">    def _forget_curve(self, memory: Memory) -&gt; <span class="type">float</span>:</span><br><span class="line">        <span class="string">&quot;&quot;</span><span class="string">&quot;</span></span><br><span class="line"><span class="string">        基于艾宾浩斯遗忘曲线的记忆保留率计算</span></span><br><span class="line"><span class="string">        公式：保留率 = e^(-t/(S*A*K)) </span></span><br><span class="line"><span class="string">        - t: 时间间隔（秒）</span></span><br><span class="line"><span class="string">        - S: 记忆稳定性</span></span><br><span class="line"><span class="string">        - A: 记忆活跃度</span></span><br><span class="line"><span class="string">        - K: 短期记忆系数（0.3，加速衰退）</span></span><br><span class="line"><span class="string">        返回值范围：0.0（完全遗忘）~ 1.0（完全清晰）</span></span><br><span class="line"><span class="string">        &quot;</span><span class="string">&quot;&quot;</span></span><br><span class="line">        time_diff = self._get_time_since_creation(memory)</span><br><span class="line">        <span class="keyword">if</span> time_diff &lt; <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1.0</span>  # 避免时间异常导致的计算错误</span><br><span class="line">        </span><br><span class="line">        # 短期记忆衰退速度为长期记忆的 ~<span class="number">3</span> 倍</span><br><span class="line">        short_term_coeff = <span class="number">0.3</span> <span class="keyword">if</span> memory.is_short_term <span class="keyword">else</span> <span class="number">1.0</span></span><br><span class="line">        denominator = memory.stability * memory.active_level * short_term_coeff</span><br><span class="line">        </span><br><span class="line">        # 防止分母过小导致保留率骤降</span><br><span class="line">        denominator = <span class="built_in">max</span>(<span class="number">0.1</span>, denominator)</span><br><span class="line">        </span><br><span class="line">        retention_rate = math.<span class="built_in">exp</span>(-time_diff / denominator)</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">max</span>(<span class="number">0.0</span>, <span class="built_in">min</span>(<span class="number">1.0</span>, retention_rate))  # 限制返回值范围</span><br><span class="line"></span><br><span class="line">    def <span class="built_in">store_memory</span>(self, </span><br><span class="line">                    key: str, </span><br><span class="line">                    content: str, </span><br><span class="line">                    is_short_term: <span class="type">bool</span> = False, </span><br><span class="line">                    active_level: <span class="type">float</span> = <span class="number">0.7</span>, </span><br><span class="line">                    stability: <span class="type">float</span> = <span class="number">1.0</span>) -&gt; None:</span><br><span class="line">        <span class="string">&quot;&quot;</span><span class="string">&quot;</span></span><br><span class="line"><span class="string">        存储记忆到记忆库</span></span><br><span class="line"><span class="string">        :param key: 记忆唯一标识（用于后续提取）</span></span><br><span class="line"><span class="string">        :param content: 记忆内容</span></span><br><span class="line"><span class="string">        :param is_short_term: 是否为短期记忆</span></span><br><span class="line"><span class="string">        :param active_level: 初始活跃度（0.1-1.0）</span></span><br><span class="line"><span class="string">        :param stability: 初始稳定性（0.5-2.0）</span></span><br><span class="line"><span class="string">        &quot;</span><span class="string">&quot;&quot;</span></span><br><span class="line">        # 修正参数范围，避免异常值</span><br><span class="line">        active_level = <span class="built_in">max</span>(<span class="number">0.1</span>, <span class="built_in">min</span>(<span class="number">1.0</span>, active_level))</span><br><span class="line">        stability = <span class="built_in">max</span>(<span class="number">0.5</span>, <span class="built_in">min</span>(<span class="number">2.0</span>, stability))</span><br><span class="line">        </span><br><span class="line">        self.memories[key] = <span class="built_in">Memory</span>(</span><br><span class="line">            content=content,</span><br><span class="line">            timestamp=self.current_time,</span><br><span class="line">            active_level=active_level,</span><br><span class="line">            stability=stability,</span><br><span class="line">            is_short_term=is_short_term</span><br><span class="line">        )</span><br><span class="line">        <span class="built_in">print</span>(f<span class="string">&quot;[&#123;self.name&#125;] 已存储记忆 | 内容：&#123;content&#125;&quot;</span>)</span><br><span class="line"></span><br><span class="line">    def _blur_memory(self, content: str, retention_rate: <span class="type">float</span>) -&gt; str:</span><br><span class="line">        <span class="string">&quot;&quot;</span><span class="string">&quot;</span></span><br><span class="line"><span class="string">        模拟记忆模糊效果</span></span><br><span class="line"><span class="string">        :param content: 原始记忆内容</span></span><br><span class="line"><span class="string">        :param retention_rate: 记忆保留率（0.0-1.0）</span></span><br><span class="line"><span class="string">        :return: 模糊后的记忆内容</span></span><br><span class="line"><span class="string">        &quot;</span><span class="string">&quot;&quot;</span></span><br><span class="line">        # 保留率越高，模糊程度越低</span><br><span class="line">        keep_length = <span class="built_in">max</span>(<span class="number">1</span>, <span class="built_in">int</span>(<span class="built_in">len</span>(content) * retention_rate * <span class="number">1.2</span>))</span><br><span class="line">        content_chars = <span class="built_in">list</span>(content)</span><br><span class="line">        </span><br><span class="line">        # 随机打乱并保留部分字符（模拟片段化记忆）</span><br><span class="line">        random.<span class="built_in">shuffle</span>(content_chars)</span><br><span class="line">        blurred_content = <span class="string">&#x27;&#x27;.join(content_chars[:keep_length])</span></span><br><span class="line"><span class="string">        </span></span><br><span class="line"><span class="string">        # 补充模糊标记，增强拟人感</span></span><br><span class="line"><span class="string">        if len(blurred_content) &lt; len(content):</span></span><br><span class="line"><span class="string">            return f&quot;...&#123;blurred_content&#125;...&quot;</span></span><br><span class="line"><span class="string">        return blurred_content</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    def retrieve_memory(self, key: str) -&gt; Optional[str]:</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        提取记忆（可能模糊或完全遗忘）</span></span><br><span class="line"><span class="string">        :param key: 记忆唯一标识</span></span><br><span class="line"><span class="string">        :return: 提取到的记忆（模糊/清晰）或 None（完全遗忘）</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        # 记忆不存在（已遗忘或未存储）</span></span><br><span class="line"><span class="string">        if key not in self.memories:</span></span><br><span class="line"><span class="string">            print(f&quot;[&#123;self.name&#125;] 完全不记得这个内容了...&quot;)</span></span><br><span class="line"><span class="string">            return None</span></span><br><span class="line"><span class="string">        </span></span><br><span class="line"><span class="string">        target_memory = self.memories[key]</span></span><br><span class="line"><span class="string">        retention_rate = self._forget_curve(target_memory)</span></span><br><span class="line"><span class="string">        </span></span><br><span class="line"><span class="string">        # 1. 保留率 &lt; 20%：完全遗忘，从记忆库删除</span></span><br><span class="line"><span class="string">        if retention_rate &lt; 0.2:</span></span><br><span class="line"><span class="string">            del self.memories[key]</span></span><br><span class="line"><span class="string">            print(f&quot;[&#123;self.name&#125;] 彻底忘记这个内容了...&quot;)</span></span><br><span class="line"><span class="string">            return None</span></span><br><span class="line"><span class="string">        </span></span><br><span class="line"><span class="string">        # 2. 20% ≤ 保留率 &lt; 50%：部分遗忘，内容模糊</span></span><br><span class="line"><span class="string">        elif 0.2 &lt;= retention_rate &lt; 0.5:</span></span><br><span class="line"><span class="string">            blurred_content = self._blur_memory(target_memory.content, retention_rate)</span></span><br><span class="line"><span class="string">            print(f&quot;[&#123;self.name&#125;] 隐约记得：&#123;blurred_content&#125;&quot;)</span></span><br><span class="line"><span class="string">            </span></span><br><span class="line"><span class="string">            # 复习机制：提取后提升活跃度（减缓后续遗忘）</span></span><br><span class="line"><span class="string">            target_memory.active_level = min(1.0, target_memory.active_level + 0.1)</span></span><br><span class="line"><span class="string">            return blurred_content</span></span><br><span class="line"><span class="string">        </span></span><br><span class="line"><span class="string">        # 3. 保留率 ≥ 50%：记忆基本清晰</span></span><br><span class="line"><span class="string">        else:</span></span><br><span class="line"><span class="string">            print(f&quot;[&#123;self.name&#125;] 清晰记得：&#123;target_memory.content&#125;&quot;)</span></span><br><span class="line"><span class="string">            </span></span><br><span class="line"><span class="string">            # 复习机制：提取后轻微提升活跃度</span></span><br><span class="line"><span class="string">            target_memory.active_level = min(1.0, target_memory.active_level + 0.05)</span></span><br><span class="line"><span class="string">            return target_memory.content</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    def simulate_time_pass(self, seconds: float) -&gt; None:</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        模拟时间流逝（触发记忆自然衰退）</span></span><br><span class="line"><span class="string">        :param seconds: 流逝的时间（秒）</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        self.current_time += seconds</span></span><br><span class="line"><span class="string">        print(f&quot;\n=== [&#123;self.name&#125;] 时间流逝 &#123;seconds&#125; 秒 ===&quot;)</span></span><br><span class="line"><span class="string">        </span></span><br><span class="line"><span class="string">        # 主动检查并清理已完全遗忘的记忆</span></span><br><span class="line"><span class="string">        self._clean_forgotten_memories()</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    def _clean_forgotten_memories(self) -&gt; None:</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;批量清理记忆库中已完全遗忘的记忆（保留率 &lt; 20%）&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        forgotten_keys = []</span></span><br><span class="line"><span class="string">        for key, memory in self.memories.items():</span></span><br><span class="line"><span class="string">            if self._forget_curve(memory) &lt; 0.2:</span></span><br><span class="line"><span class="string">                forgotten_keys.append(key)</span></span><br><span class="line"><span class="string">        </span></span><br><span class="line"><span class="string">        # 删除完全遗忘的记忆</span></span><br><span class="line"><span class="string">        for key in forgotten_keys:</span></span><br><span class="line"><span class="string">            del self.memories[key]</span></span><br><span class="line"><span class="string">        </span></span><br><span class="line"><span class="string">        if forgotten_keys:</span></span><br><span class="line"><span class="string">            print(f&quot;[&#123;self.name&#125;] 有些记忆已经彻底模糊，无法回忆...&quot;)</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2-演示模块：交互场景测试"><a href="#2-2-演示模块：交互场景测试" class="headerlink" title="2.2 演示模块：交互场景测试"></a>2.2 演示模块：交互场景测试</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function">def <span class="title">demo_memory_being</span><span class="params">()</span>:</span></span><br><span class="line"><span class="function">    <span class="string">&quot;&quot;</span><span class="string">&quot;演示电子生命体的记忆存储、提取和衰退过程&quot;</span><span class="string">&quot;&quot;</span></span></span><br><span class="line"><span class="function">    # <span class="number">1.</span> 创建电子生命体（命名为“星尘”）</span></span><br><span class="line"><span class="function">    stardust =</span> <span class="built_in">MemoryBeing</span>(name=<span class="string">&quot;星尘&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(f<span class="string">&quot;\n=== 初始化电子生命体：&#123;stardust.name&#125; ===&quot;</span>)</span><br><span class="line"></span><br><span class="line">    # <span class="number">2.</span> 存储三类不同记忆</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;\n=== 第一步：存储记忆 ===&quot;</span>)</span><br><span class="line">    stardust.<span class="built_in">store_memory</span>(</span><br><span class="line">        key=<span class="string">&quot;user_name&quot;</span>,</span><br><span class="line">        content=<span class="string">&quot;用户的名字是小明&quot;</span>,</span><br><span class="line">        is_short_term=False,  # 长期记忆（重要信息）</span><br><span class="line">        stability=<span class="number">1.8</span>,        # 高稳定性（难遗忘）</span><br><span class="line">        active_level=<span class="number">0.8</span>      # 高活跃度</span><br><span class="line">    )</span><br><span class="line">    stardust.<span class="built_in">store_memory</span>(</span><br><span class="line">        key=<span class="string">&quot;temp_task&quot;</span>,</span><br><span class="line">        content=<span class="string">&quot;明天提醒用户带钥匙&quot;</span>,</span><br><span class="line">        is_short_term=True,   # 短期记忆（临时任务）</span><br><span class="line">        stability=<span class="number">0.6</span>,        # 低稳定性</span><br><span class="line">        active_level=<span class="number">0.5</span>      # 中活跃度</span><br><span class="line">    )</span><br><span class="line">    stardust.<span class="built_in">store_memory</span>(</span><br><span class="line">        key=<span class="string">&quot;favorite_song&quot;</span>,</span><br><span class="line">        content=<span class="string">&quot;用户最喜欢的歌是《月光》&quot;</span>,</span><br><span class="line">        is_short_term=False,  # 长期记忆</span><br><span class="line">        stability=<span class="number">1.2</span>,        # 中稳定性</span><br><span class="line">        active_level=<span class="number">0.9</span>      # 高活跃度（常提及）</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    # <span class="number">3.</span> 立即提取记忆（刚存储，均清晰）</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;\n=== 第二步：立即提取记忆 ===&quot;</span>)</span><br><span class="line">    stardust.<span class="built_in">retrieve_memory</span>(key=<span class="string">&quot;user_name&quot;</span>)</span><br><span class="line">    stardust.<span class="built_in">retrieve_memory</span>(key=<span class="string">&quot;temp_task&quot;</span>)</span><br><span class="line">    stardust.<span class="built_in">retrieve_memory</span>(key=<span class="string">&quot;favorite_song&quot;</span>)</span><br><span class="line"></span><br><span class="line">    # <span class="number">4.</span> 模拟 <span class="number">1</span> 分钟后（短期记忆开始衰退）</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;\n=== 第三步：模拟 1 分钟后 ===&quot;</span>)</span><br><span class="line">    stardust.<span class="built_in">simulate_time_pass</span>(seconds=<span class="number">60</span>)</span><br><span class="line">    stardust.<span class="built_in">retrieve_memory</span>(key=<span class="string">&quot;user_name&quot;</span>)    # 长期记忆仍清晰</span><br><span class="line">    stardust.<span class="built_in">retrieve_memory</span>(key=<span class="string">&quot;temp_task&quot;</span>)    # 短期记忆开始模糊</span><br><span class="line">    stardust.<span class="built_in">retrieve_memory</span>(key=<span class="string">&quot;favorite_song&quot;</span>)# 长期高活跃度记忆清晰</span><br><span class="line"></span><br><span class="line">    # <span class="number">5.</span> 模拟 <span class="number">10</span> 分钟后（短期记忆可能完全遗忘）</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;\n=== 第四步：模拟 10 分钟后 ===&quot;</span>)</span><br><span class="line">    stardust.<span class="built_in">simulate_time_pass</span>(seconds=<span class="number">600</span>)</span><br><span class="line">    stardust.<span class="built_in">retrieve_memory</span>(key=<span class="string">&quot;user_name&quot;</span>)    # 长期记忆轻微模糊</span><br><span class="line">    stardust.<span class="built_in">retrieve_memory</span>(key=<span class="string">&quot;temp_task&quot;</span>)    # 短期记忆完全遗忘</span><br><span class="line">    stardust.<span class="built_in">retrieve_memory</span>(key=<span class="string">&quot;favorite_song&quot;</span>)# 长期高活跃度记忆仍清晰</span><br><span class="line"></span><br><span class="line">    # <span class="number">6.</span> 模拟 <span class="number">2</span> 小时后（长期记忆进一步衰退）</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;\n=== 第五步：模拟 2 小时后 ===&quot;</span>)</span><br><span class="line">    stardust.<span class="built_in">simulate_time_pass</span>(seconds=<span class="number">7200</span>)</span><br><span class="line">    stardust.<span class="built_in">retrieve_memory</span>(key=<span class="string">&quot;user_name&quot;</span>)    # 长期记忆明显模糊</span><br><span class="line">    stardust.<span class="built_in">retrieve_memory</span>(key=<span class="string">&quot;favorite_song&quot;</span>)# 长期高活跃度记忆轻微模糊</span><br></pre></td></tr></table></figure>
+
+<h1 id="执行演示"><a href="#执行演示" class="headerlink" title="执行演示"></a>执行演示</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    <span class="built_in">demo_memory_being</span>()</span><br></pre></td></tr></table></figure>
+<h2 id="3-代码核心逻辑说明"><a href="#3-代码核心逻辑说明" class="headerlink" title="3. 代码核心逻辑说明"></a>3. 代码核心逻辑说明</h2><h3 id="3-1-记忆单元（Memory-类）"><a href="#3-1-记忆单元（Memory-类）" class="headerlink" title="3.1 记忆单元（Memory 类）"></a>3.1 记忆单元（Memory 类）</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">content	str	记忆的具体内容	任意字符串</span><br><span class="line">timestamp	<span class="type">float</span>	记忆存储时的时间戳（用于计算遗忘时间）	Unix 时间戳</span><br><span class="line">active_level	<span class="type">float</span>	活跃度（复习频率越高，值越大，越难遗忘）	<span class="number">0.1</span> ~ <span class="number">1.0</span></span><br><span class="line">stability	<span class="type">float</span>	稳定性（记忆重要性，值越大，基础抗遗忘性越强）	<span class="number">0.5</span> ~ <span class="number">2.0</span></span><br><span class="line">is_short_term	<span class="type">bool</span>	是否为短期记忆（短期记忆衰退速度更快）	True / False</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-2-遗忘曲线算法"><a href="#3-2-遗忘曲线算法" class="headerlink" title="3.2 遗忘曲线算法"></a>3.2 遗忘曲线算法</h3><p>核心公式参考艾宾浩斯遗忘曲线的指数衰减特性：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">plaintext</span><br><span class="line">记忆保留率 = e^(-t/(S * A * K))</span><br><span class="line">t：记忆存储到当前的时间间隔（秒）</span><br><span class="line">S：记忆稳定性（stability）</span><br><span class="line">A：记忆活跃度（active_level）</span><br><span class="line">K：短期记忆系数（0.3，使短期记忆衰退速度提升～3 倍）</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-3-关键功能流程"><a href="#3-3-关键功能流程" class="headerlink" title="3.3 关键功能流程"></a>3.3 关键功能流程</h3><p>存储记忆：调用 store_memory()，参数校验后生成 Memory 对象存入记忆库。<br>提取记忆：调用 retrieve_memory()，通过遗忘曲线计算保留率，按保留率返回「清晰内容 &#x2F; 模糊内容 &#x2F; None」。<br>模拟时间流逝：调用 simulate_time_pass()，更新系统时间并清理完全遗忘的记忆。<br>复习增强：每次提取记忆时，轻微提升该记忆的活跃度，减缓后续遗忘速度。</p>
+<h3 id="3-4-运行效果示例"><a href="#3-4-运行效果示例" class="headerlink" title="3.4 运行效果示例"></a>3.4 运行效果示例</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">=== 初始化电子生命体：星尘 ===</span><br><span class="line"></span><br><span class="line">=== 第一步：存储记忆 ===</span><br><span class="line">[星尘] 已存储记忆 | 内容：用户的名字是小明</span><br><span class="line">[星尘] 已存储记忆 | 内容：明天提醒用户带钥匙</span><br><span class="line">[星尘] 已存储记忆 | 内容：用户最喜欢的歌是《月光》</span><br><span class="line"></span><br><span class="line">=== 第二步：立即提取记忆 ===</span><br><span class="line">[星尘] 清晰记得：用户的名字是小明</span><br><span class="line">[星尘] 清晰记得：明天提醒用户带钥匙</span><br><span class="line">[星尘] 清晰记得：用户最喜欢的歌是《月光》</span><br><span class="line"></span><br><span class="line">=== [星尘] 时间流逝 <span class="number">60</span> 秒 ===</span><br><span class="line">[星尘] 有些记忆已经彻底模糊，无法回忆...</span><br><span class="line"></span><br><span class="line">=== 第三步：模拟 <span class="number">1</span> 分钟后 ===</span><br><span class="line">[星尘] 清晰记得：用户的名字是小明</span><br><span class="line">[星尘] 隐约记得：...天提醒带钥匙...</span><br><span class="line">[星尘] 清晰记得：用户最喜欢的歌是《月光》</span><br><span class="line"></span><br><span class="line">=== [星尘] 时间流逝 <span class="number">600</span> 秒 ===</span><br><span class="line">[星尘] 有些记忆已经彻底模糊，无法回忆...</span><br><span class="line"></span><br><span class="line">=== 第四步：模拟 <span class="number">10</span> 分钟后 ===</span><br><span class="line">[星尘] 隐约记得：...用户的名字明...</span><br><span class="line">[星尘] 彻底忘记这个内容了...</span><br><span class="line">[星尘] 清晰记得：用户最喜欢的歌是《月光》</span><br><span class="line"></span><br><span class="line">=== [星尘] 时间流逝 <span class="number">7200</span> 秒 ===</span><br><span class="line">[星尘] 有些记忆已经彻底模糊，无法回忆...</span><br><span class="line"></span><br><span class="line">=== 第五步：模拟 <span class="number">2</span> 小时后 ===</span><br><span class="line">[星尘] 隐约记得：...用户的字明...</span><br><span class="line">[星尘] 隐约记得：...喜欢的《月光》...</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-5-扩展方向"><a href="#3-5-扩展方向" class="headerlink" title="3.5 扩展方向"></a>3.5 扩展方向</h3><p>增加情感因素：为记忆添加「情感权重」（如开心 &#x2F; 难过的记忆更难遗忘），修改遗忘曲线公式加入情感系数。<br>优化模糊算法：替换随机打乱字符的逻辑，改为基于语义的片段保留（如保留句子主干）。<br>持久化存储：使用 SQLite &#x2F; MongoDB 将记忆库持久化，避免程序重启后记忆丢失。<br>交互接口：集成 CLI 或 Web 接口，支持用户实时与电子生命体对话并存储交互记忆。</p>
+]]></content>
+      <categories>
+        <category>研究</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>建设</tag>
       </tags>
   </entry>
 </search>

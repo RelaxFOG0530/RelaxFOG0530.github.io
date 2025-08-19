@@ -19,24 +19,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"relaxfog0530.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.23.2","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="愿，自己不再辜负自己，奇迹不再辜负奇迹。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Early&#39;s Blog">
-<meta property="og:url" content="https://relaxfog0530.github.io/index.html">
+    <meta name="description" content="记忆体的建设与总结具有记忆衰退功能的电子生命体（Python 实现） 1. 项目概述本文档提供一个简化版「记忆衰退电子生命体」的 Python 实现，核心模拟人类记忆的三大特性：短期记忆易遗忘：临时信息（如待办事项）衰退速度远快于长期记忆。长期记忆随时间模糊：基于艾宾浩斯遗忘曲线，记忆保留率随时间呈指数衰减。复习增强记忆：提取（复习）记忆时，会提升其活跃度，降低遗忘速度。 2. 完整代码实现2.1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="记忆体的建设与总结">
+<meta property="og:url" content="https://relaxfog0530.github.io/2025/08/19/%E8%AE%B0%E5%BF%86%E4%BD%93/index.html">
 <meta property="og:site_name" content="Early&#39;s Blog">
-<meta property="og:description" content="愿，自己不再辜负自己，奇迹不再辜负奇迹。">
+<meta property="og:description" content="记忆体的建设与总结具有记忆衰退功能的电子生命体（Python 实现） 1. 项目概述本文档提供一个简化版「记忆衰退电子生命体」的 Python 实现，核心模拟人类记忆的三大特性：短期记忆易遗忘：临时信息（如待办事项）衰退速度远快于长期记忆。长期记忆随时间模糊：基于艾宾浩斯遗忘曲线，记忆保留率随时间呈指数衰减。复习增强记忆：提取（复习）记忆时，会提升其活跃度，降低遗忘速度。 2. 完整代码实现2.1">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-08-19T12:00:00.000Z">
+<meta property="article:modified_time" content="2025-08-19T12:09:41.243Z">
 <meta property="article:author" content="Early">
+<meta property="article:tag" content="2025">
+<meta property="article:tag" content="建设">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://relaxfog0530.github.io/">
+<link rel="canonical" href="https://relaxfog0530.github.io/2025/08/19/%E8%AE%B0%E5%BF%86%E4%BD%93/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://relaxfog0530.github.io/2025/08/19/%E8%AE%B0%E5%BF%86%E4%BD%93/","path":"2025/08/19/记忆体/","title":"记忆体的建设与总结"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Early's Blog</title>
+<title>记忆体的建设与总结 | Early's Blog</title>
   
 
 
@@ -95,7 +99,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Early's Blog</h1>
+      <p class="site-title">Early's Blog</p>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">Hello, World!</p>
@@ -149,7 +153,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -162,6 +166,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%B0%E5%BF%86%E4%BD%93%E7%9A%84%E5%BB%BA%E8%AE%BE%E4%B8%8E%E6%80%BB%E7%BB%93"><span class="nav-number">1.</span> <span class="nav-text">记忆体的建设与总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E9%A1%B9%E7%9B%AE%E6%A6%82%E8%BF%B0"><span class="nav-number">1.1.</span> <span class="nav-text">1. 项目概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="nav-number">1.2.</span> <span class="nav-text">2. 完整代码实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97%EF%BC%9A%E8%AE%B0%E5%BF%86%E7%B3%BB%E7%BB%9F%E7%B1%BB"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1 核心模块：记忆系统类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E6%BC%94%E7%A4%BA%E6%A8%A1%E5%9D%97%EF%BC%9A%E4%BA%A4%E4%BA%92%E5%9C%BA%E6%99%AF%E6%B5%8B%E8%AF%95"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.2 演示模块：交互场景测试</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%89%A7%E8%A1%8C%E6%BC%94%E7%A4%BA"><span class="nav-number">2.</span> <span class="nav-text">执行演示</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E4%BB%A3%E7%A0%81%E6%A0%B8%E5%BF%83%E9%80%BB%E8%BE%91%E8%AF%B4%E6%98%8E"><span class="nav-number">2.1.</span> <span class="nav-text">3. 代码核心逻辑说明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-%E8%AE%B0%E5%BF%86%E5%8D%95%E5%85%83%EF%BC%88Memory-%E7%B1%BB%EF%BC%89"><span class="nav-number">2.1.1.</span> <span class="nav-text">3.1 记忆单元（Memory 类）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E9%81%97%E5%BF%98%E6%9B%B2%E7%BA%BF%E7%AE%97%E6%B3%95"><span class="nav-number">2.1.2.</span> <span class="nav-text">3.2 遗忘曲线算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-%E5%85%B3%E9%94%AE%E5%8A%9F%E8%83%BD%E6%B5%81%E7%A8%8B"><span class="nav-number">2.1.3.</span> <span class="nav-text">3.3 关键功能流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C%E7%A4%BA%E4%BE%8B"><span class="nav-number">2.1.4.</span> <span class="nav-text">3.4 运行效果示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-%E6%89%A9%E5%B1%95%E6%96%B9%E5%90%91"><span class="nav-number">2.1.5.</span> <span class="nav-text">3.5 扩展方向</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -232,16 +237,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://relaxfog0530.github.io/2025/08/19/%E8%AE%B0%E5%BF%86%E4%BD%93/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -255,13 +261,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Early's Blog">
+      <meta itemprop="name" content="记忆体的建设与总结 | Early's Blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/08/19/%E8%AE%B0%E5%BF%86%E4%BD%93/" class="post-title-link" itemprop="url">记忆体的建设与总结</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          记忆体的建设与总结
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -285,6 +291,13 @@
     </span>
 
   
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
 </div>
 
         </div>
@@ -293,8 +306,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="记忆体的建设与总结"><a href="#记忆体的建设与总结" class="headerlink" title="记忆体的建设与总结"></a>记忆体的建设与总结</h1><p>具有记忆衰退功能的电子生命体（Python 实现）</p>
+    <div class="post-body" itemprop="articleBody"><h1 id="记忆体的建设与总结"><a href="#记忆体的建设与总结" class="headerlink" title="记忆体的建设与总结"></a>记忆体的建设与总结</h1><p>具有记忆衰退功能的电子生命体（Python 实现）</p>
 <h2 id="1-项目概述"><a href="#1-项目概述" class="headerlink" title="1. 项目概述"></a>1. 项目概述</h2><p>本文档提供一个简化版「记忆衰退电子生命体」的 Python 实现，核心模拟人类记忆的三大特性：<br>短期记忆易遗忘：临时信息（如待办事项）衰退速度远快于长期记忆。<br>长期记忆随时间模糊：基于艾宾浩斯遗忘曲线，记忆保留率随时间呈指数衰减。<br>复习增强记忆：提取（复习）记忆时，会提升其活跃度，降低遗忘速度。</p>
 <h2 id="2-完整代码实现"><a href="#2-完整代码实现" class="headerlink" title="2. 完整代码实现"></a>2. 完整代码实现</h2><h3 id="2-1-核心模块：记忆系统类"><a href="#2-1-核心模块：记忆系统类" class="headerlink" title="2.1 核心模块：记忆系统类"></a>2.1 核心模块：记忆系统类</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line">from dataclasses <span class="keyword">import</span> dataclass</span><br><span class="line">from typing <span class="keyword">import</span> Dict, List, Optional</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">@dataclass</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Memory</span>:</span><br><span class="line">    <span class="string">&quot;&quot;</span><span class="string">&quot;记忆单元数据结构&quot;</span><span class="string">&quot;&quot;</span></span><br><span class="line">    content: str          # 记忆具体内容</span><br><span class="line">    timestamp: <span class="type">float</span>      # 记忆存储时间（时间戳）</span><br><span class="line">    active_level: <span class="type">float</span>   # 活跃度（<span class="number">0</span><span class="number">-1</span>，越高越难遗忘）</span><br><span class="line">    stability: <span class="type">float</span>      # 稳定性（<span class="number">0.5</span><span class="number">-2.0</span>，基础遗忘抵抗能力）</span><br><span class="line">    is_short_term: <span class="type">bool</span>   # 是否为短期记忆（衰退更快）</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">MemoryBeing</span>:</span><br><span class="line">    <span class="string">&quot;&quot;</span><span class="string">&quot;具有记忆衰退功能的电子生命体类&quot;</span><span class="string">&quot;&quot;</span></span><br><span class="line">    def __init__(self, name: str):</span><br><span class="line">        self.name = name                          # 电子生命体名称</span><br><span class="line">        self.memories: Dict[str, Memory] = &#123;&#125;     # 记忆库（key: 记忆唯一标识）</span><br><span class="line">        self.current_time = time.<span class="built_in">time</span>()           # 系统当前时间（用于模拟时间流逝）</span><br><span class="line"></span><br><span class="line">    def _get_time_since_creation(self, memory: Memory) -&gt; <span class="type">float</span>:</span><br><span class="line">        <span class="string">&quot;&quot;</span><span class="string">&quot;计算记忆从存储到当前的时间间隔（秒）&quot;</span><span class="string">&quot;&quot;</span></span><br><span class="line">        <span class="keyword">return</span> self.current_time - memory.timestamp</span><br><span class="line"></span><br><span class="line">    def _forget_curve(self, memory: Memory) -&gt; <span class="type">float</span>:</span><br><span class="line">        <span class="string">&quot;&quot;</span><span class="string">&quot;</span></span><br><span class="line"><span class="string">        基于艾宾浩斯遗忘曲线的记忆保留率计算</span></span><br><span class="line"><span class="string">        公式：保留率 = e^(-t/(S*A*K)) </span></span><br><span class="line"><span class="string">        - t: 时间间隔（秒）</span></span><br><span class="line"><span class="string">        - S: 记忆稳定性</span></span><br><span class="line"><span class="string">        - A: 记忆活跃度</span></span><br><span class="line"><span class="string">        - K: 短期记忆系数（0.3，加速衰退）</span></span><br><span class="line"><span class="string">        返回值范围：0.0（完全遗忘）~ 1.0（完全清晰）</span></span><br><span class="line"><span class="string">        &quot;</span><span class="string">&quot;&quot;</span></span><br><span class="line">        time_diff = self._get_time_since_creation(memory)</span><br><span class="line">        <span class="keyword">if</span> time_diff &lt; <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1.0</span>  # 避免时间异常导致的计算错误</span><br><span class="line">        </span><br><span class="line">        # 短期记忆衰退速度为长期记忆的 ~<span class="number">3</span> 倍</span><br><span class="line">        short_term_coeff = <span class="number">0.3</span> <span class="keyword">if</span> memory.is_short_term <span class="keyword">else</span> <span class="number">1.0</span></span><br><span class="line">        denominator = memory.stability * memory.active_level * short_term_coeff</span><br><span class="line">        </span><br><span class="line">        # 防止分母过小导致保留率骤降</span><br><span class="line">        denominator = <span class="built_in">max</span>(<span class="number">0.1</span>, denominator)</span><br><span class="line">        </span><br><span class="line">        retention_rate = math.<span class="built_in">exp</span>(-time_diff / denominator)</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">max</span>(<span class="number">0.0</span>, <span class="built_in">min</span>(<span class="number">1.0</span>, retention_rate))  # 限制返回值范围</span><br><span class="line"></span><br><span class="line">    def <span class="built_in">store_memory</span>(self, </span><br><span class="line">                    key: str, </span><br><span class="line">                    content: str, </span><br><span class="line">                    is_short_term: <span class="type">bool</span> = False, </span><br><span class="line">                    active_level: <span class="type">float</span> = <span class="number">0.7</span>, </span><br><span class="line">                    stability: <span class="type">float</span> = <span class="number">1.0</span>) -&gt; None:</span><br><span class="line">        <span class="string">&quot;&quot;</span><span class="string">&quot;</span></span><br><span class="line"><span class="string">        存储记忆到记忆库</span></span><br><span class="line"><span class="string">        :param key: 记忆唯一标识（用于后续提取）</span></span><br><span class="line"><span class="string">        :param content: 记忆内容</span></span><br><span class="line"><span class="string">        :param is_short_term: 是否为短期记忆</span></span><br><span class="line"><span class="string">        :param active_level: 初始活跃度（0.1-1.0）</span></span><br><span class="line"><span class="string">        :param stability: 初始稳定性（0.5-2.0）</span></span><br><span class="line"><span class="string">        &quot;</span><span class="string">&quot;&quot;</span></span><br><span class="line">        # 修正参数范围，避免异常值</span><br><span class="line">        active_level = <span class="built_in">max</span>(<span class="number">0.1</span>, <span class="built_in">min</span>(<span class="number">1.0</span>, active_level))</span><br><span class="line">        stability = <span class="built_in">max</span>(<span class="number">0.5</span>, <span class="built_in">min</span>(<span class="number">2.0</span>, stability))</span><br><span class="line">        </span><br><span class="line">        self.memories[key] = <span class="built_in">Memory</span>(</span><br><span class="line">            content=content,</span><br><span class="line">            timestamp=self.current_time,</span><br><span class="line">            active_level=active_level,</span><br><span class="line">            stability=stability,</span><br><span class="line">            is_short_term=is_short_term</span><br><span class="line">        )</span><br><span class="line">        <span class="built_in">print</span>(f<span class="string">&quot;[&#123;self.name&#125;] 已存储记忆 | 内容：&#123;content&#125;&quot;</span>)</span><br><span class="line"></span><br><span class="line">    def _blur_memory(self, content: str, retention_rate: <span class="type">float</span>) -&gt; str:</span><br><span class="line">        <span class="string">&quot;&quot;</span><span class="string">&quot;</span></span><br><span class="line"><span class="string">        模拟记忆模糊效果</span></span><br><span class="line"><span class="string">        :param content: 原始记忆内容</span></span><br><span class="line"><span class="string">        :param retention_rate: 记忆保留率（0.0-1.0）</span></span><br><span class="line"><span class="string">        :return: 模糊后的记忆内容</span></span><br><span class="line"><span class="string">        &quot;</span><span class="string">&quot;&quot;</span></span><br><span class="line">        # 保留率越高，模糊程度越低</span><br><span class="line">        keep_length = <span class="built_in">max</span>(<span class="number">1</span>, <span class="built_in">int</span>(<span class="built_in">len</span>(content) * retention_rate * <span class="number">1.2</span>))</span><br><span class="line">        content_chars = <span class="built_in">list</span>(content)</span><br><span class="line">        </span><br><span class="line">        # 随机打乱并保留部分字符（模拟片段化记忆）</span><br><span class="line">        random.<span class="built_in">shuffle</span>(content_chars)</span><br><span class="line">        blurred_content = <span class="string">&#x27;&#x27;.join(content_chars[:keep_length])</span></span><br><span class="line"><span class="string">        </span></span><br><span class="line"><span class="string">        # 补充模糊标记，增强拟人感</span></span><br><span class="line"><span class="string">        if len(blurred_content) &lt; len(content):</span></span><br><span class="line"><span class="string">            return f&quot;...&#123;blurred_content&#125;...&quot;</span></span><br><span class="line"><span class="string">        return blurred_content</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    def retrieve_memory(self, key: str) -&gt; Optional[str]:</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        提取记忆（可能模糊或完全遗忘）</span></span><br><span class="line"><span class="string">        :param key: 记忆唯一标识</span></span><br><span class="line"><span class="string">        :return: 提取到的记忆（模糊/清晰）或 None（完全遗忘）</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        # 记忆不存在（已遗忘或未存储）</span></span><br><span class="line"><span class="string">        if key not in self.memories:</span></span><br><span class="line"><span class="string">            print(f&quot;[&#123;self.name&#125;] 完全不记得这个内容了...&quot;)</span></span><br><span class="line"><span class="string">            return None</span></span><br><span class="line"><span class="string">        </span></span><br><span class="line"><span class="string">        target_memory = self.memories[key]</span></span><br><span class="line"><span class="string">        retention_rate = self._forget_curve(target_memory)</span></span><br><span class="line"><span class="string">        </span></span><br><span class="line"><span class="string">        # 1. 保留率 &lt; 20%：完全遗忘，从记忆库删除</span></span><br><span class="line"><span class="string">        if retention_rate &lt; 0.2:</span></span><br><span class="line"><span class="string">            del self.memories[key]</span></span><br><span class="line"><span class="string">            print(f&quot;[&#123;self.name&#125;] 彻底忘记这个内容了...&quot;)</span></span><br><span class="line"><span class="string">            return None</span></span><br><span class="line"><span class="string">        </span></span><br><span class="line"><span class="string">        # 2. 20% ≤ 保留率 &lt; 50%：部分遗忘，内容模糊</span></span><br><span class="line"><span class="string">        elif 0.2 &lt;= retention_rate &lt; 0.5:</span></span><br><span class="line"><span class="string">            blurred_content = self._blur_memory(target_memory.content, retention_rate)</span></span><br><span class="line"><span class="string">            print(f&quot;[&#123;self.name&#125;] 隐约记得：&#123;blurred_content&#125;&quot;)</span></span><br><span class="line"><span class="string">            </span></span><br><span class="line"><span class="string">            # 复习机制：提取后提升活跃度（减缓后续遗忘）</span></span><br><span class="line"><span class="string">            target_memory.active_level = min(1.0, target_memory.active_level + 0.1)</span></span><br><span class="line"><span class="string">            return blurred_content</span></span><br><span class="line"><span class="string">        </span></span><br><span class="line"><span class="string">        # 3. 保留率 ≥ 50%：记忆基本清晰</span></span><br><span class="line"><span class="string">        else:</span></span><br><span class="line"><span class="string">            print(f&quot;[&#123;self.name&#125;] 清晰记得：&#123;target_memory.content&#125;&quot;)</span></span><br><span class="line"><span class="string">            </span></span><br><span class="line"><span class="string">            # 复习机制：提取后轻微提升活跃度</span></span><br><span class="line"><span class="string">            target_memory.active_level = min(1.0, target_memory.active_level + 0.05)</span></span><br><span class="line"><span class="string">            return target_memory.content</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    def simulate_time_pass(self, seconds: float) -&gt; None:</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        模拟时间流逝（触发记忆自然衰退）</span></span><br><span class="line"><span class="string">        :param seconds: 流逝的时间（秒）</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        self.current_time += seconds</span></span><br><span class="line"><span class="string">        print(f&quot;\n=== [&#123;self.name&#125;] 时间流逝 &#123;seconds&#125; 秒 ===&quot;)</span></span><br><span class="line"><span class="string">        </span></span><br><span class="line"><span class="string">        # 主动检查并清理已完全遗忘的记忆</span></span><br><span class="line"><span class="string">        self._clean_forgotten_memories()</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    def _clean_forgotten_memories(self) -&gt; None:</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;批量清理记忆库中已完全遗忘的记忆（保留率 &lt; 20%）&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">        forgotten_keys = []</span></span><br><span class="line"><span class="string">        for key, memory in self.memories.items():</span></span><br><span class="line"><span class="string">            if self._forget_curve(memory) &lt; 0.2:</span></span><br><span class="line"><span class="string">                forgotten_keys.append(key)</span></span><br><span class="line"><span class="string">        </span></span><br><span class="line"><span class="string">        # 删除完全遗忘的记忆</span></span><br><span class="line"><span class="string">        for key in forgotten_keys:</span></span><br><span class="line"><span class="string">            del self.memories[key]</span></span><br><span class="line"><span class="string">        </span></span><br><span class="line"><span class="string">        if forgotten_keys:</span></span><br><span class="line"><span class="string">            print(f&quot;[&#123;self.name&#125;] 有些记忆已经彻底模糊，无法回忆...&quot;)</span></span><br></pre></td></tr></table></figure>
 
@@ -311,7 +323,6 @@
 
 <h3 id="3-5-扩展方向"><a href="#3-5-扩展方向" class="headerlink" title="3.5 扩展方向"></a>3.5 扩展方向</h3><p>增加情感因素：为记忆添加「情感权重」（如开心 &#x2F; 难过的记忆更难遗忘），修改遗忘曲线公式加入情感系数。<br>优化模糊算法：替换随机打乱字符的逻辑，改为基于语义的片段保留（如保留句子主干）。<br>持久化存储：使用 SQLite &#x2F; MongoDB 将记忆库持久化，避免程序重启后记忆丢失。<br>交互接口：集成 CLI 或 Web 接口，支持用户实时与电子生命体对话并存储交互记忆。</p>
 
-      
     </div>
 
     
@@ -319,634 +330,22 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
+          <div class="post-tags">
+              <a href="/tags/2025/" rel="tag"># 2025</a>
+              <a href="/tags/%E5%BB%BA%E8%AE%BE/" rel="tag"># 建设</a>
+          </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://relaxfog0530.github.io/2025/08/08/%E5%8A%87%E7%B5%822/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Early">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Early's Blog">
-      <meta itemprop="description" content="愿，<br>自己不再辜负自己，<br>奇迹不再辜负奇迹。">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Early's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/08/08/%E5%8A%87%E7%B5%822/" class="post-title-link" itemprop="url">劇終-2</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2025-08-08 18:53:57 / 修改时间：18:56:43" itemprop="dateCreated datePublished" datetime="2025-08-08T18:53:57+08:00">2025-08-08</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/talk%EF%BC%8C%E8%BF%BD%E5%89%A7/" itemprop="url" rel="index"><span itemprop="name">talk，追剧</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><img src="http://mms2.baidu.com/it/u=3117035648,2825770514&fm=253&app=138&f=JPEG?w=652&h=500" alt="剧终"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://relaxfog0530.github.io/2025/08/06/New/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Early">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Early's Blog">
-      <meta itemprop="description" content="愿，<br>自己不再辜负自己，<br>奇迹不再辜负奇迹。">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Early's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/08/06/New/" class="post-title-link" itemprop="url">NEWNEW</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2025-08-06 21:49:43 / 修改时间：21:52:34" itemprop="dateCreated datePublished" datetime="2025-08-06T21:49:43+08:00">2025-08-06</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/think/" itemprop="url" rel="index"><span itemprop="name">think</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="NEWNEW"><a href="#NEWNEW" class="headerlink" title="NEWNEW"></a>NEWNEW</h1><p><img src="https://static-cse.canva.cn/blob/234749/.gif" alt="NEWNEW"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://relaxfog0530.github.io/2025/08/06/Horse%20Races%E9%A2%98%E8%A7%A3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Early">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Early's Blog">
-      <meta itemprop="description" content="愿，<br>自己不再辜负自己，<br>奇迹不再辜负奇迹。">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Early's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/08/06/Horse%20Races%E9%A2%98%E8%A7%A3/" class="post-title-link" itemprop="url">Horse Races</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2025-08-06 21:15:43 / 修改时间：21:22:17" itemprop="dateCreated datePublished" datetime="2025-08-06T21:15:43+08:00">2025-08-06</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">study</span></a>
-        </span>
-          ，
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/study/%E9%A2%98%E8%A7%A3/" itemprop="url" rel="index"><span itemprop="name">题解</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h4 id="我们先看题"><a href="#我们先看题" class="headerlink" title="我们先看题"></a>我们先看题</h4><h1 id="CF95D-Horse-Races"><a href="#CF95D-Horse-Races" class="headerlink" title="CF95D Horse Races"></a>CF95D Horse Races</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Petya likes horse racing very much. Horses numbered from $ l $ to $ r $ take part in the races. Petya wants to evaluate the probability of victory; for some reason, to do that he needs to know the amount of nearly lucky horses’ numbers. A nearly lucky number is an integer number that has at least two lucky digits the distance between which does not exceed $ k $ . Petya learned from some of his mates from Lviv that lucky digits are digits $ 4 $ and $ 7 $ . The distance between the digits is the absolute difference between their positions in the number of a horse. For example, if $ k&#x3D;2 $ , then numbers $ 412395497 $ , $ 404 $ , $ 4070400000070004007 $ are nearly lucky and numbers $ 4 $ , $ 4123954997 $ , $ 4007000040070004007 $ are not.</p>
-<p>Petya prepared $ t $ intervals $ [l_{i},r_{i}] $ and invented number $ k $ , common for all of them. Your task is to find how many nearly happy numbers there are in each of these segments. Since the answers can be quite large, output them modulo $ 1000000007 $ ( $ 10^{9}+7 $ ).</p>
-<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>The first line contains two integers $ t $ and $ k $ ( $ 1&lt;&#x3D;t,k&lt;&#x3D;1000 $ ) — the number of segments and the distance between the numbers correspondingly. Next $ t $ lines contain pairs of integers $ l_{i} $ and $ r_{i} $ ( $ 1&lt;&#x3D;l&lt;&#x3D;r&lt;&#x3D;10^{1000} $ ). All numbers are given without the leading zeroes. Numbers in each line are separated by exactly one space character.</p>
-<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>Output $ t $ lines. In each line print one integer — the answer for the corresponding segment modulo $ 1000000007 $ ( $ 10^{9}+7 $ ).</p>
-<h2 id="输入输出样例-1"><a href="#输入输出样例-1" class="headerlink" title="输入输出样例 #1"></a>输入输出样例 #1</h2><h3 id="输入-1"><a href="#输入-1" class="headerlink" title="输入 #1"></a>输入 #1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1 2</span><br><span class="line">1 100</span><br></pre></td></tr></table></figure>
-
-<h3 id="输出-1"><a href="#输出-1" class="headerlink" title="输出 #1"></a>输出 #1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4</span><br></pre></td></tr></table></figure>
-
-<h2 id="输入输出样例-2"><a href="#输入输出样例-2" class="headerlink" title="输入输出样例 #2"></a>输入输出样例 #2</h2><h3 id="输入-2"><a href="#输入-2" class="headerlink" title="输入 #2"></a>输入 #2</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1 2</span><br><span class="line">70 77</span><br></pre></td></tr></table></figure>
-
-<h3 id="输出-2"><a href="#输出-2" class="headerlink" title="输出 #2"></a>输出 #2</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure>
-
-<h2 id="输入输出样例-3"><a href="#输入输出样例-3" class="headerlink" title="输入输出样例 #3"></a>输入输出样例 #3</h2><h3 id="输入-3"><a href="#输入-3" class="headerlink" title="输入 #3"></a>输入 #3</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">2 1</span><br><span class="line">1 20</span><br><span class="line">80 100</span><br></pre></td></tr></table></figure>
-
-<h3 id="输出-3"><a href="#输出-3" class="headerlink" title="输出 #3"></a>输出 #3</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">0</span><br><span class="line">0</span><br></pre></td></tr></table></figure>
-
-<h2 id="说明-提示"><a href="#说明-提示" class="headerlink" title="说明&#x2F;提示"></a>说明&#x2F;提示</h2><p>In the first sample, the four nearly lucky numbers are 44, 47, 74, 77.</p>
-<p>In the second sample, only 74 and 77 are in the given segment.</p>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>一道比较基础的数位DP。</p>
-<p>答案明显可以差分出来，ans&#x3D;calc(r)−calc(l−1) ，但是由于数据范围太大 1≤l≤r≤10的1000次方，所以我们必须将 l 单独拿出来判断一下。</p>
-<p>至于 calc(x) ，可以用数位dp来进行求解，定义 dp i,j,k<br>​<br>  为在第 i 位距上一个幸运数字距离为 j 且是否满足条件的数的数量。</p>
-<p>状态转移的过程可以用记忆化搜索来实现。之后就可以很简单的解决了。</p>
-<p>Code (最近学坏了，压行的有些厉害)</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> mod = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"><span class="type">int</span> dp[<span class="number">1005</span>][<span class="number">1005</span>][<span class="number">2</span>];</span><br><span class="line"><span class="type">int</span> bits[<span class="number">1005</span>];</span><br><span class="line"><span class="type">int</span> t,k;</span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">dfs</span><span class="params">(<span class="type">int</span> len,<span class="type">int</span> lpos,<span class="type">int</span> fg,<span class="type">bool</span> border)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(!len) <span class="keyword">return</span> fg == <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span>(!border &amp;&amp; dp[len][lpos][fg]!=<span class="number">-1</span>) <span class="keyword">return</span> dp[len][lpos][fg];</span><br><span class="line">    <span class="type">int</span> up=border? bits[len]:<span class="number">9</span>;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> res=<span class="number">0</span> ;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>; i&lt;=up; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(i==<span class="number">4</span>||i==<span class="number">7</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            res += <span class="built_in">dfs</span>(len<span class="number">-1</span>,len,(lpos &amp;&amp; lpos-len&lt;=k)|fg,border&amp;&amp;i==up);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> res += <span class="built_in">dfs</span>(len - <span class="number">1</span>, lpos, fg, border &amp;&amp; i == up);</span><br><span class="line">    &#125;</span><br><span class="line">    res %= mod;</span><br><span class="line">    <span class="keyword">if</span>(!border) dp[len][lpos][fg] = res;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">f</span><span class="params">(string s)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> len=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i=s.<span class="built_in">size</span>()<span class="number">-1</span>; i&gt;=<span class="number">0</span>; i--)</span><br><span class="line">    &#123;</span><br><span class="line">        bits[++ len] = s[i] - <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">dfs</span>(len,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">check</span><span class="params">(string &amp;s)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> p = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">1</span>; i&lt;=s.<span class="built_in">size</span>(); i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (s[i<span class="number">-1</span>]==<span class="string">&#x27;4&#x27;</span>||s[i<span class="number">-1</span>]==<span class="string">&#x27;7&#x27;</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(!p||i-p&gt;k) p=i;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(i-p&lt;=k) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cin&gt;&gt;t&gt;&gt;k;</span><br><span class="line">    string l,r;</span><br><span class="line">    <span class="built_in">memset</span>(dp, <span class="number">-1</span>, <span class="built_in">sizeof</span>(dp));</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>; i&lt;t; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cin&gt;&gt;l&gt;&gt;r;</span><br><span class="line">        <span class="type">long</span> <span class="type">long</span> ans=<span class="built_in">f</span>(r)-<span class="built_in">f</span>(l)+(<span class="built_in">check</span>(l)?<span class="number">1</span>:<span class="number">0</span>);</span><br><span class="line">        cout&lt;&lt;(ans%mod+mod)%mod&lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://relaxfog0530.github.io/2025/08/04/Espresso/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Early">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Early's Blog">
-      <meta itemprop="description" content="愿，<br>自己不再辜负自己，<br>奇迹不再辜负奇迹。">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Early's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/08/04/Espresso/" class="post-title-link" itemprop="url">Espresso</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2025-08-04 21:43:57" itemprop="dateCreated datePublished" datetime="2025-08-04T21:43:57+08:00">2025-08-04</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-08-06 17:56:49" itemprop="dateModified" datetime="2025-08-06T17:56:49+08:00">2025-08-06</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/music/" itemprop="url" rel="index"><span itemprop="name">music</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1954627753&bvid=BV1ay411Y7WS&cid=1549402671&p=1" 
-        width="100%" height="450" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://relaxfog0530.github.io/2025/08/04/Link-Cut-Tree-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Early">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Early's Blog">
-      <meta itemprop="description" content="愿，<br>自己不再辜负自己，<br>奇迹不再辜负奇迹。">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Early's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/08/04/Link-Cut-Tree-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">Link Cut Tree 学习笔记</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2025-08-04 19:23:00 / 修改时间：19:26:45" itemprop="dateCreated datePublished" datetime="2025-08-04T19:23:00+08:00">2025-08-04</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">study</span></a>
-        </span>
-          ，
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/study/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Link Cut Tree（简称 LCT）是使用 Splay 和实链剖分来维护森林的一个数据结构，它支持以下在线操作：</p>
-<ul>
-<li>查询 &#x2F; 修改链上的信息</li>
-<li>换根</li>
-<li>动态连边 &#x2F; 删边</li>
-<li>查询连通性</li>
-<li>……</li>
-</ul>
-<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>在 LCT 中，每个 Splay 维护的是一条从上到下且深度<strong>严格</strong>递增的实链，且 Splay 按照点的深度排序。</p>
-<p>不同于重链剖分，实链剖分选择的实儿子由我们自己决定。</p>
-<p><img src="https://github.com/Early0v0/Blog/blob/master/source/_posts/Link-Cut-Tree-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/eg.png?raw=true" alt="eg"></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2025/08/04/Link-Cut-Tree-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://relaxfog0530.github.io/2025/08/03/%E4%BB%8A%E6%97%A5%E6%9A%B4%E8%B5%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Early">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Early's Blog">
-      <meta itemprop="description" content="愿，<br>自己不再辜负自己，<br>奇迹不再辜负奇迹。">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Early's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/08/03/%E4%BB%8A%E6%97%A5%E6%9A%B4%E8%B5%B0/" class="post-title-link" itemprop="url">今日暴走</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2025-08-03 23:37:37 / 修改时间：23:06:31" itemprop="dateCreated datePublished" datetime="2025-08-03T23:37:37+08:00">2025-08-03</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/talk/" itemprop="url" rel="index"><span itemprop="name">talk</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>今天优化网页的过程，简直是把自己扔进了代码的泥沼里挣扎。<br><img src="https://s1.aigei.com/src/img/gif/02/021da8d3e9e24928b36cd0e6a5ddb567.gif?imageMogr2/auto-orient/thumbnail/!282x226r/gravity/Center/crop/282x226/quality/85/%7CimageView2/2/w/282&e=2051020800&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:t6dvivz7_aMOjctuQUsuUfUxZEw=" alt="红温"></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2025/08/03/%E4%BB%8A%E6%97%A5%E6%9A%B4%E8%B5%B0/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/08/08/%E5%8A%87%E7%B5%822/" rel="prev" title="劇終-2">
+                  <i class="fa fa-angle-left"></i> 劇終-2
+                </a>
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://relaxfog0530.github.io/2025/08/03/%E7%BA%BF%E6%80%A7%E5%B0%BA%E5%AF%B8%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%87%BD%E6%95%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Early">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Early's Blog">
-      <meta itemprop="description" content="愿，<br>自己不再辜负自己，<br>奇迹不再辜负奇迹。">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Early's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/08/03/%E7%BA%BF%E6%80%A7%E5%B0%BA%E5%AF%B8%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%87%BD%E6%95%B0/" class="post-title-link" itemprop="url">线性尺寸莫比乌斯函数</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2025-08-03 17:53:38 / 修改时间：17:53:29" itemprop="dateCreated datePublished" datetime="2025-08-03T17:53:38+08:00">2025-08-03</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">study</span></a>
-        </span>
-          ，
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/study/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>模拟赛中的一道题，让我发现自己莫比乌斯函数的基础十分薄弱。:cry:</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2025/08/03/%E7%BA%BF%E6%80%A7%E5%B0%BA%E5%AF%B8%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%87%BD%E6%95%B0/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
+            <div class="post-nav-item">
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          </div>
     </footer>
   </article>
 </div>
@@ -954,191 +353,7 @@
 
 
 
-    
 
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://relaxfog0530.github.io/2025/08/03/%E7%BA%BF%E6%80%A7%E6%B1%82%E9%80%86%E5%85%83/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Early">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Early's Blog">
-      <meta itemprop="description" content="愿，<br>自己不再辜负自己，<br>奇迹不再辜负奇迹。">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Early's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/08/03/%E7%BA%BF%E6%80%A7%E6%B1%82%E9%80%86%E5%85%83/" class="post-title-link" itemprop="url">线性求逆元</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2025-08-03 17:51:19 / 修改时间：17:51:21" itemprop="dateCreated datePublished" datetime="2025-08-03T17:51:19+08:00">2025-08-03</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">study</span></a>
-        </span>
-          ，
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/study/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>当要求 $1-n$ 中所有数的逆元时，$O(n\log p)$ 的方法就有点悬了。</p>
-<p>下面介绍一种 $O(n)$ 求逆元的好方法。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2025/08/03/%E7%BA%BF%E6%80%A7%E6%B1%82%E9%80%86%E5%85%83/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://relaxfog0530.github.io/2025/08/03/%E5%BA%8F%E5%88%97%E8%87%AA%E5%8A%A8%E6%9C%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Early">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Early's Blog">
-      <meta itemprop="description" content="愿，<br>自己不再辜负自己，<br>奇迹不再辜负奇迹。">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Early's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/08/03/%E5%BA%8F%E5%88%97%E8%87%AA%E5%8A%A8%E6%9C%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">序列自动机学习笔记</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2025-08-03 17:46:23 / 修改时间：17:46:59" itemprop="dateCreated datePublished" datetime="2025-08-03T17:46:23+08:00">2025-08-03</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">study</span></a>
-        </span>
-          ，
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/study/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>序列自动机是接受一个字符串的子序列的自动机。</p>
-<p>它可以方便地维护 &#x2F; 匹配字符串（数列）的所有子序列。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2025/08/03/%E5%BA%8F%E5%88%97%E8%87%AA%E5%8A%A8%E6%9C%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
 
 </div>
   </main>
