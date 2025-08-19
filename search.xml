@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Espresso</title>
+    <url>/2025/08/04/Espresso/</url>
+    <content><![CDATA[<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1954627753&bvid=BV1ay411Y7WS&cid=1549402671&p=1" 
+        width="100%" height="450" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+]]></content>
+      <categories>
+        <category>music</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>video</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Horse Races</title>
     <url>/2025/08/06/Horse%20Races%E9%A2%98%E8%A7%A3/</url>
     <content><![CDATA[<h4 id="我们先看题"><a href="#我们先看题" class="headerlink" title="我们先看题"></a>我们先看题</h4><h1 id="CF95D-Horse-Races"><a href="#CF95D-Horse-Races" class="headerlink" title="CF95D Horse Races"></a>CF95D Horse Races</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Petya likes horse racing very much. Horses numbered from $ l $ to $ r $ take part in the races. Petya wants to evaluate the probability of victory; for some reason, to do that he needs to know the amount of nearly lucky horses’ numbers. A nearly lucky number is an integer number that has at least two lucky digits the distance between which does not exceed $ k $ . Petya learned from some of his mates from Lviv that lucky digits are digits $ 4 $ and $ 7 $ . The distance between the digits is the absolute difference between their positions in the number of a horse. For example, if $ k&#x3D;2 $ , then numbers $ 412395497 $ , $ 404 $ , $ 4070400000070004007 $ are nearly lucky and numbers $ 4 $ , $ 4123954997 $ , $ 4007000040070004007 $ are not.</p>
@@ -50,33 +64,6 @@
         <tag>2025</tag>
         <tag>Note</tag>
         <tag>观测</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Espresso</title>
-    <url>/2025/08/04/Espresso/</url>
-    <content><![CDATA[<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1954627753&bvid=BV1ay411Y7WS&cid=1549402671&p=1" 
-        width="100%" height="450" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
-]]></content>
-      <categories>
-        <category>music</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>video</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>NEWNEW</title>
-    <url>/2025/08/06/New/</url>
-    <content><![CDATA[<h1 id="NEWNEW"><a href="#NEWNEW" class="headerlink" title="NEWNEW"></a>NEWNEW</h1><p><img src="https://static-cse.canva.cn/blob/234749/.gif" alt="NEWNEW"></p>
-]]></content>
-      <categories>
-        <category>think</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>GIF</tag>
       </tags>
   </entry>
   <entry>
@@ -178,22 +165,17 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2025/08/02/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>NEWNEW</title>
+    <url>/2025/08/06/New/</url>
+    <content><![CDATA[<h1 id="NEWNEW"><a href="#NEWNEW" class="headerlink" title="NEWNEW"></a>NEWNEW</h1><p><img src="https://static-cse.canva.cn/blob/234749/.gif" alt="NEWNEW"></p>
 ]]></content>
+      <categories>
+        <category>think</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>GIF</tag>
+      </tags>
   </entry>
   <entry>
     <title>Splay 学习笔记</title>
@@ -293,6 +275,24 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2025/08/02/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>今日暴走</title>
     <url>/2025/08/03/%E4%BB%8A%E6%97%A5%E6%9A%B4%E8%B5%B0/</url>
     <content><![CDATA[<p>今天优化网页的过程，简直是把自己扔进了代码的泥沼里挣扎。<br><img src="https://s1.aigei.com/src/img/gif/02/021da8d3e9e24928b36cd0e6a5ddb567.gif?imageMogr2/auto-orient/thumbnail/!282x226r/gravity/Center/crop/282x226/quality/85/%7CimageView2/2/w/282&e=2051020800&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:t6dvivz7_aMOjctuQUsuUfUxZEw=" alt="红温"></p>
@@ -307,19 +307,6 @@
         <tag>2025</tag>
         <tag>Note</tag>
         <tag>观测</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>劇終-2</title>
-    <url>/2025/08/08/%E5%8A%87%E7%B5%822/</url>
-    <content><![CDATA[<p><img src="http://mms2.baidu.com/it/u=3117035648,2825770514&fm=253&app=138&f=JPEG?w=652&h=500" alt="剧终"></p>
-]]></content>
-      <categories>
-        <category>talk，追剧</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>Note</tag>
       </tags>
   </entry>
   <entry>
@@ -552,6 +539,19 @@
       <tags>
         <tag>2025</tag>
         <tag>建设</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>劇終-2</title>
+    <url>/2025/08/08/%E5%8A%87%E7%B5%822/</url>
+    <content><![CDATA[<p><img src="http://mms2.baidu.com/it/u=3117035648,2825770514&fm=253&app=138&f=JPEG?w=652&h=500" alt="剧终"></p>
+]]></content>
+      <categories>
+        <category>talk，追剧</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>Note</tag>
       </tags>
   </entry>
 </search>
