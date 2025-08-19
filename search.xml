@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Blog的初次暴走</title>
+    <url>/2025/08/02/Blog%E7%9A%84%E5%88%9D%E6%AC%A1%E6%9A%B4%E8%B5%B0/</url>
+    <content><![CDATA[<p>昨天 BlogWeb 暴走了，主要是因为凌晨三点加的那段动态天气代码里藏了个没闭合的循环。原本想让天气图标每小时自动刷新，结果写成了while(true)却忘了加终止条件，代码像脱缰的野马在后台疯狂请求接口。等早上发现时，服务器日志已经堆到了 300 多 MB，全是重复的天气数据报错，连带着首页加载时都在疯狂弹窗 —— 毕竟每秒钟弹出十几次 “获取天气失败” 的提示，再稳的浏览器也扛不住。<br>更糟的是，因为循环占用了太多进程，连后台管理页面都卡成了幻灯片。点 “编辑文章” 要等三分钟才能加载出编辑器，好不容易改完内容点保存，直接弹出 404 超时。最哭笑不得的是，原本用来美化页面的粒子特效插件，因为内存被占满，粒子全黏成了一团黑乎乎的像素块，在屏幕上像只乱爬的虫子。<br>后来对着服务器监控日志一点点捋，才发现问题根源藏在sidebar.njk的脚本里。删那行循环代码时手都在抖，生怕误删了其他功能。重启服务器后看着控制台跳出 “正常运行” 的提示，突然觉得那些凌晨改代码的冲动，都不如加个定时器再睡个好觉实在。现在每次改代码都逼着自己先写注释，哪怕只是加一行打印，也得标清楚 “这里可能会炸”—— 毕竟谁也不想再体验一次，看着自己的博客从精致小站变成狂弹窗的 “失控现场” 了。</p>
+<p>特别感谢：LCX（Thank you for your support）</p>
+]]></content>
+      <categories>
+        <category>talk</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>Note</tag>
+        <tag>观测</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Espresso</title>
     <url>/2025/08/04/Espresso/</url>
     <content><![CDATA[<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1954627753&bvid=BV1ay411Y7WS&cid=1549402671&p=1" 
@@ -12,6 +27,19 @@
       <tags>
         <tag>2025</tag>
         <tag>video</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NEWNEW</title>
+    <url>/2025/08/06/New/</url>
+    <content><![CDATA[<h1 id="NEWNEW"><a href="#NEWNEW" class="headerlink" title="NEWNEW"></a>NEWNEW</h1><p><img src="https://static-cse.canva.cn/blob/234749/.gif" alt="NEWNEW"></p>
+]]></content>
+      <categories>
+        <category>think</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>GIF</tag>
       </tags>
   </entry>
   <entry>
@@ -52,18 +80,100 @@
       </tags>
   </entry>
   <entry>
-    <title>Blog的初次暴走</title>
-    <url>/2025/08/02/Blog%E7%9A%84%E5%88%9D%E6%AC%A1%E6%9A%B4%E8%B5%B0/</url>
-    <content><![CDATA[<p>昨天 BlogWeb 暴走了，主要是因为凌晨三点加的那段动态天气代码里藏了个没闭合的循环。原本想让天气图标每小时自动刷新，结果写成了while(true)却忘了加终止条件，代码像脱缰的野马在后台疯狂请求接口。等早上发现时，服务器日志已经堆到了 300 多 MB，全是重复的天气数据报错，连带着首页加载时都在疯狂弹窗 —— 毕竟每秒钟弹出十几次 “获取天气失败” 的提示，再稳的浏览器也扛不住。<br>更糟的是，因为循环占用了太多进程，连后台管理页面都卡成了幻灯片。点 “编辑文章” 要等三分钟才能加载出编辑器，好不容易改完内容点保存，直接弹出 404 超时。最哭笑不得的是，原本用来美化页面的粒子特效插件，因为内存被占满，粒子全黏成了一团黑乎乎的像素块，在屏幕上像只乱爬的虫子。<br>后来对着服务器监控日志一点点捋，才发现问题根源藏在sidebar.njk的脚本里。删那行循环代码时手都在抖，生怕误删了其他功能。重启服务器后看着控制台跳出 “正常运行” 的提示，突然觉得那些凌晨改代码的冲动，都不如加个定时器再睡个好觉实在。现在每次改代码都逼着自己先写注释，哪怕只是加一行打印，也得标清楚 “这里可能会炸”—— 毕竟谁也不想再体验一次，看着自己的博客从精致小站变成狂弹窗的 “失控现场” 了。</p>
-<p>特别感谢：LCX（Thank you for your support）</p>
+    <title>Splay 学习笔记</title>
+    <url>/2025/08/03/Splay-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Splay 是二叉查找树的一种，它通过访问节点时将其旋转到根节点，使查找树尽量维持平衡。</p>
+<span id="more"></span>
+
+<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>每个节点需保存它所维护的值 $val$，这个值所出现的次数 $cnt$，它的子树大小 $size$，它的父节点 $fa$ 以及它的左儿子 $son_0$ 和右儿子 $son_1$。</p>
+<blockquote>
+<p>说明：代码中 $t$ 即 $&amp;t[0]$，是定义的一个空节点，其 $val,cnt,siz$ 均为 $0$，父亲和儿子都指向自己。</p>
+</blockquote>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">splay_tree</span> &#123;</span><br><span class="line">    <span class="type">int</span> val,cnt,siz;</span><br><span class="line">    splay_tree *fa,*son[<span class="number">2</span>];</span><br><span class="line">&#125;t[N<span class="number">+1</span>],*root;</span><br></pre></td></tr></table></figure>
+
+<h3 id="更新子树大小"><a href="#更新子树大小" class="headerlink" title="更新子树大小"></a>更新子树大小</h3><p>节点改变后更新它的 $siz$。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">maintain</span><span class="params">(splay_tree *x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    x-&gt;siz=x-&gt;cnt+x-&gt;son[<span class="number">0</span>]-&gt;siz+x-&gt;son[<span class="number">1</span>]-&gt;siz;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="销毁节点"><a href="#销毁节点" class="headerlink" title="销毁节点"></a>销毁节点</h3><p>前提是已经将它移至叶子节点。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">clear</span><span class="params">(splay_tree *x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    x-&gt;val=x-&gt;cnt=x-&gt;siz=<span class="number">0</span>;</span><br><span class="line">    x-&gt;fa=x-&gt;son[<span class="number">0</span>]=x-&gt;son[<span class="number">1</span>]=t;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="上旋"><a href="#上旋" class="headerlink" title="上旋"></a>上旋</h3><p>本质上是将一个节点上移一个位置。</p>
+<p>上旋分为两种：左儿子上旋为右旋，右儿子上旋为左旋。</p>
+<p><img src="https://github.com/Early0v0/Blog/blob/master/source/_posts/Splay-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/rotate.png?raw=true" alt="右旋前 右旋后"></p>
+<p>步骤如下（以右旋为例）：</p>
+<ol>
+<li>将 $Fa$ 的左儿子指向 $Xson2$，$Xson2$ 的父亲指向 $Fa$；</li>
+<li>将 $X$ 的右儿子指向 $Fa$，$Fa$ 的父亲指向 $X$；</li>
+<li>如果 $Fa$ 有父亲（记为 $FFa$），则将 $X$ 的父亲指向 $FFa$，$FFa$ 的儿子（原来 $Fa$ 所在位置）指向 $X$；</li>
+<li>更新 $X$ 和 $Fa$ 的 $siz$ 值。</li>
+</ol>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">rotate</span><span class="params">(splay_tree *x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    splay_tree *fa=x-&gt;fa,*ffa=fa-&gt;fa;</span><br><span class="line">    <span class="type">int</span> ch=x==x-&gt;fa-&gt;son[<span class="number">0</span>]?<span class="number">0</span>:<span class="number">1</span>;</span><br><span class="line">    fa-&gt;son[ch]=x-&gt;son[ch^<span class="number">1</span>],x-&gt;son[ch^<span class="number">1</span>]-&gt;fa=fa;</span><br><span class="line">    x-&gt;son[ch^<span class="number">1</span>]=fa,fa-&gt;fa=x,x-&gt;fa=ffa;</span><br><span class="line">    <span class="keyword">if</span>(ffa!=t) &#123;</span><br><span class="line">        ffa-&gt;son[fa==ffa-&gt;son[<span class="number">0</span>]?<span class="number">0</span>:<span class="number">1</span>]=x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">maintain</span>(fa),<span class="built_in">maintain</span>(x);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Splay-操作"><a href="#Splay-操作" class="headerlink" title="Splay 操作"></a>Splay 操作</h3><p>将访问的节点旋转到根节点。</p>
+<ul>
+<li>如果 $X$ 的父亲是根节点，直接将 $X$ 上旋，结束操作；</li>
+<li>如果 $X$ 与其父亲儿子类型相同，先上旋其父亲，再上旋 $X$；</li>
+<li>否则连续上旋两次 $X$。</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">splay</span><span class="params">(splay_tree *x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(splay_tree *fa=x-&gt;fa;fa=x-&gt;fa,fa!=t;<span class="built_in">rotate</span>(x)) &#123;</span><br><span class="line">        <span class="keyword">if</span>(fa-&gt;fa!=t) &#123;</span><br><span class="line">            <span class="built_in">rotate</span>((x==fa-&gt;son[<span class="number">0</span>])==(fa==fa-&gt;fa-&gt;son[<span class="number">0</span>])?fa:x);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    root=x;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="建立-Splay"><a href="#建立-Splay" class="headerlink" title="建立 Splay"></a>建立 Splay</h3><p>先将数据升序排序（假设需要插入 $a$ 数组），然后用类似建立线段树的方法递归建立。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function">splay_tree *<span class="title">build</span><span class="params">(splay_tree *fa,<span class="type">int</span> l,<span class="type">int</span> r)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(l&gt;r) &#123;</span><br><span class="line">        <span class="keyword">return</span> t;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    splay_tree *x=&amp;(t[++tot]=splay_tree&#123;a[mid],<span class="number">1</span>,<span class="number">0</span>,fa,&#123;t,t&#125;&#125;);</span><br><span class="line">    x-&gt;son[<span class="number">0</span>]=<span class="built_in">build</span>(x,l,mid<span class="number">-1</span>),x-&gt;son[<span class="number">1</span>]=<span class="built_in">build</span>(x,mid<span class="number">+1</span>,r);</span><br><span class="line">    <span class="built_in">maintain</span>(x);</span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="插入值"><a href="#插入值" class="headerlink" title="插入值"></a>插入值</h3><ul>
+<li>如果树为空，则新建根节点并插入，结束操作；</li>
+<li>否则由根开始遍历：<ul>
+<li>如果当前节点的权值等于 $val$，则当前节点的 $cnt$ 值 +1，更新节点和父亲的 $siz$ ，并对当前节点进行 Splay 操作；</li>
+<li>如果当前节点为空，则在此新建节点即可；</li>
+<li>否则按照二叉查找树的性质向下递归。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">insert</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(root==t) &#123;</span><br><span class="line">        t[++tot]=splay_tree&#123;val,<span class="number">1</span>,<span class="number">1</span>,t,&#123;t,t&#125;&#125;;</span><br><span class="line">        root=&amp;t[tot];</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    splay_tree *x=root,*fa=t;</span><br><span class="line">    <span class="keyword">while</span>(<span class="literal">true</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span>(x-&gt;val==val) &#123;</span><br><span class="line">            ++x-&gt;cnt;</span><br><span class="line">            <span class="built_in">maintain</span>(x),<span class="built_in">maintain</span>(fa);</span><br><span class="line">            <span class="built_in">splay</span>(x);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        fa=x,x=x-&gt;son[x-&gt;val&lt;val];</span><br><span class="line">        <span class="keyword">if</span>(x==t) &#123;</span><br><span class="line">            t[++tot]=splay_tree&#123;val,<span class="number">1</span>,<span class="number">1</span>,fa,&#123;t,t&#125;&#125;;</span><br><span class="line">            fa-&gt;son[val&gt;fa-&gt;val]=&amp;t[tot];</span><br><span class="line">            <span class="built_in">maintain</span>(&amp;t[tot]),<span class="built_in">maintain</span>(fa);</span><br><span class="line">            <span class="built_in">splay</span>(&amp;t[tot]);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询-val-的排名"><a href="#查询-val-的排名" class="headerlink" title="查询 val 的排名"></a>查询 val 的排名</h3><ul>
+<li>初始排名为 $1$；</li>
+<li>如果 $val$ 比当前节点的权值小，则递归左子树；</li>
+<li>如果 $val$ 比当前节点的权值大，则将答案加上左子树的 $siz$ 和当前节点的 $cnt$，递归右子树；</li>
+<li>如果 $val$ 等于当前节点的权值，返回答案；</li>
+<li>最后进行 Splay 操作。</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2rank</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> ret=<span class="number">1</span>;</span><br><span class="line">    splay_tree *x=root;</span><br><span class="line">    <span class="keyword">while</span>(x!=t) &#123;</span><br><span class="line">        <span class="keyword">if</span>(val&lt;x-&gt;val) &#123;</span><br><span class="line">            x=x-&gt;son[<span class="number">0</span>];</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            ret+=x-&gt;son[<span class="number">0</span>]-&gt;siz;</span><br><span class="line">            <span class="keyword">if</span>(val==x-&gt;val) &#123;</span><br><span class="line">                <span class="built_in">splay</span>(x);</span><br><span class="line">                <span class="keyword">return</span> ret;</span><br><span class="line">            &#125;</span><br><span class="line">            ret+=x-&gt;cnt;</span><br><span class="line">            x=x-&gt;son[<span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询排名为-rnk-的数"><a href="#查询排名为-rnk-的数" class="headerlink" title="查询排名为 rnk 的数"></a>查询排名为 rnk 的数</h3><ul>
+<li><p>如果 $rnk$ 小于等于当前节点左子树的 $siz$，则递归左子树；</p>
+</li>
+<li><p>否则将 $rnk$ 减去左子树的 $siz$ 和当前节点的 $cnt$，如果 $rnk\leq0$，则返回当前节点的权值，否则递归右子树。</p>
+</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">rank2val</span><span class="params">(<span class="type">int</span> rnk)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    splay_tree *x=root;</span><br><span class="line">    <span class="keyword">while</span>(<span class="literal">true</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span>((x-&gt;son[<span class="number">0</span>]!=t)&amp;&amp;(rnk&lt;=x-&gt;son[<span class="number">0</span>]-&gt;siz)) &#123;</span><br><span class="line">            x=x-&gt;son[<span class="number">0</span>];</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            rnk-=x-&gt;son[<span class="number">0</span>]-&gt;siz+x-&gt;cnt;</span><br><span class="line">            <span class="keyword">if</span>(rnk&lt;=<span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> x-&gt;val;</span><br><span class="line">            &#125;</span><br><span class="line">            x=x-&gt;son[<span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="删除值"><a href="#删除值" class="headerlink" title="删除值"></a>删除值</h3><ul>
+<li>先找到值为 $val$ 的节点，将其进行 Splay 操作（可以通过查询 $val$ 的排名实现）；</li>
+<li>如果它的 $cnt$ 值大于 $1$，则令 $cnt\gets cnt-1$ 即可；</li>
+<li>如果它是唯一的节点，则直接删除节点；</li>
+<li>如果它只有一个儿子，则令它的儿子作根，然后删除节点；</li>
+<li>否则找到值小于 $val$ 的最大节点进行 Splay 操作，令根的右子树为值为 $val$ 的节点的右子树，更新根的 $siz$，最后删除节点。</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">del</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">val2rank</span>(val);</span><br><span class="line">    <span class="keyword">if</span>(root-&gt;cnt&gt;<span class="number">1</span>) &#123;</span><br><span class="line">        --root-&gt;cnt,--root-&gt;siz;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>((root-&gt;son[<span class="number">0</span>]==t)&amp;&amp;(root-&gt;son[<span class="number">1</span>]==t)) &#123;</span><br><span class="line">        <span class="built_in">clear</span>(root);</span><br><span class="line">        root=t;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">2</span>;++i) &#123;</span><br><span class="line">        <span class="keyword">if</span>(root-&gt;son[i]!=t) &#123;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        splay_tree *x=root;</span><br><span class="line">        root=root-&gt;son[i^<span class="number">1</span>];</span><br><span class="line">        root-&gt;fa=t;</span><br><span class="line">        <span class="built_in">clear</span>(x);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    splay_tree *x=root-&gt;son[<span class="number">0</span>],*rt=root;</span><br><span class="line">    <span class="keyword">while</span>(x-&gt;son[<span class="number">1</span>]!=t) &#123;</span><br><span class="line">        x=x-&gt;son[<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">splay</span>(x);</span><br><span class="line">    rt-&gt;son[<span class="number">1</span>]-&gt;fa=x,x-&gt;son[<span class="number">1</span>]=rt-&gt;son[<span class="number">1</span>];</span><br><span class="line">    <span class="built_in">clear</span>(rt);</span><br><span class="line">    <span class="built_in">maintain</span>(root);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询-val-的前驱"><a href="#查询-val-的前驱" class="headerlink" title="查询 val 的前驱"></a>查询 val 的前驱</h3><p>插入 $val$，在根的左子树中找最大的值（即一直向右子树寻找），最后删除 $val$。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2pre</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">insert</span>(val);</span><br><span class="line">    splay_tree *x=root-&gt;son[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">while</span>(x-&gt;son[<span class="number">1</span>]!=t) &#123;</span><br><span class="line">        x=x-&gt;son[<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ret=x-&gt;val;</span><br><span class="line">    <span class="built_in">del</span>(val);</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询-val-的后继"><a href="#查询-val-的后继" class="headerlink" title="查询 val 的后继"></a>查询 val 的后继</h3><p>同查询前驱类似。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2suc</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">insert</span>(val);</span><br><span class="line">    splay_tree *x=root-&gt;son[<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">while</span>(x-&gt;son[<span class="number">0</span>]!=t) &#123;</span><br><span class="line">        x=x-&gt;son[<span class="number">0</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ret=x-&gt;val;</span><br><span class="line">    <span class="built_in">del</span>(val);</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="资料"><a href="#资料" class="headerlink" title="资料"></a>资料</h2><blockquote>
+<p>本文部分参考 <a href="https://oi-wiki.org/ds/splay">Splay - OI Wiki</a>。</p>
+</blockquote>
 ]]></content>
       <categories>
-        <category>talk</category>
+        <category>study</category>
+        <category>笔记</category>
       </categories>
       <tags>
         <tag>2025</tag>
-        <tag>Note</tag>
-        <tag>观测</tag>
+        <tag>code</tag>
       </tags>
   </entry>
   <entry>
@@ -153,116 +263,6 @@
 
 <h2 id="资料"><a href="#资料" class="headerlink" title="资料"></a>资料</h2><blockquote>
 <p>本文部分参考 <a href="https://www.cnblogs.com/flashhu/p/8324551.html">LCT 总结 - Flash_Hu</a>。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>study</category>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>code</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>NEWNEW</title>
-    <url>/2025/08/06/New/</url>
-    <content><![CDATA[<h1 id="NEWNEW"><a href="#NEWNEW" class="headerlink" title="NEWNEW"></a>NEWNEW</h1><p><img src="https://static-cse.canva.cn/blob/234749/.gif" alt="NEWNEW"></p>
-]]></content>
-      <categories>
-        <category>think</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>GIF</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Splay 学习笔记</title>
-    <url>/2025/08/03/Splay-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Splay 是二叉查找树的一种，它通过访问节点时将其旋转到根节点，使查找树尽量维持平衡。</p>
-<span id="more"></span>
-
-<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>每个节点需保存它所维护的值 $val$，这个值所出现的次数 $cnt$，它的子树大小 $size$，它的父节点 $fa$ 以及它的左儿子 $son_0$ 和右儿子 $son_1$。</p>
-<blockquote>
-<p>说明：代码中 $t$ 即 $&amp;t[0]$，是定义的一个空节点，其 $val,cnt,siz$ 均为 $0$，父亲和儿子都指向自己。</p>
-</blockquote>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">splay_tree</span> &#123;</span><br><span class="line">    <span class="type">int</span> val,cnt,siz;</span><br><span class="line">    splay_tree *fa,*son[<span class="number">2</span>];</span><br><span class="line">&#125;t[N<span class="number">+1</span>],*root;</span><br></pre></td></tr></table></figure>
-
-<h3 id="更新子树大小"><a href="#更新子树大小" class="headerlink" title="更新子树大小"></a>更新子树大小</h3><p>节点改变后更新它的 $siz$。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">maintain</span><span class="params">(splay_tree *x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    x-&gt;siz=x-&gt;cnt+x-&gt;son[<span class="number">0</span>]-&gt;siz+x-&gt;son[<span class="number">1</span>]-&gt;siz;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="销毁节点"><a href="#销毁节点" class="headerlink" title="销毁节点"></a>销毁节点</h3><p>前提是已经将它移至叶子节点。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">clear</span><span class="params">(splay_tree *x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    x-&gt;val=x-&gt;cnt=x-&gt;siz=<span class="number">0</span>;</span><br><span class="line">    x-&gt;fa=x-&gt;son[<span class="number">0</span>]=x-&gt;son[<span class="number">1</span>]=t;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="上旋"><a href="#上旋" class="headerlink" title="上旋"></a>上旋</h3><p>本质上是将一个节点上移一个位置。</p>
-<p>上旋分为两种：左儿子上旋为右旋，右儿子上旋为左旋。</p>
-<p><img src="https://github.com/Early0v0/Blog/blob/master/source/_posts/Splay-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/rotate.png?raw=true" alt="右旋前 右旋后"></p>
-<p>步骤如下（以右旋为例）：</p>
-<ol>
-<li>将 $Fa$ 的左儿子指向 $Xson2$，$Xson2$ 的父亲指向 $Fa$；</li>
-<li>将 $X$ 的右儿子指向 $Fa$，$Fa$ 的父亲指向 $X$；</li>
-<li>如果 $Fa$ 有父亲（记为 $FFa$），则将 $X$ 的父亲指向 $FFa$，$FFa$ 的儿子（原来 $Fa$ 所在位置）指向 $X$；</li>
-<li>更新 $X$ 和 $Fa$ 的 $siz$ 值。</li>
-</ol>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">rotate</span><span class="params">(splay_tree *x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    splay_tree *fa=x-&gt;fa,*ffa=fa-&gt;fa;</span><br><span class="line">    <span class="type">int</span> ch=x==x-&gt;fa-&gt;son[<span class="number">0</span>]?<span class="number">0</span>:<span class="number">1</span>;</span><br><span class="line">    fa-&gt;son[ch]=x-&gt;son[ch^<span class="number">1</span>],x-&gt;son[ch^<span class="number">1</span>]-&gt;fa=fa;</span><br><span class="line">    x-&gt;son[ch^<span class="number">1</span>]=fa,fa-&gt;fa=x,x-&gt;fa=ffa;</span><br><span class="line">    <span class="keyword">if</span>(ffa!=t) &#123;</span><br><span class="line">        ffa-&gt;son[fa==ffa-&gt;son[<span class="number">0</span>]?<span class="number">0</span>:<span class="number">1</span>]=x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">maintain</span>(fa),<span class="built_in">maintain</span>(x);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Splay-操作"><a href="#Splay-操作" class="headerlink" title="Splay 操作"></a>Splay 操作</h3><p>将访问的节点旋转到根节点。</p>
-<ul>
-<li>如果 $X$ 的父亲是根节点，直接将 $X$ 上旋，结束操作；</li>
-<li>如果 $X$ 与其父亲儿子类型相同，先上旋其父亲，再上旋 $X$；</li>
-<li>否则连续上旋两次 $X$。</li>
-</ul>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">splay</span><span class="params">(splay_tree *x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(splay_tree *fa=x-&gt;fa;fa=x-&gt;fa,fa!=t;<span class="built_in">rotate</span>(x)) &#123;</span><br><span class="line">        <span class="keyword">if</span>(fa-&gt;fa!=t) &#123;</span><br><span class="line">            <span class="built_in">rotate</span>((x==fa-&gt;son[<span class="number">0</span>])==(fa==fa-&gt;fa-&gt;son[<span class="number">0</span>])?fa:x);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    root=x;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="建立-Splay"><a href="#建立-Splay" class="headerlink" title="建立 Splay"></a>建立 Splay</h3><p>先将数据升序排序（假设需要插入 $a$ 数组），然后用类似建立线段树的方法递归建立。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function">splay_tree *<span class="title">build</span><span class="params">(splay_tree *fa,<span class="type">int</span> l,<span class="type">int</span> r)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(l&gt;r) &#123;</span><br><span class="line">        <span class="keyword">return</span> t;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    splay_tree *x=&amp;(t[++tot]=splay_tree&#123;a[mid],<span class="number">1</span>,<span class="number">0</span>,fa,&#123;t,t&#125;&#125;);</span><br><span class="line">    x-&gt;son[<span class="number">0</span>]=<span class="built_in">build</span>(x,l,mid<span class="number">-1</span>),x-&gt;son[<span class="number">1</span>]=<span class="built_in">build</span>(x,mid<span class="number">+1</span>,r);</span><br><span class="line">    <span class="built_in">maintain</span>(x);</span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="插入值"><a href="#插入值" class="headerlink" title="插入值"></a>插入值</h3><ul>
-<li>如果树为空，则新建根节点并插入，结束操作；</li>
-<li>否则由根开始遍历：<ul>
-<li>如果当前节点的权值等于 $val$，则当前节点的 $cnt$ 值 +1，更新节点和父亲的 $siz$ ，并对当前节点进行 Splay 操作；</li>
-<li>如果当前节点为空，则在此新建节点即可；</li>
-<li>否则按照二叉查找树的性质向下递归。</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">insert</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(root==t) &#123;</span><br><span class="line">        t[++tot]=splay_tree&#123;val,<span class="number">1</span>,<span class="number">1</span>,t,&#123;t,t&#125;&#125;;</span><br><span class="line">        root=&amp;t[tot];</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    splay_tree *x=root,*fa=t;</span><br><span class="line">    <span class="keyword">while</span>(<span class="literal">true</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span>(x-&gt;val==val) &#123;</span><br><span class="line">            ++x-&gt;cnt;</span><br><span class="line">            <span class="built_in">maintain</span>(x),<span class="built_in">maintain</span>(fa);</span><br><span class="line">            <span class="built_in">splay</span>(x);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        fa=x,x=x-&gt;son[x-&gt;val&lt;val];</span><br><span class="line">        <span class="keyword">if</span>(x==t) &#123;</span><br><span class="line">            t[++tot]=splay_tree&#123;val,<span class="number">1</span>,<span class="number">1</span>,fa,&#123;t,t&#125;&#125;;</span><br><span class="line">            fa-&gt;son[val&gt;fa-&gt;val]=&amp;t[tot];</span><br><span class="line">            <span class="built_in">maintain</span>(&amp;t[tot]),<span class="built_in">maintain</span>(fa);</span><br><span class="line">            <span class="built_in">splay</span>(&amp;t[tot]);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="查询-val-的排名"><a href="#查询-val-的排名" class="headerlink" title="查询 val 的排名"></a>查询 val 的排名</h3><ul>
-<li>初始排名为 $1$；</li>
-<li>如果 $val$ 比当前节点的权值小，则递归左子树；</li>
-<li>如果 $val$ 比当前节点的权值大，则将答案加上左子树的 $siz$ 和当前节点的 $cnt$，递归右子树；</li>
-<li>如果 $val$ 等于当前节点的权值，返回答案；</li>
-<li>最后进行 Splay 操作。</li>
-</ul>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2rank</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> ret=<span class="number">1</span>;</span><br><span class="line">    splay_tree *x=root;</span><br><span class="line">    <span class="keyword">while</span>(x!=t) &#123;</span><br><span class="line">        <span class="keyword">if</span>(val&lt;x-&gt;val) &#123;</span><br><span class="line">            x=x-&gt;son[<span class="number">0</span>];</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            ret+=x-&gt;son[<span class="number">0</span>]-&gt;siz;</span><br><span class="line">            <span class="keyword">if</span>(val==x-&gt;val) &#123;</span><br><span class="line">                <span class="built_in">splay</span>(x);</span><br><span class="line">                <span class="keyword">return</span> ret;</span><br><span class="line">            &#125;</span><br><span class="line">            ret+=x-&gt;cnt;</span><br><span class="line">            x=x-&gt;son[<span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="查询排名为-rnk-的数"><a href="#查询排名为-rnk-的数" class="headerlink" title="查询排名为 rnk 的数"></a>查询排名为 rnk 的数</h3><ul>
-<li><p>如果 $rnk$ 小于等于当前节点左子树的 $siz$，则递归左子树；</p>
-</li>
-<li><p>否则将 $rnk$ 减去左子树的 $siz$ 和当前节点的 $cnt$，如果 $rnk\leq0$，则返回当前节点的权值，否则递归右子树。</p>
-</li>
-</ul>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">rank2val</span><span class="params">(<span class="type">int</span> rnk)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    splay_tree *x=root;</span><br><span class="line">    <span class="keyword">while</span>(<span class="literal">true</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span>((x-&gt;son[<span class="number">0</span>]!=t)&amp;&amp;(rnk&lt;=x-&gt;son[<span class="number">0</span>]-&gt;siz)) &#123;</span><br><span class="line">            x=x-&gt;son[<span class="number">0</span>];</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            rnk-=x-&gt;son[<span class="number">0</span>]-&gt;siz+x-&gt;cnt;</span><br><span class="line">            <span class="keyword">if</span>(rnk&lt;=<span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> x-&gt;val;</span><br><span class="line">            &#125;</span><br><span class="line">            x=x-&gt;son[<span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="删除值"><a href="#删除值" class="headerlink" title="删除值"></a>删除值</h3><ul>
-<li>先找到值为 $val$ 的节点，将其进行 Splay 操作（可以通过查询 $val$ 的排名实现）；</li>
-<li>如果它的 $cnt$ 值大于 $1$，则令 $cnt\gets cnt-1$ 即可；</li>
-<li>如果它是唯一的节点，则直接删除节点；</li>
-<li>如果它只有一个儿子，则令它的儿子作根，然后删除节点；</li>
-<li>否则找到值小于 $val$ 的最大节点进行 Splay 操作，令根的右子树为值为 $val$ 的节点的右子树，更新根的 $siz$，最后删除节点。</li>
-</ul>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">del</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">val2rank</span>(val);</span><br><span class="line">    <span class="keyword">if</span>(root-&gt;cnt&gt;<span class="number">1</span>) &#123;</span><br><span class="line">        --root-&gt;cnt,--root-&gt;siz;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>((root-&gt;son[<span class="number">0</span>]==t)&amp;&amp;(root-&gt;son[<span class="number">1</span>]==t)) &#123;</span><br><span class="line">        <span class="built_in">clear</span>(root);</span><br><span class="line">        root=t;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">2</span>;++i) &#123;</span><br><span class="line">        <span class="keyword">if</span>(root-&gt;son[i]!=t) &#123;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        splay_tree *x=root;</span><br><span class="line">        root=root-&gt;son[i^<span class="number">1</span>];</span><br><span class="line">        root-&gt;fa=t;</span><br><span class="line">        <span class="built_in">clear</span>(x);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    splay_tree *x=root-&gt;son[<span class="number">0</span>],*rt=root;</span><br><span class="line">    <span class="keyword">while</span>(x-&gt;son[<span class="number">1</span>]!=t) &#123;</span><br><span class="line">        x=x-&gt;son[<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">splay</span>(x);</span><br><span class="line">    rt-&gt;son[<span class="number">1</span>]-&gt;fa=x,x-&gt;son[<span class="number">1</span>]=rt-&gt;son[<span class="number">1</span>];</span><br><span class="line">    <span class="built_in">clear</span>(rt);</span><br><span class="line">    <span class="built_in">maintain</span>(root);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="查询-val-的前驱"><a href="#查询-val-的前驱" class="headerlink" title="查询 val 的前驱"></a>查询 val 的前驱</h3><p>插入 $val$，在根的左子树中找最大的值（即一直向右子树寻找），最后删除 $val$。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2pre</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">insert</span>(val);</span><br><span class="line">    splay_tree *x=root-&gt;son[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">while</span>(x-&gt;son[<span class="number">1</span>]!=t) &#123;</span><br><span class="line">        x=x-&gt;son[<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ret=x-&gt;val;</span><br><span class="line">    <span class="built_in">del</span>(val);</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="查询-val-的后继"><a href="#查询-val-的后继" class="headerlink" title="查询 val 的后继"></a>查询 val 的后继</h3><p>同查询前驱类似。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2suc</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">insert</span>(val);</span><br><span class="line">    splay_tree *x=root-&gt;son[<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">while</span>(x-&gt;son[<span class="number">0</span>]!=t) &#123;</span><br><span class="line">        x=x-&gt;son[<span class="number">0</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ret=x-&gt;val;</span><br><span class="line">    <span class="built_in">del</span>(val);</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="资料"><a href="#资料" class="headerlink" title="资料"></a>资料</h2><blockquote>
-<p>本文部分参考 <a href="https://oi-wiki.org/ds/splay">Splay - OI Wiki</a>。</p>
 </blockquote>
 ]]></content>
       <categories>
@@ -385,6 +385,19 @@
       <tags>
         <tag>2025</tag>
         <tag>code</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>劇終-2</title>
+    <url>/2025/08/08/%E5%8A%87%E7%B5%822/</url>
+    <content><![CDATA[<p><img src="http://mms2.baidu.com/it/u=3117035648,2825770514&fm=253&app=138&f=JPEG?w=652&h=500" alt="剧终"></p>
+]]></content>
+      <categories>
+        <category>talk，追剧</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>Note</tag>
       </tags>
   </entry>
   <entry>
@@ -539,19 +552,6 @@
       <tags>
         <tag>2025</tag>
         <tag>建设</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>劇終-2</title>
-    <url>/2025/08/08/%E5%8A%87%E7%B5%822/</url>
-    <content><![CDATA[<p><img src="http://mms2.baidu.com/it/u=3117035648,2825770514&fm=253&app=138&f=JPEG?w=652&h=500" alt="剧终"></p>
-]]></content>
-      <categories>
-        <category>talk，追剧</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>Note</tag>
       </tags>
   </entry>
 </search>
