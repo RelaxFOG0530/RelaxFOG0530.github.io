@@ -211,6 +211,19 @@
       </tags>
   </entry>
   <entry>
+    <title>NEWNEW</title>
+    <url>/2025/08/06/New/</url>
+    <content><![CDATA[<h1 id="NEWNEW"><a href="#NEWNEW" class="headerlink" title="NEWNEW"></a>NEWNEW</h1><p><img src="https://static-cse.canva.cn/blob/234749/.gif" alt="NEWNEW"></p>
+]]></content>
+      <categories>
+        <category>think</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>GIF</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Splay 学习笔记</title>
     <url>/2025/08/03/Splay-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Splay 是二叉查找树的一种，它通过访问节点时将其旋转到根节点，使查找树尽量维持平衡。</p>
@@ -308,36 +321,6 @@
       </tags>
   </entry>
   <entry>
-    <title>NEWNEW</title>
-    <url>/2025/08/06/New/</url>
-    <content><![CDATA[<h1 id="NEWNEW"><a href="#NEWNEW" class="headerlink" title="NEWNEW"></a>NEWNEW</h1><p><img src="https://static-cse.canva.cn/blob/234749/.gif" alt="NEWNEW"></p>
-]]></content>
-      <categories>
-        <category>think</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>GIF</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>今日暴走</title>
-    <url>/2025/08/03/%E4%BB%8A%E6%97%A5%E6%9A%B4%E8%B5%B0/</url>
-    <content><![CDATA[<p>今天优化网页的过程，简直是把自己扔进了代码的泥沼里挣扎。<br><img src="https://s1.aigei.com/src/img/gif/02/021da8d3e9e24928b36cd0e6a5ddb567.gif?imageMogr2/auto-orient/thumbnail/!282x226r/gravity/Center/crop/282x226/quality/85/%7CimageView2/2/w/282&e=2051020800&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:t6dvivz7_aMOjctuQUsuUfUxZEw=" alt="红温"></p>
-<span id="more"></span>
-
-<p>下午打开项目时还信心满满，想着把加载速度提一提就行，结果点开控制台的瞬间就傻了 —— 红得刺眼的报错信息滚了三屏，像是在嘲笑我昨晚的天真。原以为只是压缩几个图片的事，没想到牵出了一串连锁反应：压缩完的图片在 IE 上全成了裂图，回滚版本时又误删了上周写的适配逻辑，等找回备份时，两个小时已经耗在原地。<br>最崩溃的是改评论区那块。明明跟着教程一步不差地配置，可 Giscus 要么加载不出来，要么一刷新就跳 404。对着文档翻到第 17 页，手指在键盘上敲到发麻，连 API 地址都快背下来了，屏幕上的 “分类不存在” 提示却像块胶布似的撕不掉。中间有三次想把鼠标摔了，盯着屏幕里那个顽固的空白区域，突然觉得眼睛发酸 —— 明明上周还好好的，怎么今天连一行代码都跟我作对？<br>傍晚时总算把加载速度压到了 1 秒内，可移动端的导航栏又开始抽风：在安卓上好好的，到了 iOS 就缩成一团；调成横屏模式，整个菜单直接钻进了页脚。对着开发者工具里密密麻麻的样式继承链，突然没力气骂娘了，就坐在那儿盯着光标闪，连外卖凉了都没察觉。<br>现在页面总算能看了，可盯着那个勉强能跑的版本，一点成就感都没有。后背僵得像块木板，手腕贴的膏药硌得慌，再看代码时眼睛里全是重影。原来优化网页哪是什么升级打怪，根本就是拿着镊子在乱麻里找线头，找着找着，连自己都快成了那团乱麻里的一根。</p>
-]]></content>
-      <categories>
-        <category>talk</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>Note</tag>
-        <tag>观测</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2025/08/02/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -366,6 +349,36 @@
       <tags>
         <tag>2025</tag>
         <tag>Note</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>劇終-2</title>
+    <url>/2025/08/08/%E5%8A%87%E7%B5%822/</url>
+    <content><![CDATA[<p><img src="http://mms2.baidu.com/it/u=3117035648,2825770514&fm=253&app=138&f=JPEG?w=652&h=500" alt="剧终"></p>
+]]></content>
+      <categories>
+        <category>talk，追剧</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>Note</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>今日暴走</title>
+    <url>/2025/08/03/%E4%BB%8A%E6%97%A5%E6%9A%B4%E8%B5%B0/</url>
+    <content><![CDATA[<p>今天优化网页的过程，简直是把自己扔进了代码的泥沼里挣扎。<br><img src="https://s1.aigei.com/src/img/gif/02/021da8d3e9e24928b36cd0e6a5ddb567.gif?imageMogr2/auto-orient/thumbnail/!282x226r/gravity/Center/crop/282x226/quality/85/%7CimageView2/2/w/282&e=2051020800&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:t6dvivz7_aMOjctuQUsuUfUxZEw=" alt="红温"></p>
+<span id="more"></span>
+
+<p>下午打开项目时还信心满满，想着把加载速度提一提就行，结果点开控制台的瞬间就傻了 —— 红得刺眼的报错信息滚了三屏，像是在嘲笑我昨晚的天真。原以为只是压缩几个图片的事，没想到牵出了一串连锁反应：压缩完的图片在 IE 上全成了裂图，回滚版本时又误删了上周写的适配逻辑，等找回备份时，两个小时已经耗在原地。<br>最崩溃的是改评论区那块。明明跟着教程一步不差地配置，可 Giscus 要么加载不出来，要么一刷新就跳 404。对着文档翻到第 17 页，手指在键盘上敲到发麻，连 API 地址都快背下来了，屏幕上的 “分类不存在” 提示却像块胶布似的撕不掉。中间有三次想把鼠标摔了，盯着屏幕里那个顽固的空白区域，突然觉得眼睛发酸 —— 明明上周还好好的，怎么今天连一行代码都跟我作对？<br>傍晚时总算把加载速度压到了 1 秒内，可移动端的导航栏又开始抽风：在安卓上好好的，到了 iOS 就缩成一团；调成横屏模式，整个菜单直接钻进了页脚。对着开发者工具里密密麻麻的样式继承链，突然没力气骂娘了，就坐在那儿盯着光标闪，连外卖凉了都没察觉。<br>现在页面总算能看了，可盯着那个勉强能跑的版本，一点成就感都没有。后背僵得像块木板，手腕贴的膏药硌得慌，再看代码时眼睛里全是重影。原来优化网页哪是什么升级打怪，根本就是拿着镊子在乱麻里找线头，找着找着，连自己都快成了那团乱麻里的一根。</p>
+]]></content>
+      <categories>
+        <category>talk</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>Note</tag>
+        <tag>观测</tag>
       </tags>
   </entry>
   <entry>
@@ -431,19 +444,6 @@
       <tags>
         <tag>2025</tag>
         <tag>code</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>劇終-2</title>
-    <url>/2025/08/08/%E5%8A%87%E7%B5%822/</url>
-    <content><![CDATA[<p><img src="http://mms2.baidu.com/it/u=3117035648,2825770514&fm=253&app=138&f=JPEG?w=652&h=500" alt="剧终"></p>
-]]></content>
-      <categories>
-        <category>talk，追剧</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>Note</tag>
       </tags>
   </entry>
   <entry>
@@ -516,6 +516,31 @@
       </tags>
   </entry>
   <entry>
+    <title>线性求逆元</title>
+    <url>/2025/08/03/%E7%BA%BF%E6%80%A7%E6%B1%82%E9%80%86%E5%85%83/</url>
+    <content><![CDATA[<p>当要求 $1-n$ 中所有数的逆元时，$O(n\log p)$ 的方法就有点悬了。</p>
+<p>下面介绍一种 $O(n)$ 求逆元的好方法。</p>
+<span id="more"></span>
+
+<h2 id="推导"><a href="#推导" class="headerlink" title="推导"></a>推导</h2><p>首先，$1^{-1}\equiv1\pmod p$。</p>
+<p>设 $k&#x3D;\lfloor\frac pi\rfloor$，则 $p&#x3D;k\cdot i+r$，其中 $r&#x3D;p\bmod i,1&lt;i&lt;p$。</p>
+<p>易得 $k\cdot i+r\equiv0\pmod p$。</p>
+<p>两边同乘 $i^{-1}\cdot r^{-1}$ 得：</p>
+<p>$$<br>\begin{aligned}<br>k\cdot r^{-1}+i^{-1}&amp;\equiv0&amp;\pmod p\<br>i^{-1}&amp;\equiv-k\cdot r^{-1}&amp;\pmod p\<br>i^{-1}&amp;\equiv-\lfloor\frac pi\rfloor\cdot(p\bmod i)^{-1}&amp;\pmod p<br>\end{aligned}<br>$$</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;++i) &#123;</span><br><span class="line">    inv[i]=-(mod/i)*inv[mod%i]%mod;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>为使 $inv_i$ 非负，代码也可写成：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;++i) &#123;</span><br><span class="line">    inv[i]=(mod-mod/i)*inv[mod%i]%mod;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>study</category>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>code</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>线性尺寸莫比乌斯函数</title>
     <url>/2025/08/03/%E7%BA%BF%E6%80%A7%E5%B0%BA%E5%AF%B8%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<p>模拟赛中的一道题，让我发现自己莫比乌斯函数的基础十分薄弱。:cry:</p>
@@ -538,31 +563,6 @@
 <p>本文部分参考<a href="https://oi.men.ci/euler-sieve/">线性筛法筛素数、莫比乌斯函数、欧拉函数 | Menci’s Blog</a>。</p>
 </blockquote>
 ]]></content>
-      <categories>
-        <category>study</category>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>code</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>线性求逆元</title>
-    <url>/2025/08/03/%E7%BA%BF%E6%80%A7%E6%B1%82%E9%80%86%E5%85%83/</url>
-    <content><![CDATA[<p>当要求 $1-n$ 中所有数的逆元时，$O(n\log p)$ 的方法就有点悬了。</p>
-<p>下面介绍一种 $O(n)$ 求逆元的好方法。</p>
-<span id="more"></span>
-
-<h2 id="推导"><a href="#推导" class="headerlink" title="推导"></a>推导</h2><p>首先，$1^{-1}\equiv1\pmod p$。</p>
-<p>设 $k&#x3D;\lfloor\frac pi\rfloor$，则 $p&#x3D;k\cdot i+r$，其中 $r&#x3D;p\bmod i,1&lt;i&lt;p$。</p>
-<p>易得 $k\cdot i+r\equiv0\pmod p$。</p>
-<p>两边同乘 $i^{-1}\cdot r^{-1}$ 得：</p>
-<p>$$<br>\begin{aligned}<br>k\cdot r^{-1}+i^{-1}&amp;\equiv0&amp;\pmod p\<br>i^{-1}&amp;\equiv-k\cdot r^{-1}&amp;\pmod p\<br>i^{-1}&amp;\equiv-\lfloor\frac pi\rfloor\cdot(p\bmod i)^{-1}&amp;\pmod p<br>\end{aligned}<br>$$</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;++i) &#123;</span><br><span class="line">    inv[i]=-(mod/i)*inv[mod%i]%mod;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>为使 $inv_i$ 非负，代码也可写成：</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;++i) &#123;</span><br><span class="line">    inv[i]=(mod-mod/i)*inv[mod%i]%mod;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>study</category>
         <category>笔记</category>
