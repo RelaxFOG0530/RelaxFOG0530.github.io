@@ -16,6 +16,52 @@
       </tags>
   </entry>
   <entry>
+    <title>对我和你或许有帮助的一次讲解（Day 1）</title>
+    <url>/2025/08/28/Day%201/</url>
+    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>我这里的时间已经是深更半夜了，听着戳的-My My My！-身为一位合格的需动机主义者，突觉这几天没有学习C++，再看看20几天后又要比赛了….我</p>
+<p>认为我需要做出一点的Action，于是我打算以自我讲解的方式，梳理一下我最近学习的C++知识。</p>
+<p>当然我会从基础开始，逐步讲解，希望能让大家都能理解。……^-^</p>
+<span id="more"></span>
+
+<p>好的，我们开始！我会用最简单直接的方式，让你在30分钟内掌握这些C++基础。</p>
+<h3 id="1-输入-cin-和输出-cout"><a href="#1-输入-cin-和输出-cout" class="headerlink" title="1. 输入(cin)和输出(cout)"></a>1. 输入(cin)和输出(cout)</h3><p>首先，你需要包含头文件 <iostream> 并使用 std 命名空间。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// cout 用于输出 (console out)</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Hello, World!&quot;</span> &lt;&lt; endl; <span class="comment">// endl 表示换行</span></span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> age = <span class="number">18</span>;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;I am &quot;</span> &lt;&lt; age &lt;&lt; <span class="string">&quot; years old.&quot;</span> &lt;&lt; endl; <span class="comment">// 可以混合输出文本和变量</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// cin 用于输入 (console in)</span></span><br><span class="line">    <span class="type">int</span> inputNumber;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Please enter a number: &quot;</span>;</span><br><span class="line">    cin &gt;&gt; inputNumber; <span class="comment">// 程序会暂停，等待你输入一个数字</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;You entered: &quot;</span> &lt;&lt; inputNumber &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="要点："><a href="#要点：" class="headerlink" title="要点："></a>要点：</h4><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;&lt; 是输出操作符，可以链式使用 (cout &lt;&lt; a &lt;&lt; b &lt;&lt; c;)</span><br><span class="line"></span><br><span class="line">&gt;&gt; 是输入操作符，可以链式使用 (cin &gt;&gt; a &gt;&gt; b &gt;&gt; c;)</span><br><span class="line"></span><br><span class="line">endl 用来换行，也可以用 <span class="string">&quot;\n&quot;</span> 代替，如 cout &lt;&lt; <span class="string">&quot;Hello\n&quot;</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-基本数据类型"><a href="#2-基本数据类型" class="headerlink" title="2. 基本数据类型"></a>2. 基本数据类型</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">类型	描述	示例	大致范围</span><br><span class="line"><span class="type">int</span>	整数	<span class="type">int</span> count = <span class="number">10</span>;	<span class="number">-2</span>×<span class="number">10</span>⁹ 到 <span class="number">2</span>×<span class="number">10</span>⁹</span><br><span class="line"><span class="type">long</span> <span class="type">long</span>	超大的整数	<span class="type">long</span> <span class="type">long</span> bigNum = <span class="number">123456789012345LL</span>;	<span class="number">-9</span>×<span class="number">10</span>¹⁸ 到 <span class="number">9</span>×<span class="number">10</span>¹⁸</span><br><span class="line"><span class="type">double</span>	双精度浮点数（小数）	<span class="type">double</span> price = <span class="number">9.99</span>;	精度约<span class="number">15</span>位小数</span><br><span class="line"><span class="type">char</span>	单个字符	<span class="type">char</span> grade = <span class="string">&#x27;A&#x27;</span>;	单个字母/符号</span><br><span class="line">string	字符串（需<span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span>）	string name = <span class="string">&quot;Alice&quot;</span>;	一串文本</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="示例："><a href="#示例：" class="headerlink" title="示例："></a>示例：</h4><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span> <span class="comment">// 使用string类型需要包含这个头文件</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> apples = <span class="number">5</span>;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> starsInGalaxy = <span class="number">1000000000000LL</span>;</span><br><span class="line">    <span class="type">double</span> pi = <span class="number">3.14159</span>;</span><br><span class="line">    <span class="type">char</span> firstLetter = <span class="string">&#x27;C&#x27;</span>;</span><br><span class="line">    string language = <span class="string">&quot;C++&quot;</span>;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Apples: &quot;</span> &lt;&lt; apples &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Stars: &quot;</span> &lt;&lt; starsInGalaxy &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Pi: &quot;</span> &lt;&lt; pi &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;First Letter: &quot;</span> &lt;&lt; firstLetter &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Language: &quot;</span> &lt;&lt; language &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="要点：-1"><a href="#要点：-1" class="headerlink" title="要点："></a>要点：</h4><p>给 long long 变量赋值时，数字后面加 LL 是个好习惯。</p>
+<p>char 用单引号 ‘’，string 用双引号 “”。</p>
+<h3 id="3-循环-for-while-和判断-if-else"><a href="#3-循环-for-while-和判断-if-else" class="headerlink" title="3. 循环 (for&#x2F;while) 和判断 (if&#x2F;else)"></a>3. 循环 (for&#x2F;while) 和判断 (if&#x2F;else)</h3><h4 id="if-else-判断"><a href="#if-else-判断" class="headerlink" title="if&#x2F;else 判断"></a>if&#x2F;else 判断</h4><p>根据条件执行不同的代码。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> score;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Enter your score: &quot;</span>;</span><br><span class="line">    cin &gt;&gt; score;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (score &gt;= <span class="number">90</span>) &#123; <span class="comment">// 如果条件成立</span></span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;Grade: A&quot;</span> &lt;&lt; endl;</span><br><span class="line">    &#125; </span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (score &gt;= <span class="number">60</span>) &#123; <span class="comment">// 如果上一个条件不成立，检查这个</span></span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;Grade: Pass&quot;</span> &lt;&lt; endl;</span><br><span class="line">    &#125; </span><br><span class="line">    <span class="keyword">else</span> &#123; <span class="comment">// 如果所有条件都不成立</span></span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;Grade: Fail&quot;</span> &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="for-循环"><a href="#for-循环" class="headerlink" title="for 循环"></a>for 循环</h4><p>当你明确知道要循环多少次时使用。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 循环10次，i从0到9</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;i is: &quot;</span> &lt;&lt; i &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 计算1到100的和</span></span><br><span class="line">    <span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> num = <span class="number">1</span>; num &lt;= <span class="number">100</span>; num++) &#123;</span><br><span class="line">        sum += num; <span class="comment">// 等价于 sum = sum + num;</span></span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Sum from 1 to 100 is: &quot;</span> &lt;&lt; sum &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="for循环结构：-for-初始化-循环条件-更新-循环体"><a href="#for循环结构：-for-初始化-循环条件-更新-循环体" class="headerlink" title="for循环结构： for (初始化; 循环条件; 更新) { 循环体 }"></a>for循环结构： for (初始化; 循环条件; 更新) { 循环体 }</h4><h4 id="while-循环"><a href="#while-循环" class="headerlink" title="while 循环"></a>while 循环</h4><p>当你不确定要循环多少次，但知道循环条件时使用。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> number = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// while循环：当条件满足时，一直循环</span></span><br><span class="line">    <span class="keyword">while</span> (number &lt; <span class="number">100</span>) &#123;</span><br><span class="line">        cout &lt;&lt; number &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">        number *= <span class="number">2</span>; <span class="comment">// number = number * 2;</span></span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// do-while循环：先执行一次，再判断条件</span></span><br><span class="line">    <span class="type">int</span> x;</span><br><span class="line">    <span class="keyword">do</span> &#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;Enter a positive number: &quot;</span>;</span><br><span class="line">        cin &gt;&gt; x;</span><br><span class="line">    &#125; <span class="keyword">while</span> (x &lt;= <span class="number">0</span>); <span class="comment">// 如果输入的数字不大于0，就继续循环要求输入</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;You entered: &quot;</span> &lt;&lt; x &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="while循环结构：-while-循环条件-循环体"><a href="#while循环结构：-while-循环条件-循环体" class="headerlink" title="while循环结构： while (循环条件) { 循环体 }"></a>while循环结构： while (循环条件) { 循环体 }</h4><p>综合练习<br>我们来写一个程序，综合运用以上所有知识：判断一个数是否为素数。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Enter a positive integer: &quot;</span>;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 先处理一些简单情况</span></span><br><span class="line">    <span class="keyword">if</span> (n &lt;= <span class="number">1</span>) &#123;</span><br><span class="line">        cout &lt;&lt; n &lt;&lt; <span class="string">&quot; is not a prime number.&quot;</span> &lt;&lt; endl;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>; <span class="comment">// 程序结束</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 假设它是素数</span></span><br><span class="line">    <span class="type">bool</span> isPrime = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 检查从2到n-1，是否有能整除n的数</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">2</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (n % i == <span class="number">0</span>) &#123; <span class="comment">// 如果n能被i整除</span></span><br><span class="line">            isPrime = <span class="literal">false</span>;</span><br><span class="line">            <span class="keyword">break</span>; <span class="comment">// 发现一个因子就不是素数，立即跳出循环</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (isPrime) &#123;</span><br><span class="line">        cout &lt;&lt; n &lt;&lt; <span class="string">&quot; is a prime number.&quot;</span> &lt;&lt; endl;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        cout &lt;&lt; n &lt;&lt; <span class="string">&quot; is not a prime number.&quot;</span> &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="核心要点总结"><a href="#核心要点总结" class="headerlink" title="核心要点总结"></a>核心要点总结</h4><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">cin/cout: cin &gt;&gt; variable; cout &lt;&lt; <span class="string">&quot;Text&quot;</span> &lt;&lt; variable &lt;&lt; endl;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型:"></a>数据类型:</h4><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">整数用 <span class="type">int</span>，很大用 <span class="type">long</span> <span class="type">long</span></span><br><span class="line"></span><br><span class="line">小数用 <span class="type">double</span></span><br><span class="line"></span><br><span class="line">单个字符用 <span class="type">char</span>，字符串用 <span class="built_in">string</span> (要 <span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span>)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>/<span class="keyword">else</span>: 根据条件选择执行路径。</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>循环: <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>; i&lt;N; i++)，用于已知次数的循环。</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span>循环: <span class="keyword">while</span> (condition)，用于满足条件时的循环。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="最后建议：-打开你的代码编辑器，把上面的例子都亲手敲一遍并运行。这是最快最有效的学习方式！30分钟到了，但你还需要多练习来巩固。加油！"><a href="#最后建议：-打开你的代码编辑器，把上面的例子都亲手敲一遍并运行。这是最快最有效的学习方式！30分钟到了，但你还需要多练习来巩固。加油！" class="headerlink" title="最后建议： 打开你的代码编辑器，把上面的例子都亲手敲一遍并运行。这是最快最有效的学习方式！30分钟到了，但你还需要多练习来巩固。加油！"></a>最后建议： 打开你的代码编辑器，把上面的例子都亲手敲一遍并运行。这是最快最有效的学习方式！30分钟到了，但你还需要多练习来巩固。加油！</h4>]]></content>
+      <categories>
+        <category>study</category>
+        <category>氢氧根</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>code</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Espresso</title>
     <url>/2025/08/04/Espresso/</url>
     <content><![CDATA[<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1954627753&bvid=BV1ay411Y7WS&cid=1549402671&p=1" 
@@ -27,19 +73,6 @@
       <tags>
         <tag>2025</tag>
         <tag>video</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>NEWNEW</title>
-    <url>/2025/08/06/New/</url>
-    <content><![CDATA[<h1 id="NEWNEW"><a href="#NEWNEW" class="headerlink" title="NEWNEW"></a>NEWNEW</h1><p><img src="https://static-cse.canva.cn/blob/234749/.gif" alt="NEWNEW"></p>
-]]></content>
-      <categories>
-        <category>think</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>GIF</tag>
       </tags>
   </entry>
   <entry>
@@ -73,103 +106,6 @@
       <categories>
         <category>study</category>
         <category>题解</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>code</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Splay 学习笔记</title>
-    <url>/2025/08/03/Splay-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Splay 是二叉查找树的一种，它通过访问节点时将其旋转到根节点，使查找树尽量维持平衡。</p>
-<span id="more"></span>
-
-<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>每个节点需保存它所维护的值 $val$，这个值所出现的次数 $cnt$，它的子树大小 $size$，它的父节点 $fa$ 以及它的左儿子 $son_0$ 和右儿子 $son_1$。</p>
-<blockquote>
-<p>说明：代码中 $t$ 即 $&amp;t[0]$，是定义的一个空节点，其 $val,cnt,siz$ 均为 $0$，父亲和儿子都指向自己。</p>
-</blockquote>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">splay_tree</span> &#123;</span><br><span class="line">    <span class="type">int</span> val,cnt,siz;</span><br><span class="line">    splay_tree *fa,*son[<span class="number">2</span>];</span><br><span class="line">&#125;t[N<span class="number">+1</span>],*root;</span><br></pre></td></tr></table></figure>
-
-<h3 id="更新子树大小"><a href="#更新子树大小" class="headerlink" title="更新子树大小"></a>更新子树大小</h3><p>节点改变后更新它的 $siz$。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">maintain</span><span class="params">(splay_tree *x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    x-&gt;siz=x-&gt;cnt+x-&gt;son[<span class="number">0</span>]-&gt;siz+x-&gt;son[<span class="number">1</span>]-&gt;siz;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="销毁节点"><a href="#销毁节点" class="headerlink" title="销毁节点"></a>销毁节点</h3><p>前提是已经将它移至叶子节点。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">clear</span><span class="params">(splay_tree *x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    x-&gt;val=x-&gt;cnt=x-&gt;siz=<span class="number">0</span>;</span><br><span class="line">    x-&gt;fa=x-&gt;son[<span class="number">0</span>]=x-&gt;son[<span class="number">1</span>]=t;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="上旋"><a href="#上旋" class="headerlink" title="上旋"></a>上旋</h3><p>本质上是将一个节点上移一个位置。</p>
-<p>上旋分为两种：左儿子上旋为右旋，右儿子上旋为左旋。</p>
-<p><img src="https://github.com/Early0v0/Blog/blob/master/source/_posts/Splay-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/rotate.png?raw=true" alt="右旋前 右旋后"></p>
-<p>步骤如下（以右旋为例）：</p>
-<ol>
-<li>将 $Fa$ 的左儿子指向 $Xson2$，$Xson2$ 的父亲指向 $Fa$；</li>
-<li>将 $X$ 的右儿子指向 $Fa$，$Fa$ 的父亲指向 $X$；</li>
-<li>如果 $Fa$ 有父亲（记为 $FFa$），则将 $X$ 的父亲指向 $FFa$，$FFa$ 的儿子（原来 $Fa$ 所在位置）指向 $X$；</li>
-<li>更新 $X$ 和 $Fa$ 的 $siz$ 值。</li>
-</ol>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">rotate</span><span class="params">(splay_tree *x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    splay_tree *fa=x-&gt;fa,*ffa=fa-&gt;fa;</span><br><span class="line">    <span class="type">int</span> ch=x==x-&gt;fa-&gt;son[<span class="number">0</span>]?<span class="number">0</span>:<span class="number">1</span>;</span><br><span class="line">    fa-&gt;son[ch]=x-&gt;son[ch^<span class="number">1</span>],x-&gt;son[ch^<span class="number">1</span>]-&gt;fa=fa;</span><br><span class="line">    x-&gt;son[ch^<span class="number">1</span>]=fa,fa-&gt;fa=x,x-&gt;fa=ffa;</span><br><span class="line">    <span class="keyword">if</span>(ffa!=t) &#123;</span><br><span class="line">        ffa-&gt;son[fa==ffa-&gt;son[<span class="number">0</span>]?<span class="number">0</span>:<span class="number">1</span>]=x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">maintain</span>(fa),<span class="built_in">maintain</span>(x);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Splay-操作"><a href="#Splay-操作" class="headerlink" title="Splay 操作"></a>Splay 操作</h3><p>将访问的节点旋转到根节点。</p>
-<ul>
-<li>如果 $X$ 的父亲是根节点，直接将 $X$ 上旋，结束操作；</li>
-<li>如果 $X$ 与其父亲儿子类型相同，先上旋其父亲，再上旋 $X$；</li>
-<li>否则连续上旋两次 $X$。</li>
-</ul>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">splay</span><span class="params">(splay_tree *x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(splay_tree *fa=x-&gt;fa;fa=x-&gt;fa,fa!=t;<span class="built_in">rotate</span>(x)) &#123;</span><br><span class="line">        <span class="keyword">if</span>(fa-&gt;fa!=t) &#123;</span><br><span class="line">            <span class="built_in">rotate</span>((x==fa-&gt;son[<span class="number">0</span>])==(fa==fa-&gt;fa-&gt;son[<span class="number">0</span>])?fa:x);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    root=x;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="建立-Splay"><a href="#建立-Splay" class="headerlink" title="建立 Splay"></a>建立 Splay</h3><p>先将数据升序排序（假设需要插入 $a$ 数组），然后用类似建立线段树的方法递归建立。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function">splay_tree *<span class="title">build</span><span class="params">(splay_tree *fa,<span class="type">int</span> l,<span class="type">int</span> r)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(l&gt;r) &#123;</span><br><span class="line">        <span class="keyword">return</span> t;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    splay_tree *x=&amp;(t[++tot]=splay_tree&#123;a[mid],<span class="number">1</span>,<span class="number">0</span>,fa,&#123;t,t&#125;&#125;);</span><br><span class="line">    x-&gt;son[<span class="number">0</span>]=<span class="built_in">build</span>(x,l,mid<span class="number">-1</span>),x-&gt;son[<span class="number">1</span>]=<span class="built_in">build</span>(x,mid<span class="number">+1</span>,r);</span><br><span class="line">    <span class="built_in">maintain</span>(x);</span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="插入值"><a href="#插入值" class="headerlink" title="插入值"></a>插入值</h3><ul>
-<li>如果树为空，则新建根节点并插入，结束操作；</li>
-<li>否则由根开始遍历：<ul>
-<li>如果当前节点的权值等于 $val$，则当前节点的 $cnt$ 值 +1，更新节点和父亲的 $siz$ ，并对当前节点进行 Splay 操作；</li>
-<li>如果当前节点为空，则在此新建节点即可；</li>
-<li>否则按照二叉查找树的性质向下递归。</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">insert</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(root==t) &#123;</span><br><span class="line">        t[++tot]=splay_tree&#123;val,<span class="number">1</span>,<span class="number">1</span>,t,&#123;t,t&#125;&#125;;</span><br><span class="line">        root=&amp;t[tot];</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    splay_tree *x=root,*fa=t;</span><br><span class="line">    <span class="keyword">while</span>(<span class="literal">true</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span>(x-&gt;val==val) &#123;</span><br><span class="line">            ++x-&gt;cnt;</span><br><span class="line">            <span class="built_in">maintain</span>(x),<span class="built_in">maintain</span>(fa);</span><br><span class="line">            <span class="built_in">splay</span>(x);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        fa=x,x=x-&gt;son[x-&gt;val&lt;val];</span><br><span class="line">        <span class="keyword">if</span>(x==t) &#123;</span><br><span class="line">            t[++tot]=splay_tree&#123;val,<span class="number">1</span>,<span class="number">1</span>,fa,&#123;t,t&#125;&#125;;</span><br><span class="line">            fa-&gt;son[val&gt;fa-&gt;val]=&amp;t[tot];</span><br><span class="line">            <span class="built_in">maintain</span>(&amp;t[tot]),<span class="built_in">maintain</span>(fa);</span><br><span class="line">            <span class="built_in">splay</span>(&amp;t[tot]);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="查询-val-的排名"><a href="#查询-val-的排名" class="headerlink" title="查询 val 的排名"></a>查询 val 的排名</h3><ul>
-<li>初始排名为 $1$；</li>
-<li>如果 $val$ 比当前节点的权值小，则递归左子树；</li>
-<li>如果 $val$ 比当前节点的权值大，则将答案加上左子树的 $siz$ 和当前节点的 $cnt$，递归右子树；</li>
-<li>如果 $val$ 等于当前节点的权值，返回答案；</li>
-<li>最后进行 Splay 操作。</li>
-</ul>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2rank</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> ret=<span class="number">1</span>;</span><br><span class="line">    splay_tree *x=root;</span><br><span class="line">    <span class="keyword">while</span>(x!=t) &#123;</span><br><span class="line">        <span class="keyword">if</span>(val&lt;x-&gt;val) &#123;</span><br><span class="line">            x=x-&gt;son[<span class="number">0</span>];</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            ret+=x-&gt;son[<span class="number">0</span>]-&gt;siz;</span><br><span class="line">            <span class="keyword">if</span>(val==x-&gt;val) &#123;</span><br><span class="line">                <span class="built_in">splay</span>(x);</span><br><span class="line">                <span class="keyword">return</span> ret;</span><br><span class="line">            &#125;</span><br><span class="line">            ret+=x-&gt;cnt;</span><br><span class="line">            x=x-&gt;son[<span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="查询排名为-rnk-的数"><a href="#查询排名为-rnk-的数" class="headerlink" title="查询排名为 rnk 的数"></a>查询排名为 rnk 的数</h3><ul>
-<li><p>如果 $rnk$ 小于等于当前节点左子树的 $siz$，则递归左子树；</p>
-</li>
-<li><p>否则将 $rnk$ 减去左子树的 $siz$ 和当前节点的 $cnt$，如果 $rnk\leq0$，则返回当前节点的权值，否则递归右子树。</p>
-</li>
-</ul>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">rank2val</span><span class="params">(<span class="type">int</span> rnk)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    splay_tree *x=root;</span><br><span class="line">    <span class="keyword">while</span>(<span class="literal">true</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span>((x-&gt;son[<span class="number">0</span>]!=t)&amp;&amp;(rnk&lt;=x-&gt;son[<span class="number">0</span>]-&gt;siz)) &#123;</span><br><span class="line">            x=x-&gt;son[<span class="number">0</span>];</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            rnk-=x-&gt;son[<span class="number">0</span>]-&gt;siz+x-&gt;cnt;</span><br><span class="line">            <span class="keyword">if</span>(rnk&lt;=<span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> x-&gt;val;</span><br><span class="line">            &#125;</span><br><span class="line">            x=x-&gt;son[<span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="删除值"><a href="#删除值" class="headerlink" title="删除值"></a>删除值</h3><ul>
-<li>先找到值为 $val$ 的节点，将其进行 Splay 操作（可以通过查询 $val$ 的排名实现）；</li>
-<li>如果它的 $cnt$ 值大于 $1$，则令 $cnt\gets cnt-1$ 即可；</li>
-<li>如果它是唯一的节点，则直接删除节点；</li>
-<li>如果它只有一个儿子，则令它的儿子作根，然后删除节点；</li>
-<li>否则找到值小于 $val$ 的最大节点进行 Splay 操作，令根的右子树为值为 $val$ 的节点的右子树，更新根的 $siz$，最后删除节点。</li>
-</ul>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">del</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">val2rank</span>(val);</span><br><span class="line">    <span class="keyword">if</span>(root-&gt;cnt&gt;<span class="number">1</span>) &#123;</span><br><span class="line">        --root-&gt;cnt,--root-&gt;siz;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>((root-&gt;son[<span class="number">0</span>]==t)&amp;&amp;(root-&gt;son[<span class="number">1</span>]==t)) &#123;</span><br><span class="line">        <span class="built_in">clear</span>(root);</span><br><span class="line">        root=t;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">2</span>;++i) &#123;</span><br><span class="line">        <span class="keyword">if</span>(root-&gt;son[i]!=t) &#123;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        splay_tree *x=root;</span><br><span class="line">        root=root-&gt;son[i^<span class="number">1</span>];</span><br><span class="line">        root-&gt;fa=t;</span><br><span class="line">        <span class="built_in">clear</span>(x);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    splay_tree *x=root-&gt;son[<span class="number">0</span>],*rt=root;</span><br><span class="line">    <span class="keyword">while</span>(x-&gt;son[<span class="number">1</span>]!=t) &#123;</span><br><span class="line">        x=x-&gt;son[<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">splay</span>(x);</span><br><span class="line">    rt-&gt;son[<span class="number">1</span>]-&gt;fa=x,x-&gt;son[<span class="number">1</span>]=rt-&gt;son[<span class="number">1</span>];</span><br><span class="line">    <span class="built_in">clear</span>(rt);</span><br><span class="line">    <span class="built_in">maintain</span>(root);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="查询-val-的前驱"><a href="#查询-val-的前驱" class="headerlink" title="查询 val 的前驱"></a>查询 val 的前驱</h3><p>插入 $val$，在根的左子树中找最大的值（即一直向右子树寻找），最后删除 $val$。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2pre</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">insert</span>(val);</span><br><span class="line">    splay_tree *x=root-&gt;son[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">while</span>(x-&gt;son[<span class="number">1</span>]!=t) &#123;</span><br><span class="line">        x=x-&gt;son[<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ret=x-&gt;val;</span><br><span class="line">    <span class="built_in">del</span>(val);</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="查询-val-的后继"><a href="#查询-val-的后继" class="headerlink" title="查询 val 的后继"></a>查询 val 的后继</h3><p>同查询前驱类似。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2suc</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">insert</span>(val);</span><br><span class="line">    splay_tree *x=root-&gt;son[<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">while</span>(x-&gt;son[<span class="number">0</span>]!=t) &#123;</span><br><span class="line">        x=x-&gt;son[<span class="number">0</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ret=x-&gt;val;</span><br><span class="line">    <span class="built_in">del</span>(val);</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="资料"><a href="#资料" class="headerlink" title="资料"></a>资料</h2><blockquote>
-<p>本文部分参考 <a href="https://oi-wiki.org/ds/splay">Splay - OI Wiki</a>。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>study</category>
-        <category>笔记</category>
       </categories>
       <tags>
         <tag>2025</tag>
@@ -275,6 +211,116 @@
       </tags>
   </entry>
   <entry>
+    <title>NEWNEW</title>
+    <url>/2025/08/06/New/</url>
+    <content><![CDATA[<h1 id="NEWNEW"><a href="#NEWNEW" class="headerlink" title="NEWNEW"></a>NEWNEW</h1><p><img src="https://static-cse.canva.cn/blob/234749/.gif" alt="NEWNEW"></p>
+]]></content>
+      <categories>
+        <category>think</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>GIF</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Splay 学习笔记</title>
+    <url>/2025/08/03/Splay-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Splay 是二叉查找树的一种，它通过访问节点时将其旋转到根节点，使查找树尽量维持平衡。</p>
+<span id="more"></span>
+
+<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>每个节点需保存它所维护的值 $val$，这个值所出现的次数 $cnt$，它的子树大小 $size$，它的父节点 $fa$ 以及它的左儿子 $son_0$ 和右儿子 $son_1$。</p>
+<blockquote>
+<p>说明：代码中 $t$ 即 $&amp;t[0]$，是定义的一个空节点，其 $val,cnt,siz$ 均为 $0$，父亲和儿子都指向自己。</p>
+</blockquote>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">splay_tree</span> &#123;</span><br><span class="line">    <span class="type">int</span> val,cnt,siz;</span><br><span class="line">    splay_tree *fa,*son[<span class="number">2</span>];</span><br><span class="line">&#125;t[N<span class="number">+1</span>],*root;</span><br></pre></td></tr></table></figure>
+
+<h3 id="更新子树大小"><a href="#更新子树大小" class="headerlink" title="更新子树大小"></a>更新子树大小</h3><p>节点改变后更新它的 $siz$。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">maintain</span><span class="params">(splay_tree *x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    x-&gt;siz=x-&gt;cnt+x-&gt;son[<span class="number">0</span>]-&gt;siz+x-&gt;son[<span class="number">1</span>]-&gt;siz;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="销毁节点"><a href="#销毁节点" class="headerlink" title="销毁节点"></a>销毁节点</h3><p>前提是已经将它移至叶子节点。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">clear</span><span class="params">(splay_tree *x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    x-&gt;val=x-&gt;cnt=x-&gt;siz=<span class="number">0</span>;</span><br><span class="line">    x-&gt;fa=x-&gt;son[<span class="number">0</span>]=x-&gt;son[<span class="number">1</span>]=t;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="上旋"><a href="#上旋" class="headerlink" title="上旋"></a>上旋</h3><p>本质上是将一个节点上移一个位置。</p>
+<p>上旋分为两种：左儿子上旋为右旋，右儿子上旋为左旋。</p>
+<p><img src="https://github.com/Early0v0/Blog/blob/master/source/_posts/Splay-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/rotate.png?raw=true" alt="右旋前 右旋后"></p>
+<p>步骤如下（以右旋为例）：</p>
+<ol>
+<li>将 $Fa$ 的左儿子指向 $Xson2$，$Xson2$ 的父亲指向 $Fa$；</li>
+<li>将 $X$ 的右儿子指向 $Fa$，$Fa$ 的父亲指向 $X$；</li>
+<li>如果 $Fa$ 有父亲（记为 $FFa$），则将 $X$ 的父亲指向 $FFa$，$FFa$ 的儿子（原来 $Fa$ 所在位置）指向 $X$；</li>
+<li>更新 $X$ 和 $Fa$ 的 $siz$ 值。</li>
+</ol>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">rotate</span><span class="params">(splay_tree *x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    splay_tree *fa=x-&gt;fa,*ffa=fa-&gt;fa;</span><br><span class="line">    <span class="type">int</span> ch=x==x-&gt;fa-&gt;son[<span class="number">0</span>]?<span class="number">0</span>:<span class="number">1</span>;</span><br><span class="line">    fa-&gt;son[ch]=x-&gt;son[ch^<span class="number">1</span>],x-&gt;son[ch^<span class="number">1</span>]-&gt;fa=fa;</span><br><span class="line">    x-&gt;son[ch^<span class="number">1</span>]=fa,fa-&gt;fa=x,x-&gt;fa=ffa;</span><br><span class="line">    <span class="keyword">if</span>(ffa!=t) &#123;</span><br><span class="line">        ffa-&gt;son[fa==ffa-&gt;son[<span class="number">0</span>]?<span class="number">0</span>:<span class="number">1</span>]=x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">maintain</span>(fa),<span class="built_in">maintain</span>(x);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Splay-操作"><a href="#Splay-操作" class="headerlink" title="Splay 操作"></a>Splay 操作</h3><p>将访问的节点旋转到根节点。</p>
+<ul>
+<li>如果 $X$ 的父亲是根节点，直接将 $X$ 上旋，结束操作；</li>
+<li>如果 $X$ 与其父亲儿子类型相同，先上旋其父亲，再上旋 $X$；</li>
+<li>否则连续上旋两次 $X$。</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">splay</span><span class="params">(splay_tree *x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(splay_tree *fa=x-&gt;fa;fa=x-&gt;fa,fa!=t;<span class="built_in">rotate</span>(x)) &#123;</span><br><span class="line">        <span class="keyword">if</span>(fa-&gt;fa!=t) &#123;</span><br><span class="line">            <span class="built_in">rotate</span>((x==fa-&gt;son[<span class="number">0</span>])==(fa==fa-&gt;fa-&gt;son[<span class="number">0</span>])?fa:x);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    root=x;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="建立-Splay"><a href="#建立-Splay" class="headerlink" title="建立 Splay"></a>建立 Splay</h3><p>先将数据升序排序（假设需要插入 $a$ 数组），然后用类似建立线段树的方法递归建立。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function">splay_tree *<span class="title">build</span><span class="params">(splay_tree *fa,<span class="type">int</span> l,<span class="type">int</span> r)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(l&gt;r) &#123;</span><br><span class="line">        <span class="keyword">return</span> t;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    splay_tree *x=&amp;(t[++tot]=splay_tree&#123;a[mid],<span class="number">1</span>,<span class="number">0</span>,fa,&#123;t,t&#125;&#125;);</span><br><span class="line">    x-&gt;son[<span class="number">0</span>]=<span class="built_in">build</span>(x,l,mid<span class="number">-1</span>),x-&gt;son[<span class="number">1</span>]=<span class="built_in">build</span>(x,mid<span class="number">+1</span>,r);</span><br><span class="line">    <span class="built_in">maintain</span>(x);</span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="插入值"><a href="#插入值" class="headerlink" title="插入值"></a>插入值</h3><ul>
+<li>如果树为空，则新建根节点并插入，结束操作；</li>
+<li>否则由根开始遍历：<ul>
+<li>如果当前节点的权值等于 $val$，则当前节点的 $cnt$ 值 +1，更新节点和父亲的 $siz$ ，并对当前节点进行 Splay 操作；</li>
+<li>如果当前节点为空，则在此新建节点即可；</li>
+<li>否则按照二叉查找树的性质向下递归。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">insert</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(root==t) &#123;</span><br><span class="line">        t[++tot]=splay_tree&#123;val,<span class="number">1</span>,<span class="number">1</span>,t,&#123;t,t&#125;&#125;;</span><br><span class="line">        root=&amp;t[tot];</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    splay_tree *x=root,*fa=t;</span><br><span class="line">    <span class="keyword">while</span>(<span class="literal">true</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span>(x-&gt;val==val) &#123;</span><br><span class="line">            ++x-&gt;cnt;</span><br><span class="line">            <span class="built_in">maintain</span>(x),<span class="built_in">maintain</span>(fa);</span><br><span class="line">            <span class="built_in">splay</span>(x);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        fa=x,x=x-&gt;son[x-&gt;val&lt;val];</span><br><span class="line">        <span class="keyword">if</span>(x==t) &#123;</span><br><span class="line">            t[++tot]=splay_tree&#123;val,<span class="number">1</span>,<span class="number">1</span>,fa,&#123;t,t&#125;&#125;;</span><br><span class="line">            fa-&gt;son[val&gt;fa-&gt;val]=&amp;t[tot];</span><br><span class="line">            <span class="built_in">maintain</span>(&amp;t[tot]),<span class="built_in">maintain</span>(fa);</span><br><span class="line">            <span class="built_in">splay</span>(&amp;t[tot]);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询-val-的排名"><a href="#查询-val-的排名" class="headerlink" title="查询 val 的排名"></a>查询 val 的排名</h3><ul>
+<li>初始排名为 $1$；</li>
+<li>如果 $val$ 比当前节点的权值小，则递归左子树；</li>
+<li>如果 $val$ 比当前节点的权值大，则将答案加上左子树的 $siz$ 和当前节点的 $cnt$，递归右子树；</li>
+<li>如果 $val$ 等于当前节点的权值，返回答案；</li>
+<li>最后进行 Splay 操作。</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2rank</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> ret=<span class="number">1</span>;</span><br><span class="line">    splay_tree *x=root;</span><br><span class="line">    <span class="keyword">while</span>(x!=t) &#123;</span><br><span class="line">        <span class="keyword">if</span>(val&lt;x-&gt;val) &#123;</span><br><span class="line">            x=x-&gt;son[<span class="number">0</span>];</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            ret+=x-&gt;son[<span class="number">0</span>]-&gt;siz;</span><br><span class="line">            <span class="keyword">if</span>(val==x-&gt;val) &#123;</span><br><span class="line">                <span class="built_in">splay</span>(x);</span><br><span class="line">                <span class="keyword">return</span> ret;</span><br><span class="line">            &#125;</span><br><span class="line">            ret+=x-&gt;cnt;</span><br><span class="line">            x=x-&gt;son[<span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询排名为-rnk-的数"><a href="#查询排名为-rnk-的数" class="headerlink" title="查询排名为 rnk 的数"></a>查询排名为 rnk 的数</h3><ul>
+<li><p>如果 $rnk$ 小于等于当前节点左子树的 $siz$，则递归左子树；</p>
+</li>
+<li><p>否则将 $rnk$ 减去左子树的 $siz$ 和当前节点的 $cnt$，如果 $rnk\leq0$，则返回当前节点的权值，否则递归右子树。</p>
+</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">rank2val</span><span class="params">(<span class="type">int</span> rnk)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    splay_tree *x=root;</span><br><span class="line">    <span class="keyword">while</span>(<span class="literal">true</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span>((x-&gt;son[<span class="number">0</span>]!=t)&amp;&amp;(rnk&lt;=x-&gt;son[<span class="number">0</span>]-&gt;siz)) &#123;</span><br><span class="line">            x=x-&gt;son[<span class="number">0</span>];</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            rnk-=x-&gt;son[<span class="number">0</span>]-&gt;siz+x-&gt;cnt;</span><br><span class="line">            <span class="keyword">if</span>(rnk&lt;=<span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> x-&gt;val;</span><br><span class="line">            &#125;</span><br><span class="line">            x=x-&gt;son[<span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="删除值"><a href="#删除值" class="headerlink" title="删除值"></a>删除值</h3><ul>
+<li>先找到值为 $val$ 的节点，将其进行 Splay 操作（可以通过查询 $val$ 的排名实现）；</li>
+<li>如果它的 $cnt$ 值大于 $1$，则令 $cnt\gets cnt-1$ 即可；</li>
+<li>如果它是唯一的节点，则直接删除节点；</li>
+<li>如果它只有一个儿子，则令它的儿子作根，然后删除节点；</li>
+<li>否则找到值小于 $val$ 的最大节点进行 Splay 操作，令根的右子树为值为 $val$ 的节点的右子树，更新根的 $siz$，最后删除节点。</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">del</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">val2rank</span>(val);</span><br><span class="line">    <span class="keyword">if</span>(root-&gt;cnt&gt;<span class="number">1</span>) &#123;</span><br><span class="line">        --root-&gt;cnt,--root-&gt;siz;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>((root-&gt;son[<span class="number">0</span>]==t)&amp;&amp;(root-&gt;son[<span class="number">1</span>]==t)) &#123;</span><br><span class="line">        <span class="built_in">clear</span>(root);</span><br><span class="line">        root=t;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">2</span>;++i) &#123;</span><br><span class="line">        <span class="keyword">if</span>(root-&gt;son[i]!=t) &#123;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        splay_tree *x=root;</span><br><span class="line">        root=root-&gt;son[i^<span class="number">1</span>];</span><br><span class="line">        root-&gt;fa=t;</span><br><span class="line">        <span class="built_in">clear</span>(x);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    splay_tree *x=root-&gt;son[<span class="number">0</span>],*rt=root;</span><br><span class="line">    <span class="keyword">while</span>(x-&gt;son[<span class="number">1</span>]!=t) &#123;</span><br><span class="line">        x=x-&gt;son[<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">splay</span>(x);</span><br><span class="line">    rt-&gt;son[<span class="number">1</span>]-&gt;fa=x,x-&gt;son[<span class="number">1</span>]=rt-&gt;son[<span class="number">1</span>];</span><br><span class="line">    <span class="built_in">clear</span>(rt);</span><br><span class="line">    <span class="built_in">maintain</span>(root);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询-val-的前驱"><a href="#查询-val-的前驱" class="headerlink" title="查询 val 的前驱"></a>查询 val 的前驱</h3><p>插入 $val$，在根的左子树中找最大的值（即一直向右子树寻找），最后删除 $val$。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2pre</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">insert</span>(val);</span><br><span class="line">    splay_tree *x=root-&gt;son[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">while</span>(x-&gt;son[<span class="number">1</span>]!=t) &#123;</span><br><span class="line">        x=x-&gt;son[<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ret=x-&gt;val;</span><br><span class="line">    <span class="built_in">del</span>(val);</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询-val-的后继"><a href="#查询-val-的后继" class="headerlink" title="查询 val 的后继"></a>查询 val 的后继</h3><p>同查询前驱类似。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2suc</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">insert</span>(val);</span><br><span class="line">    splay_tree *x=root-&gt;son[<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">while</span>(x-&gt;son[<span class="number">0</span>]!=t) &#123;</span><br><span class="line">        x=x-&gt;son[<span class="number">0</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ret=x-&gt;val;</span><br><span class="line">    <span class="built_in">del</span>(val);</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="资料"><a href="#资料" class="headerlink" title="资料"></a>资料</h2><blockquote>
+<p>本文部分参考 <a href="https://oi-wiki.org/ds/splay">Splay - OI Wiki</a>。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>study</category>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>code</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2025/08/02/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -320,71 +366,6 @@
       <tags>
         <tag>2025</tag>
         <tag>Note</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>可持久化平衡树学习笔记</title>
-    <url>/2025/08/03/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E5%B9%B3%E8%A1%A1%E6%A0%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>FHQ Treap，又叫无旋 Treap，是一种平衡树，还可以支持可持久化，<del>代码也通俗易懂</del>。</p>
-<p><a href="https://www.luogu.com.cn/problem/P3835">例题</a></p>
-<span id="more"></span>
-
-<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>每个节点需保存它所维护的值 $val$，它的子树大小 $siz$，父节点 $fa$ 以及它的左儿子 $lson$ 和右儿子 $rson$。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">tree</span> &#123;</span><br><span class="line">    <span class="type">int</span> val,pri,siz;</span><br><span class="line">    tree *lson,*rson;</span><br><span class="line">&#125;;</span><br><span class="line">tree nul&#123;<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,&amp;nul,&amp;nul&#125;,*root[N<span class="number">+1</span>];</span><br></pre></td></tr></table></figure>
-
-<h3 id="建立新节点"><a href="#建立新节点" class="headerlink" title="建立新节点"></a>建立新节点</h3><p>像 Treap 一样赋予随机值。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> tree *<span class="title">new_tree</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *x=<span class="keyword">new</span> tree;</span><br><span class="line">    *x=tree&#123;val,<span class="built_in">rand</span>(),<span class="number">1</span>,&amp;nul,&amp;nul&#125;;</span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="复制节点"><a href="#复制节点" class="headerlink" title="复制节点"></a>复制节点</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> tree *<span class="title">copy</span><span class="params">(tree *ori)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *x=<span class="keyword">new</span> tree;</span><br><span class="line">    *x=*ori;</span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="更新节点-siz"><a href="#更新节点-siz" class="headerlink" title="更新节点 siz"></a>更新节点 siz</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">push_up</span><span class="params">(tree *x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    x-&gt;siz=x-&gt;lson-&gt;siz+x-&gt;rson-&gt;siz<span class="number">+1</span>;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h3><p>合并 $x$ 和 $y$。（保证 $x$ 的权值 $\leq y$ 的权值）</p>
-<p>如果两个节点中有空节点，则返回非空节点。</p>
-<p>根据 Treap 的堆性质，选择随机值较大的点（假设是 $x$），合并它的右儿子（如果是 $y$ 则为它的左儿子）与 $y$。</p>
-<p>由于需要可持久化，需要重建 $x$ 节点。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function">tree *<span class="title">merge</span><span class="params">(tree *x,tree *y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>((x==&amp;nul)||(y==&amp;nul)) &#123;</span><br><span class="line">        <span class="keyword">return</span> x==&amp;nul?y:x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(x-&gt;pri&lt;=y-&gt;pri) &#123;</span><br><span class="line">        y=<span class="built_in">copy</span>(y);</span><br><span class="line">        y-&gt;lson=<span class="built_in">merge</span>(x,y-&gt;lson);</span><br><span class="line">        <span class="built_in">push_up</span>(y);</span><br><span class="line">        <span class="keyword">return</span> y;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        x=<span class="built_in">copy</span>(x);</span><br><span class="line">        x-&gt;rson=<span class="built_in">merge</span>(x-&gt;rson,y);</span><br><span class="line">        <span class="built_in">push_up</span>(x);</span><br><span class="line">        <span class="keyword">return</span> x;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="分裂"><a href="#分裂" class="headerlink" title="分裂"></a>分裂</h3><p>将 $x$ 分成权值 $\leq val$ 的树和权值 $&gt;val$ 的树。</p>
-<p>如果 $x$ 的权值 $\leq val$，则把 $x$ 的右儿子分裂，否则分裂左儿子。</p>
-<p>注意可持久化。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">split</span><span class="params">(tree *x,<span class="type">int</span> val,tree *&amp;l,tree *&amp;r)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(x==&amp;nul) &#123;</span><br><span class="line">        l=r=&amp;nul;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(x-&gt;val&lt;=val) &#123;</span><br><span class="line">        l=<span class="built_in">copy</span>(x);</span><br><span class="line">        <span class="built_in">split</span>(l-&gt;rson,val,l-&gt;rson,r);</span><br><span class="line">        <span class="built_in">push_up</span>(l);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        r=<span class="built_in">copy</span>(x);</span><br><span class="line">        <span class="built_in">split</span>(r-&gt;lson,val,l,r-&gt;lson);</span><br><span class="line">        <span class="built_in">push_up</span>(r);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="插入值"><a href="#插入值" class="headerlink" title="插入值"></a>插入值</h3><p>将 $root$ 分裂成分成权值 $\leq val$ 的树 $l$ 与权值 $&gt;val$ 的树 $r$。</p>
-<p>新建一个值为 $val$ 的节点（设为 $x$）。</p>
-<p>依次合并 $l,x,r$ 即可。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">insert</span><span class="params">(tree *&amp;root,<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *l,*r;</span><br><span class="line">    <span class="built_in">split</span>(root,val,l,r);</span><br><span class="line">    tree *x=<span class="built_in">new_tree</span>(val);</span><br><span class="line">    root=<span class="built_in">merge</span>(l,<span class="built_in">merge</span>(x,r));</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="删除值"><a href="#删除值" class="headerlink" title="删除值"></a>删除值</h3><p>将 $root$ 分裂成分成权值 $&lt;val$ 的树 $l$、权值 $&#x3D;val$ 的树 $mid$ 与权值 $&gt;val$ 的树 $r$。</p>
-<p>依次合并 $l,lson_{mid},rson_{mid},r$ 即可。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">del</span><span class="params">(tree *&amp;root,<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *l,*l_mid,*mid,*r;</span><br><span class="line">    <span class="built_in">split</span>(root,val,l_mid,r);</span><br><span class="line">    <span class="built_in">split</span>(l_mid,val<span class="number">-1</span>,l,mid);</span><br><span class="line">    root=<span class="built_in">merge</span>(l,<span class="built_in">merge</span>(<span class="built_in">merge</span>(mid-&gt;lson,mid-&gt;rson),r));</span><br><span class="line">    <span class="keyword">if</span>(mid!=&amp;nul) &#123;</span><br><span class="line">        <span class="keyword">delete</span> mid;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="查询排名为-rnk-的数"><a href="#查询排名为-rnk-的数" class="headerlink" title="查询排名为 rnk 的数"></a>查询排名为 rnk 的数</h3><ul>
-<li><p>如果 $rnk$ 小于等于当前节点左子树的 $siz$，则递归左子树；</p>
-</li>
-<li><p>否则将 $rnk$ 减去左子树的 $siz+1$，如果 $rnk\leq0$，则返回当前节点的权值，否则递归右子树。</p>
-</li>
-</ul>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">rnk2val</span><span class="params">(tree *x,<span class="type">int</span> rnk)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(rnk&lt;=x-&gt;lson-&gt;siz) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">rnk2val</span>(x-&gt;lson,rnk);</span><br><span class="line">    &#125;</span><br><span class="line">    rnk-=x-&gt;lson-&gt;siz<span class="number">+1</span>;</span><br><span class="line">    <span class="keyword">return</span> rnk?<span class="built_in">rnk2val</span>(x-&gt;rson,rnk):x-&gt;val;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="查询-val-的排名"><a href="#查询-val-的排名" class="headerlink" title="查询 val 的排名"></a>查询 val 的排名</h3><p>把 $root$ 分裂为权值 $&lt;val$ 的树 $l$ 与权值 $\geq val$ 的树 $r$。</p>
-<p>统计 $siz_l+1$ 即为答案。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2rnk</span><span class="params">(tree *&amp;root,<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *l,*mid_r;</span><br><span class="line">    <span class="built_in">split</span>(root,val<span class="number">-1</span>,l,mid_r);</span><br><span class="line">    <span class="type">int</span> ret=l-&gt;siz<span class="number">+1</span>;</span><br><span class="line">    root=<span class="built_in">merge</span>(l,mid_r);</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="查询-val-的前驱"><a href="#查询-val-的前驱" class="headerlink" title="查询 val 的前驱"></a>查询 val 的前驱</h3><p>把 $root$ 分裂为权值 $&lt;val$ 的树 $l$ 与权值 $\geq val$ 的树 $r$。</p>
-<p>查询 $l$ 中排名为 $siz_l$ 的数。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2pre</span><span class="params">(tree *&amp;root,<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *l,*r;</span><br><span class="line">    <span class="built_in">split</span>(root,val<span class="number">-1</span>,l,r);</span><br><span class="line">    <span class="keyword">if</span>(l==&amp;nul) &#123;</span><br><span class="line">        <span class="keyword">return</span> -inf;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ret=<span class="built_in">rnk2val</span>(l,l-&gt;siz);</span><br><span class="line">    root=<span class="built_in">merge</span>(l,r);</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="查询-val-的后继"><a href="#查询-val-的后继" class="headerlink" title="查询 val 的后继"></a>查询 val 的后继</h3><p>把 $root$ 分裂为权值 $\leq val$ 的树 $l$ 与权值 $&gt;val$ 的树 $r$。</p>
-<p>查询 $r$ 中最小的（排名为 $1$）的数。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2suc</span><span class="params">(tree *&amp;root,<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *l,*r;</span><br><span class="line">    <span class="built_in">split</span>(root,val,l,r);</span><br><span class="line">    <span class="keyword">if</span>(r==&amp;nul) &#123;</span><br><span class="line">        <span class="keyword">return</span> inf;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ret=<span class="built_in">rnk2val</span>(r,<span class="number">1</span>);</span><br><span class="line">    root=<span class="built_in">merge</span>(l,r);</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>study</category>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>code</tag>
       </tags>
   </entry>
   <entry>
@@ -446,6 +427,71 @@
 <p>序列自动机第二种部分参考<a href="https://www.luogu.com.cn/blog/WYXkk/zi-xu-lie-zi-dong-ji">浅谈子序列自动机 - WYXkk 的博客</a>。</p>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>study</category>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>code</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>可持久化平衡树学习笔记</title>
+    <url>/2025/08/03/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E5%B9%B3%E8%A1%A1%E6%A0%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>FHQ Treap，又叫无旋 Treap，是一种平衡树，还可以支持可持久化，<del>代码也通俗易懂</del>。</p>
+<p><a href="https://www.luogu.com.cn/problem/P3835">例题</a></p>
+<span id="more"></span>
+
+<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>每个节点需保存它所维护的值 $val$，它的子树大小 $siz$，父节点 $fa$ 以及它的左儿子 $lson$ 和右儿子 $rson$。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">tree</span> &#123;</span><br><span class="line">    <span class="type">int</span> val,pri,siz;</span><br><span class="line">    tree *lson,*rson;</span><br><span class="line">&#125;;</span><br><span class="line">tree nul&#123;<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,&amp;nul,&amp;nul&#125;,*root[N<span class="number">+1</span>];</span><br></pre></td></tr></table></figure>
+
+<h3 id="建立新节点"><a href="#建立新节点" class="headerlink" title="建立新节点"></a>建立新节点</h3><p>像 Treap 一样赋予随机值。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> tree *<span class="title">new_tree</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *x=<span class="keyword">new</span> tree;</span><br><span class="line">    *x=tree&#123;val,<span class="built_in">rand</span>(),<span class="number">1</span>,&amp;nul,&amp;nul&#125;;</span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="复制节点"><a href="#复制节点" class="headerlink" title="复制节点"></a>复制节点</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> tree *<span class="title">copy</span><span class="params">(tree *ori)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *x=<span class="keyword">new</span> tree;</span><br><span class="line">    *x=*ori;</span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="更新节点-siz"><a href="#更新节点-siz" class="headerlink" title="更新节点 siz"></a>更新节点 siz</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">push_up</span><span class="params">(tree *x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    x-&gt;siz=x-&gt;lson-&gt;siz+x-&gt;rson-&gt;siz<span class="number">+1</span>;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h3><p>合并 $x$ 和 $y$。（保证 $x$ 的权值 $\leq y$ 的权值）</p>
+<p>如果两个节点中有空节点，则返回非空节点。</p>
+<p>根据 Treap 的堆性质，选择随机值较大的点（假设是 $x$），合并它的右儿子（如果是 $y$ 则为它的左儿子）与 $y$。</p>
+<p>由于需要可持久化，需要重建 $x$ 节点。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function">tree *<span class="title">merge</span><span class="params">(tree *x,tree *y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>((x==&amp;nul)||(y==&amp;nul)) &#123;</span><br><span class="line">        <span class="keyword">return</span> x==&amp;nul?y:x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(x-&gt;pri&lt;=y-&gt;pri) &#123;</span><br><span class="line">        y=<span class="built_in">copy</span>(y);</span><br><span class="line">        y-&gt;lson=<span class="built_in">merge</span>(x,y-&gt;lson);</span><br><span class="line">        <span class="built_in">push_up</span>(y);</span><br><span class="line">        <span class="keyword">return</span> y;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        x=<span class="built_in">copy</span>(x);</span><br><span class="line">        x-&gt;rson=<span class="built_in">merge</span>(x-&gt;rson,y);</span><br><span class="line">        <span class="built_in">push_up</span>(x);</span><br><span class="line">        <span class="keyword">return</span> x;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="分裂"><a href="#分裂" class="headerlink" title="分裂"></a>分裂</h3><p>将 $x$ 分成权值 $\leq val$ 的树和权值 $&gt;val$ 的树。</p>
+<p>如果 $x$ 的权值 $\leq val$，则把 $x$ 的右儿子分裂，否则分裂左儿子。</p>
+<p>注意可持久化。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">split</span><span class="params">(tree *x,<span class="type">int</span> val,tree *&amp;l,tree *&amp;r)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(x==&amp;nul) &#123;</span><br><span class="line">        l=r=&amp;nul;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(x-&gt;val&lt;=val) &#123;</span><br><span class="line">        l=<span class="built_in">copy</span>(x);</span><br><span class="line">        <span class="built_in">split</span>(l-&gt;rson,val,l-&gt;rson,r);</span><br><span class="line">        <span class="built_in">push_up</span>(l);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        r=<span class="built_in">copy</span>(x);</span><br><span class="line">        <span class="built_in">split</span>(r-&gt;lson,val,l,r-&gt;lson);</span><br><span class="line">        <span class="built_in">push_up</span>(r);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="插入值"><a href="#插入值" class="headerlink" title="插入值"></a>插入值</h3><p>将 $root$ 分裂成分成权值 $\leq val$ 的树 $l$ 与权值 $&gt;val$ 的树 $r$。</p>
+<p>新建一个值为 $val$ 的节点（设为 $x$）。</p>
+<p>依次合并 $l,x,r$ 即可。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">insert</span><span class="params">(tree *&amp;root,<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *l,*r;</span><br><span class="line">    <span class="built_in">split</span>(root,val,l,r);</span><br><span class="line">    tree *x=<span class="built_in">new_tree</span>(val);</span><br><span class="line">    root=<span class="built_in">merge</span>(l,<span class="built_in">merge</span>(x,r));</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="删除值"><a href="#删除值" class="headerlink" title="删除值"></a>删除值</h3><p>将 $root$ 分裂成分成权值 $&lt;val$ 的树 $l$、权值 $&#x3D;val$ 的树 $mid$ 与权值 $&gt;val$ 的树 $r$。</p>
+<p>依次合并 $l,lson_{mid},rson_{mid},r$ 即可。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">del</span><span class="params">(tree *&amp;root,<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *l,*l_mid,*mid,*r;</span><br><span class="line">    <span class="built_in">split</span>(root,val,l_mid,r);</span><br><span class="line">    <span class="built_in">split</span>(l_mid,val<span class="number">-1</span>,l,mid);</span><br><span class="line">    root=<span class="built_in">merge</span>(l,<span class="built_in">merge</span>(<span class="built_in">merge</span>(mid-&gt;lson,mid-&gt;rson),r));</span><br><span class="line">    <span class="keyword">if</span>(mid!=&amp;nul) &#123;</span><br><span class="line">        <span class="keyword">delete</span> mid;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询排名为-rnk-的数"><a href="#查询排名为-rnk-的数" class="headerlink" title="查询排名为 rnk 的数"></a>查询排名为 rnk 的数</h3><ul>
+<li><p>如果 $rnk$ 小于等于当前节点左子树的 $siz$，则递归左子树；</p>
+</li>
+<li><p>否则将 $rnk$ 减去左子树的 $siz+1$，如果 $rnk\leq0$，则返回当前节点的权值，否则递归右子树。</p>
+</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">rnk2val</span><span class="params">(tree *x,<span class="type">int</span> rnk)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(rnk&lt;=x-&gt;lson-&gt;siz) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">rnk2val</span>(x-&gt;lson,rnk);</span><br><span class="line">    &#125;</span><br><span class="line">    rnk-=x-&gt;lson-&gt;siz<span class="number">+1</span>;</span><br><span class="line">    <span class="keyword">return</span> rnk?<span class="built_in">rnk2val</span>(x-&gt;rson,rnk):x-&gt;val;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询-val-的排名"><a href="#查询-val-的排名" class="headerlink" title="查询 val 的排名"></a>查询 val 的排名</h3><p>把 $root$ 分裂为权值 $&lt;val$ 的树 $l$ 与权值 $\geq val$ 的树 $r$。</p>
+<p>统计 $siz_l+1$ 即为答案。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2rnk</span><span class="params">(tree *&amp;root,<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *l,*mid_r;</span><br><span class="line">    <span class="built_in">split</span>(root,val<span class="number">-1</span>,l,mid_r);</span><br><span class="line">    <span class="type">int</span> ret=l-&gt;siz<span class="number">+1</span>;</span><br><span class="line">    root=<span class="built_in">merge</span>(l,mid_r);</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询-val-的前驱"><a href="#查询-val-的前驱" class="headerlink" title="查询 val 的前驱"></a>查询 val 的前驱</h3><p>把 $root$ 分裂为权值 $&lt;val$ 的树 $l$ 与权值 $\geq val$ 的树 $r$。</p>
+<p>查询 $l$ 中排名为 $siz_l$ 的数。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2pre</span><span class="params">(tree *&amp;root,<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *l,*r;</span><br><span class="line">    <span class="built_in">split</span>(root,val<span class="number">-1</span>,l,r);</span><br><span class="line">    <span class="keyword">if</span>(l==&amp;nul) &#123;</span><br><span class="line">        <span class="keyword">return</span> -inf;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ret=<span class="built_in">rnk2val</span>(l,l-&gt;siz);</span><br><span class="line">    root=<span class="built_in">merge</span>(l,r);</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询-val-的后继"><a href="#查询-val-的后继" class="headerlink" title="查询 val 的后继"></a>查询 val 的后继</h3><p>把 $root$ 分裂为权值 $\leq val$ 的树 $l$ 与权值 $&gt;val$ 的树 $r$。</p>
+<p>查询 $r$ 中最小的（排名为 $1$）的数。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2suc</span><span class="params">(tree *&amp;root,<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *l,*r;</span><br><span class="line">    <span class="built_in">split</span>(root,val,l,r);</span><br><span class="line">    <span class="keyword">if</span>(r==&amp;nul) &#123;</span><br><span class="line">        <span class="keyword">return</span> inf;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ret=<span class="built_in">rnk2val</span>(r,<span class="number">1</span>);</span><br><span class="line">    root=<span class="built_in">merge</span>(l,r);</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>study</category>
         <category>笔记</category>
