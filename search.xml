@@ -211,19 +211,6 @@
       </tags>
   </entry>
   <entry>
-    <title>NEWNEW</title>
-    <url>/2025/08/06/New/</url>
-    <content><![CDATA[<h1 id="NEWNEW"><a href="#NEWNEW" class="headerlink" title="NEWNEW"></a>NEWNEW</h1><p><img src="https://static-cse.canva.cn/blob/234749/.gif" alt="NEWNEW"></p>
-]]></content>
-      <categories>
-        <category>think</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>GIF</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Splay 学习笔记</title>
     <url>/2025/08/03/Splay-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Splay 是二叉查找树的一种，它通过访问节点时将其旋转到根节点，使查找树尽量维持平衡。</p>
@@ -321,22 +308,17 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2025/08/02/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>NEWNEW</title>
+    <url>/2025/08/06/New/</url>
+    <content><![CDATA[<h1 id="NEWNEW"><a href="#NEWNEW" class="headerlink" title="NEWNEW"></a>NEWNEW</h1><p><img src="https://static-cse.canva.cn/blob/234749/.gif" alt="NEWNEW"></p>
 ]]></content>
+      <categories>
+        <category>think</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>GIF</tag>
+      </tags>
   </entry>
   <entry>
     <title>今日暴走</title>
@@ -356,6 +338,24 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2025/08/02/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>劇終</title>
     <url>/2025/08/03/%E5%8A%87%E7%B5%82/</url>
     <content><![CDATA[<p><img src="http://img.xinmin.cn/xmwb/2020/5/NEM1_20200510_C0325256459_A2250577.png" alt="剧终"></p>
@@ -366,6 +366,71 @@
       <tags>
         <tag>2025</tag>
         <tag>Note</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>可持久化平衡树学习笔记</title>
+    <url>/2025/08/03/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E5%B9%B3%E8%A1%A1%E6%A0%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>FHQ Treap，又叫无旋 Treap，是一种平衡树，还可以支持可持久化，<del>代码也通俗易懂</del>。</p>
+<p><a href="https://www.luogu.com.cn/problem/P3835">例题</a></p>
+<span id="more"></span>
+
+<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>每个节点需保存它所维护的值 $val$，它的子树大小 $siz$，父节点 $fa$ 以及它的左儿子 $lson$ 和右儿子 $rson$。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">tree</span> &#123;</span><br><span class="line">    <span class="type">int</span> val,pri,siz;</span><br><span class="line">    tree *lson,*rson;</span><br><span class="line">&#125;;</span><br><span class="line">tree nul&#123;<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,&amp;nul,&amp;nul&#125;,*root[N<span class="number">+1</span>];</span><br></pre></td></tr></table></figure>
+
+<h3 id="建立新节点"><a href="#建立新节点" class="headerlink" title="建立新节点"></a>建立新节点</h3><p>像 Treap 一样赋予随机值。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> tree *<span class="title">new_tree</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *x=<span class="keyword">new</span> tree;</span><br><span class="line">    *x=tree&#123;val,<span class="built_in">rand</span>(),<span class="number">1</span>,&amp;nul,&amp;nul&#125;;</span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="复制节点"><a href="#复制节点" class="headerlink" title="复制节点"></a>复制节点</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> tree *<span class="title">copy</span><span class="params">(tree *ori)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *x=<span class="keyword">new</span> tree;</span><br><span class="line">    *x=*ori;</span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="更新节点-siz"><a href="#更新节点-siz" class="headerlink" title="更新节点 siz"></a>更新节点 siz</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">push_up</span><span class="params">(tree *x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    x-&gt;siz=x-&gt;lson-&gt;siz+x-&gt;rson-&gt;siz<span class="number">+1</span>;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h3><p>合并 $x$ 和 $y$。（保证 $x$ 的权值 $\leq y$ 的权值）</p>
+<p>如果两个节点中有空节点，则返回非空节点。</p>
+<p>根据 Treap 的堆性质，选择随机值较大的点（假设是 $x$），合并它的右儿子（如果是 $y$ 则为它的左儿子）与 $y$。</p>
+<p>由于需要可持久化，需要重建 $x$ 节点。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function">tree *<span class="title">merge</span><span class="params">(tree *x,tree *y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>((x==&amp;nul)||(y==&amp;nul)) &#123;</span><br><span class="line">        <span class="keyword">return</span> x==&amp;nul?y:x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(x-&gt;pri&lt;=y-&gt;pri) &#123;</span><br><span class="line">        y=<span class="built_in">copy</span>(y);</span><br><span class="line">        y-&gt;lson=<span class="built_in">merge</span>(x,y-&gt;lson);</span><br><span class="line">        <span class="built_in">push_up</span>(y);</span><br><span class="line">        <span class="keyword">return</span> y;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        x=<span class="built_in">copy</span>(x);</span><br><span class="line">        x-&gt;rson=<span class="built_in">merge</span>(x-&gt;rson,y);</span><br><span class="line">        <span class="built_in">push_up</span>(x);</span><br><span class="line">        <span class="keyword">return</span> x;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="分裂"><a href="#分裂" class="headerlink" title="分裂"></a>分裂</h3><p>将 $x$ 分成权值 $\leq val$ 的树和权值 $&gt;val$ 的树。</p>
+<p>如果 $x$ 的权值 $\leq val$，则把 $x$ 的右儿子分裂，否则分裂左儿子。</p>
+<p>注意可持久化。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">split</span><span class="params">(tree *x,<span class="type">int</span> val,tree *&amp;l,tree *&amp;r)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(x==&amp;nul) &#123;</span><br><span class="line">        l=r=&amp;nul;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(x-&gt;val&lt;=val) &#123;</span><br><span class="line">        l=<span class="built_in">copy</span>(x);</span><br><span class="line">        <span class="built_in">split</span>(l-&gt;rson,val,l-&gt;rson,r);</span><br><span class="line">        <span class="built_in">push_up</span>(l);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        r=<span class="built_in">copy</span>(x);</span><br><span class="line">        <span class="built_in">split</span>(r-&gt;lson,val,l,r-&gt;lson);</span><br><span class="line">        <span class="built_in">push_up</span>(r);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="插入值"><a href="#插入值" class="headerlink" title="插入值"></a>插入值</h3><p>将 $root$ 分裂成分成权值 $\leq val$ 的树 $l$ 与权值 $&gt;val$ 的树 $r$。</p>
+<p>新建一个值为 $val$ 的节点（设为 $x$）。</p>
+<p>依次合并 $l,x,r$ 即可。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">insert</span><span class="params">(tree *&amp;root,<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *l,*r;</span><br><span class="line">    <span class="built_in">split</span>(root,val,l,r);</span><br><span class="line">    tree *x=<span class="built_in">new_tree</span>(val);</span><br><span class="line">    root=<span class="built_in">merge</span>(l,<span class="built_in">merge</span>(x,r));</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="删除值"><a href="#删除值" class="headerlink" title="删除值"></a>删除值</h3><p>将 $root$ 分裂成分成权值 $&lt;val$ 的树 $l$、权值 $&#x3D;val$ 的树 $mid$ 与权值 $&gt;val$ 的树 $r$。</p>
+<p>依次合并 $l,lson_{mid},rson_{mid},r$ 即可。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">del</span><span class="params">(tree *&amp;root,<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *l,*l_mid,*mid,*r;</span><br><span class="line">    <span class="built_in">split</span>(root,val,l_mid,r);</span><br><span class="line">    <span class="built_in">split</span>(l_mid,val<span class="number">-1</span>,l,mid);</span><br><span class="line">    root=<span class="built_in">merge</span>(l,<span class="built_in">merge</span>(<span class="built_in">merge</span>(mid-&gt;lson,mid-&gt;rson),r));</span><br><span class="line">    <span class="keyword">if</span>(mid!=&amp;nul) &#123;</span><br><span class="line">        <span class="keyword">delete</span> mid;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询排名为-rnk-的数"><a href="#查询排名为-rnk-的数" class="headerlink" title="查询排名为 rnk 的数"></a>查询排名为 rnk 的数</h3><ul>
+<li><p>如果 $rnk$ 小于等于当前节点左子树的 $siz$，则递归左子树；</p>
+</li>
+<li><p>否则将 $rnk$ 减去左子树的 $siz+1$，如果 $rnk\leq0$，则返回当前节点的权值，否则递归右子树。</p>
+</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">rnk2val</span><span class="params">(tree *x,<span class="type">int</span> rnk)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(rnk&lt;=x-&gt;lson-&gt;siz) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">rnk2val</span>(x-&gt;lson,rnk);</span><br><span class="line">    &#125;</span><br><span class="line">    rnk-=x-&gt;lson-&gt;siz<span class="number">+1</span>;</span><br><span class="line">    <span class="keyword">return</span> rnk?<span class="built_in">rnk2val</span>(x-&gt;rson,rnk):x-&gt;val;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询-val-的排名"><a href="#查询-val-的排名" class="headerlink" title="查询 val 的排名"></a>查询 val 的排名</h3><p>把 $root$ 分裂为权值 $&lt;val$ 的树 $l$ 与权值 $\geq val$ 的树 $r$。</p>
+<p>统计 $siz_l+1$ 即为答案。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2rnk</span><span class="params">(tree *&amp;root,<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *l,*mid_r;</span><br><span class="line">    <span class="built_in">split</span>(root,val<span class="number">-1</span>,l,mid_r);</span><br><span class="line">    <span class="type">int</span> ret=l-&gt;siz<span class="number">+1</span>;</span><br><span class="line">    root=<span class="built_in">merge</span>(l,mid_r);</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询-val-的前驱"><a href="#查询-val-的前驱" class="headerlink" title="查询 val 的前驱"></a>查询 val 的前驱</h3><p>把 $root$ 分裂为权值 $&lt;val$ 的树 $l$ 与权值 $\geq val$ 的树 $r$。</p>
+<p>查询 $l$ 中排名为 $siz_l$ 的数。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2pre</span><span class="params">(tree *&amp;root,<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *l,*r;</span><br><span class="line">    <span class="built_in">split</span>(root,val<span class="number">-1</span>,l,r);</span><br><span class="line">    <span class="keyword">if</span>(l==&amp;nul) &#123;</span><br><span class="line">        <span class="keyword">return</span> -inf;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ret=<span class="built_in">rnk2val</span>(l,l-&gt;siz);</span><br><span class="line">    root=<span class="built_in">merge</span>(l,r);</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询-val-的后继"><a href="#查询-val-的后继" class="headerlink" title="查询 val 的后继"></a>查询 val 的后继</h3><p>把 $root$ 分裂为权值 $\leq val$ 的树 $l$ 与权值 $&gt;val$ 的树 $r$。</p>
+<p>查询 $r$ 中最小的（排名为 $1$）的数。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2suc</span><span class="params">(tree *&amp;root,<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *l,*r;</span><br><span class="line">    <span class="built_in">split</span>(root,val,l,r);</span><br><span class="line">    <span class="keyword">if</span>(r==&amp;nul) &#123;</span><br><span class="line">        <span class="keyword">return</span> inf;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ret=<span class="built_in">rnk2val</span>(r,<span class="number">1</span>);</span><br><span class="line">    root=<span class="built_in">merge</span>(l,r);</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>study</category>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>code</tag>
       </tags>
   </entry>
   <entry>
@@ -427,71 +492,6 @@
 <p>序列自动机第二种部分参考<a href="https://www.luogu.com.cn/blog/WYXkk/zi-xu-lie-zi-dong-ji">浅谈子序列自动机 - WYXkk 的博客</a>。</p>
 </blockquote>
 ]]></content>
-      <categories>
-        <category>study</category>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>code</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>可持久化平衡树学习笔记</title>
-    <url>/2025/08/03/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E5%B9%B3%E8%A1%A1%E6%A0%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>FHQ Treap，又叫无旋 Treap，是一种平衡树，还可以支持可持久化，<del>代码也通俗易懂</del>。</p>
-<p><a href="https://www.luogu.com.cn/problem/P3835">例题</a></p>
-<span id="more"></span>
-
-<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>每个节点需保存它所维护的值 $val$，它的子树大小 $siz$，父节点 $fa$ 以及它的左儿子 $lson$ 和右儿子 $rson$。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">tree</span> &#123;</span><br><span class="line">    <span class="type">int</span> val,pri,siz;</span><br><span class="line">    tree *lson,*rson;</span><br><span class="line">&#125;;</span><br><span class="line">tree nul&#123;<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,&amp;nul,&amp;nul&#125;,*root[N<span class="number">+1</span>];</span><br></pre></td></tr></table></figure>
-
-<h3 id="建立新节点"><a href="#建立新节点" class="headerlink" title="建立新节点"></a>建立新节点</h3><p>像 Treap 一样赋予随机值。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> tree *<span class="title">new_tree</span><span class="params">(<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *x=<span class="keyword">new</span> tree;</span><br><span class="line">    *x=tree&#123;val,<span class="built_in">rand</span>(),<span class="number">1</span>,&amp;nul,&amp;nul&#125;;</span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="复制节点"><a href="#复制节点" class="headerlink" title="复制节点"></a>复制节点</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> tree *<span class="title">copy</span><span class="params">(tree *ori)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *x=<span class="keyword">new</span> tree;</span><br><span class="line">    *x=*ori;</span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="更新节点-siz"><a href="#更新节点-siz" class="headerlink" title="更新节点 siz"></a>更新节点 siz</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">inline</span> <span class="type">void</span> <span class="title">push_up</span><span class="params">(tree *x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    x-&gt;siz=x-&gt;lson-&gt;siz+x-&gt;rson-&gt;siz<span class="number">+1</span>;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h3><p>合并 $x$ 和 $y$。（保证 $x$ 的权值 $\leq y$ 的权值）</p>
-<p>如果两个节点中有空节点，则返回非空节点。</p>
-<p>根据 Treap 的堆性质，选择随机值较大的点（假设是 $x$），合并它的右儿子（如果是 $y$ 则为它的左儿子）与 $y$。</p>
-<p>由于需要可持久化，需要重建 $x$ 节点。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function">tree *<span class="title">merge</span><span class="params">(tree *x,tree *y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>((x==&amp;nul)||(y==&amp;nul)) &#123;</span><br><span class="line">        <span class="keyword">return</span> x==&amp;nul?y:x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(x-&gt;pri&lt;=y-&gt;pri) &#123;</span><br><span class="line">        y=<span class="built_in">copy</span>(y);</span><br><span class="line">        y-&gt;lson=<span class="built_in">merge</span>(x,y-&gt;lson);</span><br><span class="line">        <span class="built_in">push_up</span>(y);</span><br><span class="line">        <span class="keyword">return</span> y;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        x=<span class="built_in">copy</span>(x);</span><br><span class="line">        x-&gt;rson=<span class="built_in">merge</span>(x-&gt;rson,y);</span><br><span class="line">        <span class="built_in">push_up</span>(x);</span><br><span class="line">        <span class="keyword">return</span> x;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="分裂"><a href="#分裂" class="headerlink" title="分裂"></a>分裂</h3><p>将 $x$ 分成权值 $\leq val$ 的树和权值 $&gt;val$ 的树。</p>
-<p>如果 $x$ 的权值 $\leq val$，则把 $x$ 的右儿子分裂，否则分裂左儿子。</p>
-<p>注意可持久化。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">split</span><span class="params">(tree *x,<span class="type">int</span> val,tree *&amp;l,tree *&amp;r)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(x==&amp;nul) &#123;</span><br><span class="line">        l=r=&amp;nul;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(x-&gt;val&lt;=val) &#123;</span><br><span class="line">        l=<span class="built_in">copy</span>(x);</span><br><span class="line">        <span class="built_in">split</span>(l-&gt;rson,val,l-&gt;rson,r);</span><br><span class="line">        <span class="built_in">push_up</span>(l);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        r=<span class="built_in">copy</span>(x);</span><br><span class="line">        <span class="built_in">split</span>(r-&gt;lson,val,l,r-&gt;lson);</span><br><span class="line">        <span class="built_in">push_up</span>(r);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="插入值"><a href="#插入值" class="headerlink" title="插入值"></a>插入值</h3><p>将 $root$ 分裂成分成权值 $\leq val$ 的树 $l$ 与权值 $&gt;val$ 的树 $r$。</p>
-<p>新建一个值为 $val$ 的节点（设为 $x$）。</p>
-<p>依次合并 $l,x,r$ 即可。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">insert</span><span class="params">(tree *&amp;root,<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *l,*r;</span><br><span class="line">    <span class="built_in">split</span>(root,val,l,r);</span><br><span class="line">    tree *x=<span class="built_in">new_tree</span>(val);</span><br><span class="line">    root=<span class="built_in">merge</span>(l,<span class="built_in">merge</span>(x,r));</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="删除值"><a href="#删除值" class="headerlink" title="删除值"></a>删除值</h3><p>将 $root$ 分裂成分成权值 $&lt;val$ 的树 $l$、权值 $&#x3D;val$ 的树 $mid$ 与权值 $&gt;val$ 的树 $r$。</p>
-<p>依次合并 $l,lson_{mid},rson_{mid},r$ 即可。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">del</span><span class="params">(tree *&amp;root,<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *l,*l_mid,*mid,*r;</span><br><span class="line">    <span class="built_in">split</span>(root,val,l_mid,r);</span><br><span class="line">    <span class="built_in">split</span>(l_mid,val<span class="number">-1</span>,l,mid);</span><br><span class="line">    root=<span class="built_in">merge</span>(l,<span class="built_in">merge</span>(<span class="built_in">merge</span>(mid-&gt;lson,mid-&gt;rson),r));</span><br><span class="line">    <span class="keyword">if</span>(mid!=&amp;nul) &#123;</span><br><span class="line">        <span class="keyword">delete</span> mid;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="查询排名为-rnk-的数"><a href="#查询排名为-rnk-的数" class="headerlink" title="查询排名为 rnk 的数"></a>查询排名为 rnk 的数</h3><ul>
-<li><p>如果 $rnk$ 小于等于当前节点左子树的 $siz$，则递归左子树；</p>
-</li>
-<li><p>否则将 $rnk$ 减去左子树的 $siz+1$，如果 $rnk\leq0$，则返回当前节点的权值，否则递归右子树。</p>
-</li>
-</ul>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">rnk2val</span><span class="params">(tree *x,<span class="type">int</span> rnk)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(rnk&lt;=x-&gt;lson-&gt;siz) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">rnk2val</span>(x-&gt;lson,rnk);</span><br><span class="line">    &#125;</span><br><span class="line">    rnk-=x-&gt;lson-&gt;siz<span class="number">+1</span>;</span><br><span class="line">    <span class="keyword">return</span> rnk?<span class="built_in">rnk2val</span>(x-&gt;rson,rnk):x-&gt;val;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="查询-val-的排名"><a href="#查询-val-的排名" class="headerlink" title="查询 val 的排名"></a>查询 val 的排名</h3><p>把 $root$ 分裂为权值 $&lt;val$ 的树 $l$ 与权值 $\geq val$ 的树 $r$。</p>
-<p>统计 $siz_l+1$ 即为答案。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2rnk</span><span class="params">(tree *&amp;root,<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *l,*mid_r;</span><br><span class="line">    <span class="built_in">split</span>(root,val<span class="number">-1</span>,l,mid_r);</span><br><span class="line">    <span class="type">int</span> ret=l-&gt;siz<span class="number">+1</span>;</span><br><span class="line">    root=<span class="built_in">merge</span>(l,mid_r);</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="查询-val-的前驱"><a href="#查询-val-的前驱" class="headerlink" title="查询 val 的前驱"></a>查询 val 的前驱</h3><p>把 $root$ 分裂为权值 $&lt;val$ 的树 $l$ 与权值 $\geq val$ 的树 $r$。</p>
-<p>查询 $l$ 中排名为 $siz_l$ 的数。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2pre</span><span class="params">(tree *&amp;root,<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *l,*r;</span><br><span class="line">    <span class="built_in">split</span>(root,val<span class="number">-1</span>,l,r);</span><br><span class="line">    <span class="keyword">if</span>(l==&amp;nul) &#123;</span><br><span class="line">        <span class="keyword">return</span> -inf;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ret=<span class="built_in">rnk2val</span>(l,l-&gt;siz);</span><br><span class="line">    root=<span class="built_in">merge</span>(l,r);</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="查询-val-的后继"><a href="#查询-val-的后继" class="headerlink" title="查询 val 的后继"></a>查询 val 的后继</h3><p>把 $root$ 分裂为权值 $\leq val$ 的树 $l$ 与权值 $&gt;val$ 的树 $r$。</p>
-<p>查询 $r$ 中最小的（排名为 $1$）的数。</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">val2suc</span><span class="params">(tree *&amp;root,<span class="type">int</span> val)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    tree *l,*r;</span><br><span class="line">    <span class="built_in">split</span>(root,val,l,r);</span><br><span class="line">    <span class="keyword">if</span>(r==&amp;nul) &#123;</span><br><span class="line">        <span class="keyword">return</span> inf;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ret=<span class="built_in">rnk2val</span>(r,<span class="number">1</span>);</span><br><span class="line">    root=<span class="built_in">merge</span>(l,r);</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>study</category>
         <category>笔记</category>

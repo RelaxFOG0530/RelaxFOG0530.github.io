@@ -274,13 +274,6 @@
   </url>
   
   <url>
-    <loc>https://relaxfog0530.github.io/categories/study/%E6%B0%A2%E6%B0%A7%E6%A0%B9/</loc>
-    <lastmod>2025-08-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://relaxfog0530.github.io/categories/music/</loc>
     <lastmod>2025-08-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -288,14 +281,14 @@
   </url>
   
   <url>
-    <loc>https://relaxfog0530.github.io/categories/study/%E9%A2%98%E8%A7%A3/</loc>
+    <loc>https://relaxfog0530.github.io/categories/study/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2025-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://relaxfog0530.github.io/categories/study/%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://relaxfog0530.github.io/categories/study/%E6%B0%A2%E6%B0%A7%E6%A0%B9/</loc>
     <lastmod>2025-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -310,6 +303,13 @@
   
   <url>
     <loc>https://relaxfog0530.github.io/categories/talk%EF%BC%8C%E8%BF%BD%E5%89%A7/</loc>
+    <lastmod>2025-08-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://relaxfog0530.github.io/categories/study/%E9%A2%98%E8%A7%A3/</loc>
     <lastmod>2025-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
