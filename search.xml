@@ -16,6 +16,20 @@
       </tags>
   </entry>
   <entry>
+    <title>Espresso</title>
+    <url>/2025/08/04/Espresso/</url>
+    <content><![CDATA[<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1954627753&bvid=BV1ay411Y7WS&cid=1549402671&p=1" 
+        width="100%" height="450" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+]]></content>
+      <categories>
+        <category>music</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>video</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>对我和你或许有帮助的一次讲解（Day 1）</title>
     <url>/2025/08/28/Day%201/</url>
     <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>我这里的时间已经是深更半夜了，听着戳的-My My My！-身为一位合格的需动机主义者，突觉这几天没有学习C++，再看看20几天后又要比赛了….我</p>
@@ -55,57 +69,6 @@
       <categories>
         <category>study</category>
         <category>氢氧根</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>code</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Espresso</title>
-    <url>/2025/08/04/Espresso/</url>
-    <content><![CDATA[<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1954627753&bvid=BV1ay411Y7WS&cid=1549402671&p=1" 
-        width="100%" height="450" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
-]]></content>
-      <categories>
-        <category>music</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>video</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Horse Races</title>
-    <url>/2025/08/06/Horse%20Races%E9%A2%98%E8%A7%A3/</url>
-    <content><![CDATA[<h4 id="我们先看题"><a href="#我们先看题" class="headerlink" title="我们先看题"></a>我们先看题</h4><h1 id="CF95D-Horse-Races"><a href="#CF95D-Horse-Races" class="headerlink" title="CF95D Horse Races"></a>CF95D Horse Races</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Petya likes horse racing very much. Horses numbered from $ l $ to $ r $ take part in the races. Petya wants to evaluate the probability of victory; for some reason, to do that he needs to know the amount of nearly lucky horses’ numbers. A nearly lucky number is an integer number that has at least two lucky digits the distance between which does not exceed $ k $ . Petya learned from some of his mates from Lviv that lucky digits are digits $ 4 $ and $ 7 $ . The distance between the digits is the absolute difference between their positions in the number of a horse. For example, if $ k&#x3D;2 $ , then numbers $ 412395497 $ , $ 404 $ , $ 4070400000070004007 $ are nearly lucky and numbers $ 4 $ , $ 4123954997 $ , $ 4007000040070004007 $ are not.</p>
-<p>Petya prepared $ t $ intervals $ [l_{i},r_{i}] $ and invented number $ k $ , common for all of them. Your task is to find how many nearly happy numbers there are in each of these segments. Since the answers can be quite large, output them modulo $ 1000000007 $ ( $ 10^{9}+7 $ ).</p>
-<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>The first line contains two integers $ t $ and $ k $ ( $ 1&lt;&#x3D;t,k&lt;&#x3D;1000 $ ) — the number of segments and the distance between the numbers correspondingly. Next $ t $ lines contain pairs of integers $ l_{i} $ and $ r_{i} $ ( $ 1&lt;&#x3D;l&lt;&#x3D;r&lt;&#x3D;10^{1000} $ ). All numbers are given without the leading zeroes. Numbers in each line are separated by exactly one space character.</p>
-<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>Output $ t $ lines. In each line print one integer — the answer for the corresponding segment modulo $ 1000000007 $ ( $ 10^{9}+7 $ ).</p>
-<h2 id="输入输出样例-1"><a href="#输入输出样例-1" class="headerlink" title="输入输出样例 #1"></a>输入输出样例 #1</h2><h3 id="输入-1"><a href="#输入-1" class="headerlink" title="输入 #1"></a>输入 #1</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1 2</span><br><span class="line">1 100</span><br></pre></td></tr></table></figure>
-
-<h3 id="输出-1"><a href="#输出-1" class="headerlink" title="输出 #1"></a>输出 #1</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">4</span><br></pre></td></tr></table></figure>
-
-<h2 id="输入输出样例-2"><a href="#输入输出样例-2" class="headerlink" title="输入输出样例 #2"></a>输入输出样例 #2</h2><h3 id="输入-2"><a href="#输入-2" class="headerlink" title="输入 #2"></a>输入 #2</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1 2</span><br><span class="line">70 77</span><br></pre></td></tr></table></figure>
-
-<h3 id="输出-2"><a href="#输出-2" class="headerlink" title="输出 #2"></a>输出 #2</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure>
-
-<h2 id="输入输出样例-3"><a href="#输入输出样例-3" class="headerlink" title="输入输出样例 #3"></a>输入输出样例 #3</h2><h3 id="输入-3"><a href="#输入-3" class="headerlink" title="输入 #3"></a>输入 #3</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">2 1</span><br><span class="line">1 20</span><br><span class="line">80 100</span><br></pre></td></tr></table></figure>
-
-<h3 id="输出-3"><a href="#输出-3" class="headerlink" title="输出 #3"></a>输出 #3</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">0</span><br><span class="line">0</span><br></pre></td></tr></table></figure>
-
-<h2 id="说明-提示"><a href="#说明-提示" class="headerlink" title="说明&#x2F;提示"></a>说明&#x2F;提示</h2><p>In the first sample, the four nearly lucky numbers are 44, 47, 74, 77.</p>
-<p>In the second sample, only 74 and 77 are in the given segment.</p>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>一道比较基础的数位DP。</p>
-<p>答案明显可以差分出来，ans&#x3D;calc(r)−calc(l−1) ，但是由于数据范围太大 1≤l≤r≤10的1000次方，所以我们必须将 l 单独拿出来判断一下。</p>
-<p>至于 calc(x) ，可以用数位dp来进行求解，定义 dp i,j,k<br>​<br>  为在第 i 位距上一个幸运数字距离为 j 且是否满足条件的数的数量。</p>
-<p>状态转移的过程可以用记忆化搜索来实现。之后就可以很简单的解决了。</p>
-<p>Code (最近学坏了，压行的有些厉害)</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> mod = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"><span class="type">int</span> dp[<span class="number">1005</span>][<span class="number">1005</span>][<span class="number">2</span>];</span><br><span class="line"><span class="type">int</span> bits[<span class="number">1005</span>];</span><br><span class="line"><span class="type">int</span> t,k;</span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">dfs</span><span class="params">(<span class="type">int</span> len,<span class="type">int</span> lpos,<span class="type">int</span> fg,<span class="type">bool</span> border)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(!len) <span class="keyword">return</span> fg == <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span>(!border &amp;&amp; dp[len][lpos][fg]!=<span class="number">-1</span>) <span class="keyword">return</span> dp[len][lpos][fg];</span><br><span class="line">    <span class="type">int</span> up=border? bits[len]:<span class="number">9</span>;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> res=<span class="number">0</span> ;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>; i&lt;=up; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(i==<span class="number">4</span>||i==<span class="number">7</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            res += <span class="built_in">dfs</span>(len<span class="number">-1</span>,len,(lpos &amp;&amp; lpos-len&lt;=k)|fg,border&amp;&amp;i==up);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> res += <span class="built_in">dfs</span>(len - <span class="number">1</span>, lpos, fg, border &amp;&amp; i == up);</span><br><span class="line">    &#125;</span><br><span class="line">    res %= mod;</span><br><span class="line">    <span class="keyword">if</span>(!border) dp[len][lpos][fg] = res;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">f</span><span class="params">(string s)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> len=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i=s.<span class="built_in">size</span>()<span class="number">-1</span>; i&gt;=<span class="number">0</span>; i--)</span><br><span class="line">    &#123;</span><br><span class="line">        bits[++ len] = s[i] - <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">dfs</span>(len,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">check</span><span class="params">(string &amp;s)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> p = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">1</span>; i&lt;=s.<span class="built_in">size</span>(); i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (s[i<span class="number">-1</span>]==<span class="string">&#x27;4&#x27;</span>||s[i<span class="number">-1</span>]==<span class="string">&#x27;7&#x27;</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(!p||i-p&gt;k) p=i;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(i-p&lt;=k) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cin&gt;&gt;t&gt;&gt;k;</span><br><span class="line">    string l,r;</span><br><span class="line">    <span class="built_in">memset</span>(dp, <span class="number">-1</span>, <span class="built_in">sizeof</span>(dp));</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>; i&lt;t; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cin&gt;&gt;l&gt;&gt;r;</span><br><span class="line">        <span class="type">long</span> <span class="type">long</span> ans=<span class="built_in">f</span>(r)-<span class="built_in">f</span>(l)+(<span class="built_in">check</span>(l)?<span class="number">1</span>:<span class="number">0</span>);</span><br><span class="line">        cout&lt;&lt;(ans%mod+mod)%mod&lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>study</category>
-        <category>题解</category>
       </categories>
       <tags>
         <tag>2025</tag>
@@ -204,6 +167,43 @@
       <categories>
         <category>study</category>
         <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>code</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Horse Races</title>
+    <url>/2025/08/06/Horse%20Races%E9%A2%98%E8%A7%A3/</url>
+    <content><![CDATA[<h4 id="我们先看题"><a href="#我们先看题" class="headerlink" title="我们先看题"></a>我们先看题</h4><h1 id="CF95D-Horse-Races"><a href="#CF95D-Horse-Races" class="headerlink" title="CF95D Horse Races"></a>CF95D Horse Races</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>Petya likes horse racing very much. Horses numbered from $ l $ to $ r $ take part in the races. Petya wants to evaluate the probability of victory; for some reason, to do that he needs to know the amount of nearly lucky horses’ numbers. A nearly lucky number is an integer number that has at least two lucky digits the distance between which does not exceed $ k $ . Petya learned from some of his mates from Lviv that lucky digits are digits $ 4 $ and $ 7 $ . The distance between the digits is the absolute difference between their positions in the number of a horse. For example, if $ k&#x3D;2 $ , then numbers $ 412395497 $ , $ 404 $ , $ 4070400000070004007 $ are nearly lucky and numbers $ 4 $ , $ 4123954997 $ , $ 4007000040070004007 $ are not.</p>
+<p>Petya prepared $ t $ intervals $ [l_{i},r_{i}] $ and invented number $ k $ , common for all of them. Your task is to find how many nearly happy numbers there are in each of these segments. Since the answers can be quite large, output them modulo $ 1000000007 $ ( $ 10^{9}+7 $ ).</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>The first line contains two integers $ t $ and $ k $ ( $ 1&lt;&#x3D;t,k&lt;&#x3D;1000 $ ) — the number of segments and the distance between the numbers correspondingly. Next $ t $ lines contain pairs of integers $ l_{i} $ and $ r_{i} $ ( $ 1&lt;&#x3D;l&lt;&#x3D;r&lt;&#x3D;10^{1000} $ ). All numbers are given without the leading zeroes. Numbers in each line are separated by exactly one space character.</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>Output $ t $ lines. In each line print one integer — the answer for the corresponding segment modulo $ 1000000007 $ ( $ 10^{9}+7 $ ).</p>
+<h2 id="输入输出样例-1"><a href="#输入输出样例-1" class="headerlink" title="输入输出样例 #1"></a>输入输出样例 #1</h2><h3 id="输入-1"><a href="#输入-1" class="headerlink" title="输入 #1"></a>输入 #1</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1 2</span><br><span class="line">1 100</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出-1"><a href="#输出-1" class="headerlink" title="输出 #1"></a>输出 #1</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">4</span><br></pre></td></tr></table></figure>
+
+<h2 id="输入输出样例-2"><a href="#输入输出样例-2" class="headerlink" title="输入输出样例 #2"></a>输入输出样例 #2</h2><h3 id="输入-2"><a href="#输入-2" class="headerlink" title="输入 #2"></a>输入 #2</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1 2</span><br><span class="line">70 77</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出-2"><a href="#输出-2" class="headerlink" title="输出 #2"></a>输出 #2</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure>
+
+<h2 id="输入输出样例-3"><a href="#输入输出样例-3" class="headerlink" title="输入输出样例 #3"></a>输入输出样例 #3</h2><h3 id="输入-3"><a href="#输入-3" class="headerlink" title="输入 #3"></a>输入 #3</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">2 1</span><br><span class="line">1 20</span><br><span class="line">80 100</span><br></pre></td></tr></table></figure>
+
+<h3 id="输出-3"><a href="#输出-3" class="headerlink" title="输出 #3"></a>输出 #3</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">0</span><br><span class="line">0</span><br></pre></td></tr></table></figure>
+
+<h2 id="说明-提示"><a href="#说明-提示" class="headerlink" title="说明&#x2F;提示"></a>说明&#x2F;提示</h2><p>In the first sample, the four nearly lucky numbers are 44, 47, 74, 77.</p>
+<p>In the second sample, only 74 and 77 are in the given segment.</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>一道比较基础的数位DP。</p>
+<p>答案明显可以差分出来，ans&#x3D;calc(r)−calc(l−1) ，但是由于数据范围太大 1≤l≤r≤10的1000次方，所以我们必须将 l 单独拿出来判断一下。</p>
+<p>至于 calc(x) ，可以用数位dp来进行求解，定义 dp i,j,k<br>​<br>  为在第 i 位距上一个幸运数字距离为 j 且是否满足条件的数的数量。</p>
+<p>状态转移的过程可以用记忆化搜索来实现。之后就可以很简单的解决了。</p>
+<p>Code (最近学坏了，压行的有些厉害)</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> mod = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"><span class="type">int</span> dp[<span class="number">1005</span>][<span class="number">1005</span>][<span class="number">2</span>];</span><br><span class="line"><span class="type">int</span> bits[<span class="number">1005</span>];</span><br><span class="line"><span class="type">int</span> t,k;</span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">dfs</span><span class="params">(<span class="type">int</span> len,<span class="type">int</span> lpos,<span class="type">int</span> fg,<span class="type">bool</span> border)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(!len) <span class="keyword">return</span> fg == <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span>(!border &amp;&amp; dp[len][lpos][fg]!=<span class="number">-1</span>) <span class="keyword">return</span> dp[len][lpos][fg];</span><br><span class="line">    <span class="type">int</span> up=border? bits[len]:<span class="number">9</span>;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> res=<span class="number">0</span> ;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>; i&lt;=up; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(i==<span class="number">4</span>||i==<span class="number">7</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            res += <span class="built_in">dfs</span>(len<span class="number">-1</span>,len,(lpos &amp;&amp; lpos-len&lt;=k)|fg,border&amp;&amp;i==up);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> res += <span class="built_in">dfs</span>(len - <span class="number">1</span>, lpos, fg, border &amp;&amp; i == up);</span><br><span class="line">    &#125;</span><br><span class="line">    res %= mod;</span><br><span class="line">    <span class="keyword">if</span>(!border) dp[len][lpos][fg] = res;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">f</span><span class="params">(string s)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> len=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i=s.<span class="built_in">size</span>()<span class="number">-1</span>; i&gt;=<span class="number">0</span>; i--)</span><br><span class="line">    &#123;</span><br><span class="line">        bits[++ len] = s[i] - <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">dfs</span>(len,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">check</span><span class="params">(string &amp;s)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> p = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">1</span>; i&lt;=s.<span class="built_in">size</span>(); i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (s[i<span class="number">-1</span>]==<span class="string">&#x27;4&#x27;</span>||s[i<span class="number">-1</span>]==<span class="string">&#x27;7&#x27;</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(!p||i-p&gt;k) p=i;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(i-p&lt;=k) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cin&gt;&gt;t&gt;&gt;k;</span><br><span class="line">    string l,r;</span><br><span class="line">    <span class="built_in">memset</span>(dp, <span class="number">-1</span>, <span class="built_in">sizeof</span>(dp));</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>; i&lt;t; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cin&gt;&gt;l&gt;&gt;r;</span><br><span class="line">        <span class="type">long</span> <span class="type">long</span> ans=<span class="built_in">f</span>(r)-<span class="built_in">f</span>(l)+(<span class="built_in">check</span>(l)?<span class="number">1</span>:<span class="number">0</span>);</span><br><span class="line">        cout&lt;&lt;(ans%mod+mod)%mod&lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>study</category>
+        <category>题解</category>
       </categories>
       <tags>
         <tag>2025</tag>
@@ -339,6 +339,23 @@
 ]]></content>
   </entry>
   <entry>
+    <title>今日暴走</title>
+    <url>/2025/08/03/%E4%BB%8A%E6%97%A5%E6%9A%B4%E8%B5%B0/</url>
+    <content><![CDATA[<p>今天优化网页的过程，简直是把自己扔进了代码的泥沼里挣扎。<br><img src="https://s1.aigei.com/src/img/gif/02/021da8d3e9e24928b36cd0e6a5ddb567.gif?imageMogr2/auto-orient/thumbnail/!282x226r/gravity/Center/crop/282x226/quality/85/%7CimageView2/2/w/282&e=2051020800&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:t6dvivz7_aMOjctuQUsuUfUxZEw=" alt="红温"></p>
+<span id="more"></span>
+
+<p>下午打开项目时还信心满满，想着把加载速度提一提就行，结果点开控制台的瞬间就傻了 —— 红得刺眼的报错信息滚了三屏，像是在嘲笑我昨晚的天真。原以为只是压缩几个图片的事，没想到牵出了一串连锁反应：压缩完的图片在 IE 上全成了裂图，回滚版本时又误删了上周写的适配逻辑，等找回备份时，两个小时已经耗在原地。<br>最崩溃的是改评论区那块。明明跟着教程一步不差地配置，可 Giscus 要么加载不出来，要么一刷新就跳 404。对着文档翻到第 17 页，手指在键盘上敲到发麻，连 API 地址都快背下来了，屏幕上的 “分类不存在” 提示却像块胶布似的撕不掉。中间有三次想把鼠标摔了，盯着屏幕里那个顽固的空白区域，突然觉得眼睛发酸 —— 明明上周还好好的，怎么今天连一行代码都跟我作对？<br>傍晚时总算把加载速度压到了 1 秒内，可移动端的导航栏又开始抽风：在安卓上好好的，到了 iOS 就缩成一团；调成横屏模式，整个菜单直接钻进了页脚。对着开发者工具里密密麻麻的样式继承链，突然没力气骂娘了，就坐在那儿盯着光标闪，连外卖凉了都没察觉。<br>现在页面总算能看了，可盯着那个勉强能跑的版本，一点成就感都没有。后背僵得像块木板，手腕贴的膏药硌得慌，再看代码时眼睛里全是重影。原来优化网页哪是什么升级打怪，根本就是拿着镊子在乱麻里找线头，找着找着，连自己都快成了那团乱麻里的一根。</p>
+]]></content>
+      <categories>
+        <category>talk</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>Note</tag>
+        <tag>观测</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>劇終</title>
     <url>/2025/08/03/%E5%8A%87%E7%B5%82/</url>
     <content><![CDATA[<p><img src="http://img.xinmin.cn/xmwb/2020/5/NEM1_20200510_C0325256459_A2250577.png" alt="剧终"></p>
@@ -362,23 +379,6 @@
       <tags>
         <tag>2025</tag>
         <tag>Note</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>今日暴走</title>
-    <url>/2025/08/03/%E4%BB%8A%E6%97%A5%E6%9A%B4%E8%B5%B0/</url>
-    <content><![CDATA[<p>今天优化网页的过程，简直是把自己扔进了代码的泥沼里挣扎。<br><img src="https://s1.aigei.com/src/img/gif/02/021da8d3e9e24928b36cd0e6a5ddb567.gif?imageMogr2/auto-orient/thumbnail/!282x226r/gravity/Center/crop/282x226/quality/85/%7CimageView2/2/w/282&e=2051020800&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:t6dvivz7_aMOjctuQUsuUfUxZEw=" alt="红温"></p>
-<span id="more"></span>
-
-<p>下午打开项目时还信心满满，想着把加载速度提一提就行，结果点开控制台的瞬间就傻了 —— 红得刺眼的报错信息滚了三屏，像是在嘲笑我昨晚的天真。原以为只是压缩几个图片的事，没想到牵出了一串连锁反应：压缩完的图片在 IE 上全成了裂图，回滚版本时又误删了上周写的适配逻辑，等找回备份时，两个小时已经耗在原地。<br>最崩溃的是改评论区那块。明明跟着教程一步不差地配置，可 Giscus 要么加载不出来，要么一刷新就跳 404。对着文档翻到第 17 页，手指在键盘上敲到发麻，连 API 地址都快背下来了，屏幕上的 “分类不存在” 提示却像块胶布似的撕不掉。中间有三次想把鼠标摔了，盯着屏幕里那个顽固的空白区域，突然觉得眼睛发酸 —— 明明上周还好好的，怎么今天连一行代码都跟我作对？<br>傍晚时总算把加载速度压到了 1 秒内，可移动端的导航栏又开始抽风：在安卓上好好的，到了 iOS 就缩成一团；调成横屏模式，整个菜单直接钻进了页脚。对着开发者工具里密密麻麻的样式继承链，突然没力气骂娘了，就坐在那儿盯着光标闪，连外卖凉了都没察觉。<br>现在页面总算能看了，可盯着那个勉强能跑的版本，一点成就感都没有。后背僵得像块木板，手腕贴的膏药硌得慌，再看代码时眼睛里全是重影。原来优化网页哪是什么升级打怪，根本就是拿着镊子在乱麻里找线头，找着找着，连自己都快成了那团乱麻里的一根。</p>
-]]></content>
-      <categories>
-        <category>talk</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>Note</tag>
-        <tag>观测</tag>
       </tags>
   </entry>
   <entry>
@@ -516,31 +516,6 @@
       </tags>
   </entry>
   <entry>
-    <title>线性求逆元</title>
-    <url>/2025/08/03/%E7%BA%BF%E6%80%A7%E6%B1%82%E9%80%86%E5%85%83/</url>
-    <content><![CDATA[<p>当要求 $1-n$ 中所有数的逆元时，$O(n\log p)$ 的方法就有点悬了。</p>
-<p>下面介绍一种 $O(n)$ 求逆元的好方法。</p>
-<span id="more"></span>
-
-<h2 id="推导"><a href="#推导" class="headerlink" title="推导"></a>推导</h2><p>首先，$1^{-1}\equiv1\pmod p$。</p>
-<p>设 $k&#x3D;\lfloor\frac pi\rfloor$，则 $p&#x3D;k\cdot i+r$，其中 $r&#x3D;p\bmod i,1&lt;i&lt;p$。</p>
-<p>易得 $k\cdot i+r\equiv0\pmod p$。</p>
-<p>两边同乘 $i^{-1}\cdot r^{-1}$ 得：</p>
-<p>$$<br>\begin{aligned}<br>k\cdot r^{-1}+i^{-1}&amp;\equiv0&amp;\pmod p\<br>i^{-1}&amp;\equiv-k\cdot r^{-1}&amp;\pmod p\<br>i^{-1}&amp;\equiv-\lfloor\frac pi\rfloor\cdot(p\bmod i)^{-1}&amp;\pmod p<br>\end{aligned}<br>$$</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;++i) &#123;</span><br><span class="line">    inv[i]=-(mod/i)*inv[mod%i]%mod;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>为使 $inv_i$ 非负，代码也可写成：</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;++i) &#123;</span><br><span class="line">    inv[i]=(mod-mod/i)*inv[mod%i]%mod;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>study</category>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>2025</tag>
-        <tag>code</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>线性尺寸莫比乌斯函数</title>
     <url>/2025/08/03/%E7%BA%BF%E6%80%A7%E5%B0%BA%E5%AF%B8%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<p>模拟赛中的一道题，让我发现自己莫比乌斯函数的基础十分薄弱。:cry:</p>
@@ -563,6 +538,31 @@
 <p>本文部分参考<a href="https://oi.men.ci/euler-sieve/">线性筛法筛素数、莫比乌斯函数、欧拉函数 | Menci’s Blog</a>。</p>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>study</category>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>2025</tag>
+        <tag>code</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>线性求逆元</title>
+    <url>/2025/08/03/%E7%BA%BF%E6%80%A7%E6%B1%82%E9%80%86%E5%85%83/</url>
+    <content><![CDATA[<p>当要求 $1-n$ 中所有数的逆元时，$O(n\log p)$ 的方法就有点悬了。</p>
+<p>下面介绍一种 $O(n)$ 求逆元的好方法。</p>
+<span id="more"></span>
+
+<h2 id="推导"><a href="#推导" class="headerlink" title="推导"></a>推导</h2><p>首先，$1^{-1}\equiv1\pmod p$。</p>
+<p>设 $k&#x3D;\lfloor\frac pi\rfloor$，则 $p&#x3D;k\cdot i+r$，其中 $r&#x3D;p\bmod i,1&lt;i&lt;p$。</p>
+<p>易得 $k\cdot i+r\equiv0\pmod p$。</p>
+<p>两边同乘 $i^{-1}\cdot r^{-1}$ 得：</p>
+<p>$$<br>\begin{aligned}<br>k\cdot r^{-1}+i^{-1}&amp;\equiv0&amp;\pmod p\<br>i^{-1}&amp;\equiv-k\cdot r^{-1}&amp;\pmod p\<br>i^{-1}&amp;\equiv-\lfloor\frac pi\rfloor\cdot(p\bmod i)^{-1}&amp;\pmod p<br>\end{aligned}<br>$$</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;++i) &#123;</span><br><span class="line">    inv[i]=-(mod/i)*inv[mod%i]%mod;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>为使 $inv_i$ 非负，代码也可写成：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;++i) &#123;</span><br><span class="line">    inv[i]=(mod-mod/i)*inv[mod%i]%mod;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>study</category>
         <category>笔记</category>
